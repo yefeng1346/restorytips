@@ -15,7 +15,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
       <div className="wrap foot-grid">
         <div>
           <Link className="brand" href={localizedPath(locale, "/")}>
-            <img src="/favicon.png" alt="" width="30" height="30" loading="lazy" className="pixel" />
+            <img src="/favicon.png" alt="ReStorytips logo" width="30" height="30" loading="lazy" className="pixel" />
             <span>
               ReStory
               <span className="sub">ReStory Repair Wiki</span>

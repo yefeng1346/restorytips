@@ -24,7 +24,7 @@ export function SiteHeader({ locale, currentPath }: SiteHeaderProps) {
     <header className="site-header">
       <div className="wrap header-inner">
         <Link className="brand" href={localizedPath(locale, "/")}>
-          <img src="/favicon.png" alt="" width="30" height="30" className="pixel" />
+          <img src="/favicon.png" alt="ReStorytips logo" width="30" height="30" className="pixel" />
           <span>
             ReStory
             <span className="sub">Repair Wiki</span>
