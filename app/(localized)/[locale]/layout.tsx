@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "../../globals.css";
+import { GoogleAdsense } from "@/components/google-adsense";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { defaultLocale, isLocale, locales, siteConfig, type Locale } from "@/lib/site-data";
 
 export function generateStaticParams() {
@@ -36,7 +38,11 @@ export default async function LocalizedRootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        {children}
+        <GoogleAnalytics />
+        <GoogleAdsense />
+      </body>
     </html>
   );
 }

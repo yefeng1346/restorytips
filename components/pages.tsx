@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
+import { NativeBanner } from "./native-banner";
 import { SitePageJsonLd } from "./seo-json-ld";
 import { Taskbar } from "./taskbar";
 import { WikiSidebar } from "./wiki-sidebar";
@@ -167,6 +168,8 @@ export function HomePage({ locale }: { locale: Locale }) {
           </ul>
         </section>
 
+        <NativeBanner />
+
         <section>
           <span className="section-kicker">{copy.labels.startHere}</span>
           <h2>{locale === "en" ? home.start.title : copy.labels.startHere}</h2>
@@ -287,6 +290,7 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
                 ))}
               </ul>
             </section>
+            <NativeBanner />
             <section className="panel raised">
               <span className="section-kicker">{copy.labels.official}</span>
               <h2>{copy.labels.source}</h2>
@@ -361,6 +365,7 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
             <div className="prose">
               <Article />
             </div>
+            <NativeBanner />
             <section>
               <span className="section-kicker">{copy.labels.relatedPages}</span>
               <ul className="grid cols-3 content-list">
@@ -409,7 +414,9 @@ export function LegalPage({ locale, type }: { locale: Locale; type: "privacy" | 
             <>
               <p>This independent fan-made ReStory Wiki is designed to provide guides and reference information. It does not require an account to read the public pages.</p>
               <h2>Information on this site</h2>
-              <p>Any analytics or advertising service used by the deployed site should be configured separately and documented before launch. Do not submit private information through guide comments or external links.</p>
+              <p>Google Analytics is enabled to measure visits and page usage through measurement ID G-NGY82QT3YL. Google may process technical and usage data under its own policies. Do not submit private information through guide comments or external links.</p>
+              <h2>Advertising</h2>
+              <p>Public content pages may load Google AdSense with publisher ID ca-pub-4496419024798372 and a third-party native advertising script from effectivecpmnetwork.com. Any data processing by those providers is governed by their own policies.</p>
               <h2>External services</h2>
               <p>Official Steam, Discord, YouTube, and tinyBuild links leave this Wiki and are governed by their own policies.</p>
             </>
