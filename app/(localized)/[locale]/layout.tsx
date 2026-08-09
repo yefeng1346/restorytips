@@ -38,10 +38,12 @@ export default async function LocalizedRootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <GoogleAdsense />
+      </head>
       <body>
         {children}
         <GoogleAnalytics />
-        <GoogleAdsense />
       </body>
     </html>
   );

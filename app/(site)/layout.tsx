@@ -36,10 +36,12 @@ export const metadata: Metadata = {
 export default function SiteRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <GoogleAdsense />
+      </head>
       <body>
         {children}
         <GoogleAnalytics />
-        <GoogleAdsense />
       </body>
     </html>
   );
