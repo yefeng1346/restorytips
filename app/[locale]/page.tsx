@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { HomePage } from "@/components/pages";
+import { buildPageMetadata } from "@/lib/seo";
 import { getLocaleCopy, isLocale, locales, siteConfig, type Locale } from "@/lib/site-data";
 
 export function generateStaticParams() {
@@ -11,11 +12,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale: rawLocale } = await params;
   if (!isLocale(rawLocale)) return {};
   const copy = getLocaleCopy(rawLocale);
-  return {
+  return buildPageMetadata({
     title: `${copy.gameName} Wiki — Guides, Repairs`,
     description: siteConfig.homepage.meta.description,
     keywords: siteConfig.homepage.meta.keywords,
-  };
+    path: `/${rawLocale}`,
+    alternatePath: "/",
+    locale: rawLocale,
+    supportedLocales: locales,
+  });
 }
 
 export default async function LocalizedHome({ params }: { params: Promise<{ locale: string }> }) {

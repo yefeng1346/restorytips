@@ -5,6 +5,7 @@ export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
 export const siteConfig = {
+  siteUrl: "https://www.restorytips.com",
   gameName: "ReStory: Chill Electronics Repairs",
   shortName: "ReStory",
   locales,
@@ -638,4 +639,48 @@ export function localizedPath(locale: Locale, path: string): string {
 
 export function getGuideMeta(slug: string): GuideMeta | undefined {
   return guideMeta.find((guide) => guide.slug === slug);
+}
+
+const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<GuideMeta>>>> = {
+  ru: {
+    "restory-chill-electronics-repairs-walkthrough": {
+      title: "ReStory: Chill Electronics Repairs — гайд для новичков",
+      seoTitle: "ReStory: Chill Electronics Repairs — гайд для новичков",
+      metaDescription:
+        "Гайд для новичков по ReStory: Chill Electronics Repairs — первый заказ, основной цикл ремонта, детали, мастерская и подтверждённые сведения.",
+      description:
+        "Начните с первого заказа, пройдите подтверждённый цикл ремонта и отделяйте проверенные сведения от деталей, которые ещё нужно подтвердить.",
+    },
+  },
+  de: {
+    "restory-chill-electronics-repairs-walkthrough": {
+      title: "ReStory: Chill Electronics Repairs — Einsteiger-Guide",
+      seoTitle: "ReStory: Chill Electronics Repairs — Einsteiger-Guide",
+      metaDescription:
+        "Einsteiger-Guide für ReStory: Chill Electronics Repairs mit dem ersten Auftrag, dem Reparaturkreislauf, Ersatzteilen, Werkstatt und bestätigten Informationen.",
+      description:
+        "Starte mit dem ersten Auftrag, folge dem bestätigten Reparaturkreislauf und trenne geprüfte Informationen von offenen Details.",
+    },
+  },
+  ja: {
+    "restory-chill-electronics-repairs-walkthrough": {
+      title: "リ・ストーリー: 思い出修理屋 — 初心者ガイド",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 初心者ガイド",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の初心者ガイド。最初の依頼、修理の基本ループ、交換部品、店の管理、Steam版の確認済み情報をまとめます。",
+      description:
+        "最初の依頼から確認済みの修理ループまで、ゲーム内で確認できた情報と未確認の詳細を分けて紹介します。",
+    },
+  },
+};
+
+export function getLocalizedGuideMeta(locale: Locale, slug: string): GuideMeta | undefined {
+  const guide = getGuideMeta(slug);
+  if (!guide) return undefined;
+  const override = localizedGuideOverrides[locale]?.[slug];
+  return override ? { ...guide, ...override } : guide;
+}
+
+export function hasLocalizedGuide(locale: Locale, slug: string): boolean {
+  return Boolean(localizedGuideOverrides[locale]?.[slug]);
 }

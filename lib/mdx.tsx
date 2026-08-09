@@ -19,6 +19,9 @@ import ReviewGuide from "@/content/en/guides/restory-chill-electronics-repairs-r
 import SystemRequirementsGuide from "@/content/en/guides/restory-chill-electronics-repairs-system-requirements.mdx";
 import TrailerGuide from "@/content/en/guides/restory-chill-electronics-repairs-trailer.mdx";
 import WalkthroughGuide from "@/content/en/guides/restory-chill-electronics-repairs-walkthrough.mdx";
+import GermanBeginnerGuide from "@/content/de/guides/beginner-guide.mdx";
+import JapaneseBeginnerGuide from "@/content/ja/guides/beginner-guide.mdx";
+import RussianBeginnerGuide from "@/content/ru/guides/beginner-guide.mdx";
 import type { Locale } from "./site-data";
 
 export type MdxArticle = ComponentType<Record<string, unknown>>;
@@ -46,9 +49,15 @@ const articles: Record<Locale, Record<string, MdxArticle>> = {
     "restory-chill-electronics-repairs-mods": ModsGuide,
     "restory-chill-electronics-repairs-games-like": GamesLikeGuide,
   },
-  ru: {},
-  de: {},
-  ja: {},
+  ru: {
+    "restory-chill-electronics-repairs-walkthrough": RussianBeginnerGuide,
+  },
+  de: {
+    "restory-chill-electronics-repairs-walkthrough": GermanBeginnerGuide,
+  },
+  ja: {
+    "restory-chill-electronics-repairs-walkthrough": JapaneseBeginnerGuide,
+  },
 };
 
 export function getGuideComponent(locale: Locale, slug: string): MdxArticle | undefined {

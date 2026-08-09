@@ -2,10 +2,12 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
+import { SitePageJsonLd } from "./seo-json-ld";
 import { Taskbar } from "./taskbar";
 import { WikiSidebar } from "./wiki-sidebar";
 import {
   getLocaleCopy,
+  getLocalizedGuideMeta,
   guideMeta,
   localizedPath,
   siteConfig,
@@ -13,11 +15,35 @@ import {
 } from "@/lib/site-data";
 import { getGuideComponent } from "@/lib/mdx";
 
-function PageChrome({ locale, currentPath, children }: { locale: Locale; currentPath: string; children: ReactNode }) {
+function PageChrome({
+  locale,
+  currentPath,
+  children,
+  pageTitle = siteConfig.gameName,
+  pageDescription = siteConfig.homepage.meta.description,
+  article = false,
+  breadcrumbs = [],
+}: {
+  locale: Locale;
+  currentPath: string;
+  children: ReactNode;
+  pageTitle?: string;
+  pageDescription?: string;
+  article?: boolean;
+  breadcrumbs?: { name: string; path: string }[];
+}) {
   return (
     <>
+      <SitePageJsonLd
+        locale={locale}
+        path={localizedPath(locale, currentPath)}
+        title={pageTitle}
+        description={pageDescription}
+        article={article}
+        breadcrumbs={breadcrumbs}
+      />
       <SiteHeader locale={locale} currentPath={currentPath} />
-      <main id="main">{children}</main>
+      <main id="main" lang={locale}>{children}</main>
       <SiteFooter locale={locale} />
       <Taskbar locale={locale} />
     </>
@@ -75,7 +101,12 @@ export function HomePage({ locale }: { locale: Locale }) {
   const home = siteConfig.homepage;
 
   return (
-    <PageChrome locale={locale} currentPath="/">
+    <PageChrome
+      locale={locale}
+      currentPath="/"
+      pageTitle={locale === "en" ? home.hero.title : copy.gameName}
+      pageDescription={locale === "en" ? home.hero.description : copy.home.quickDescription}
+    >
       <div className="wrap" style={{ paddingTop: "1.6rem" }}>
         <section className="banner">
           <span className="section-kicker">{copy.labels.communityWiki}</span>
@@ -211,7 +242,12 @@ export function HomePage({ locale }: { locale: Locale }) {
 export function GuideIndexPage({ locale }: { locale: Locale }) {
   const copy = getLocaleCopy(locale);
   return (
-    <PageChrome locale={locale} currentPath="/guides">
+    <PageChrome
+      locale={locale}
+      currentPath="/guides"
+      pageTitle={locale === "en" ? "ReStory Repair Guides" : copy.nav.guides}
+      pageDescription={copy.home.quickDescription}
+    >
       <div className="wrap" style={{ paddingTop: "1.6rem" }}>
         <nav className="crumbs" aria-label="Breadcrumb">
           <Link href={localizedPath(locale, "/")}>{copy.nav.home}</Link>
@@ -259,7 +295,7 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
 
 export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: string }) {
   const copy = getLocaleCopy(locale);
-  const meta = guideMeta.find((guide) => guide.slug === slug);
+  const meta = getLocalizedGuideMeta(locale, slug);
   const Article = getGuideComponent(locale, slug);
 
   if (!meta || !Article) {
@@ -269,7 +305,18 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
   const related = guideMeta.filter((guide) => guide.slug !== slug).slice(0, 3);
 
   return (
-    <PageChrome locale={locale} currentPath={`/guides/${slug}`}>
+    <PageChrome
+      locale={locale}
+      currentPath={`/guides/${slug}`}
+      pageTitle={meta.title}
+      pageDescription={meta.description}
+      article
+      breadcrumbs={[
+        { name: copy.nav.home, path: "/" },
+        { name: copy.nav.guides, path: "/guides" },
+        { name: meta.title, path: `/guides/${slug}` },
+      ]}
+    >
       <div className="wrap" style={{ paddingTop: "1.6rem" }}>
         <nav className="crumbs" aria-label="Breadcrumb">
           <Link href={localizedPath(locale, "/")}>{copy.nav.home}</Link>
@@ -315,7 +362,16 @@ export function LegalPage({ locale, type }: { locale: Locale; type: "privacy" | 
   const copy = getLocaleCopy(locale);
   const title = type === "privacy" ? copy.labels.privacy : copy.labels.terms;
   return (
-    <PageChrome locale={locale} currentPath={`/${type}`}>
+    <PageChrome
+      locale={locale}
+      currentPath={`/${type}`}
+      pageTitle={title}
+      pageDescription={
+        type === "privacy"
+          ? "Privacy information for the independent ReStory: Chill Electronics Repairs fan Wiki."
+          : "Terms for using the independent ReStory: Chill Electronics Repairs fan Wiki."
+      }
+    >
       <div className="wrap" style={{ paddingTop: "1.6rem" }}>
         <nav className="crumbs" aria-label="Breadcrumb">
           <Link href={localizedPath(locale, "/")}>{copy.nav.home}</Link>
