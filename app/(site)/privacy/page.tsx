@@ -4,7 +4,8 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Privacy Policy — ReStory Wiki",
-  description: "Privacy information for the independent ReStory: Chill Electronics Repairs fan Wiki.",
+  description:
+    "Read the ReStory: Chill Electronics Repairs fan Wiki privacy policy, including public page use, analytics notes, external services, and privacy expectations.",
   path: "/privacy",
 });
 

@@ -7,7 +7,7 @@ export function Taskbar({ locale }: { locale: Locale }) {
   return (
     <div className="taskbar" role="navigation" aria-label="Taskbar shortcuts">
       <Link className="start" href={localizedPath(locale, "/")}>
-        <img src="/favicon.png" alt="" width="18" height="18" className="pixel" />
+        <img src="/favicon.png" alt="" width="18" height="18" loading="lazy" className="pixel" />
         <span>ReStory</span>
       </Link>
       <div className="tasks">

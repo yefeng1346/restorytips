@@ -62,6 +62,7 @@ export function buildPageMetadata({
     title,
     description,
     keywords,
+    authors: [{ name: "ReStorytips Editorial Team", url: siteConfig.siteUrl }],
     robots,
     alternates: {
       canonical,

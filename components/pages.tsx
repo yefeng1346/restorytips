@@ -7,6 +7,7 @@ import { Taskbar } from "./taskbar";
 import { WikiSidebar } from "./wiki-sidebar";
 import {
   getLocaleCopy,
+  getGuideAnswer,
   getLocalizedGuideMeta,
   guideMeta,
   localizedPath,
@@ -147,37 +148,41 @@ export function HomePage({ locale }: { locale: Locale }) {
           <span className="section-kicker">{copy.labels.quickLookup}</span>
           <h2>{copy.home.quickTitle}</h2>
           <p className="section-intro">{copy.home.quickDescription}</p>
-          <div className="quick-grid">
+          <ul className="quick-grid content-list">
             {quickLinks.map((item) => {
               const isExternal = "external" in item && item.external;
               const linkProps = isExternal ? { target: "_blank", rel: "noreferrer" } : {};
               const href = isExternal ? item.href : localizedPath(locale, item.href);
               return (
-                <Link className="quick-card" href={href} key={item.title} {...linkProps}>
-                  <span className="quick-stat">{item.stat}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <small>{item.label}</small>
-                </Link>
+                <li key={item.title}>
+                  <Link className="quick-card" href={href} {...linkProps}>
+                    <span className="quick-stat">{item.stat}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                    <small>{item.label}</small>
+                  </Link>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </section>
 
         <section>
           <span className="section-kicker">{copy.labels.startHere}</span>
           <h2>{locale === "en" ? home.start.title : copy.labels.startHere}</h2>
-          <div className="grid cols-2 start-grid">
+          <ul className="grid cols-2 start-grid content-list">
             {home.start.cards.map((card) => (
-              <Link className="card start-card" href={localizedPath(locale, card.href)} key={card.number}>
-                <span className="start-card__number">{card.number}</span>
-                <div>
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                </div>
-              </Link>
+              <li key={card.number}>
+                <Link className="card start-card" href={localizedPath(locale, card.href)}>
+                  <span className="start-card__number">{card.number}</span>
+                  <div>
+                    <h3>{card.title}</h3>
+                    <p>{card.description}</p>
+                  </div>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         <section>
@@ -266,19 +271,21 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
             <section style={{ marginTop: 0 }}>
               <span className="section-kicker">{copy.labels.startHere}</span>
               <h2>{copy.home.quickTitle}</h2>
-              <div className="grid cols-2">
+              <ul className="grid cols-2 content-list">
                 {guideMeta.map((guide) => (
-                  <Link className="card guide-card" href={localizedPath(locale, `/guides/${guide.slug}`)} key={guide.slug}>
-                    <span className="chip teal">{guide.category}</span>
-                    <h3>{guide.title}</h3>
-                    <p>{guide.description}</p>
-                    <div className="guide-card__footer">
-                      <span>{guide.readTime}</span>
-                      <span>{copy.labels.readMore} →</span>
-                    </div>
-                  </Link>
+                  <li key={guide.slug}>
+                    <Link className="card guide-card" href={localizedPath(locale, `/guides/${guide.slug}`)}>
+                      <span className="chip teal">{guide.category}</span>
+                      <h3>{guide.title}</h3>
+                      <p>{guide.description}</p>
+                      <div className="guide-card__footer">
+                        <span>{guide.readTime}</span>
+                        <span>{copy.labels.readMore} →</span>
+                      </div>
+                    </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </section>
             <section className="panel raised">
               <span className="section-kicker">{copy.labels.official}</span>
@@ -297,6 +304,7 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
   const copy = getLocaleCopy(locale);
   const meta = getLocalizedGuideMeta(locale, slug);
   const Article = getGuideComponent(locale, slug);
+  const guideAnswer = locale === "en" ? getGuideAnswer(slug) : undefined;
 
   if (!meta || !Article) {
     return null;
@@ -335,20 +343,36 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
                 <span>{meta.readTime}</span>
                 {meta.tags.map((tag) => <span className="chip" key={tag}>{tag}</span>)}
               </div>
+              <div className="article-meta article-meta--trust" aria-label={copy.labels.editorialReview}>
+                <span>{copy.labels.editorialReview}: ReStorytips Editorial Team</span>
+                <span>{copy.labels.researchStatus}</span>
+              </div>
             </header>
+            {guideAnswer ? (
+              <aside className="answer-first" aria-labelledby={`answer-${slug}`}>
+                <span className="section-kicker">{copy.labels.shortAnswer}</span>
+                <h2 id={`answer-${slug}`}>{meta.title}</h2>
+                <p>{guideAnswer.summary}</p>
+                <ul className="content-list">
+                  {guideAnswer.points.map((point) => <li key={point}>{point}</li>)}
+                </ul>
+              </aside>
+            ) : null}
             <div className="prose">
               <Article />
             </div>
             <section>
               <span className="section-kicker">{copy.labels.relatedPages}</span>
-              <div className="grid cols-3">
+              <ul className="grid cols-3 content-list">
                 {related.map((guide) => (
-                  <Link className="card" href={localizedPath(locale, `/guides/${guide.slug}`)} key={guide.slug}>
-                    <h3>{guide.title}</h3>
-                    <p>{guide.description}</p>
-                  </Link>
+                  <li key={guide.slug}>
+                    <Link className="card" href={localizedPath(locale, `/guides/${guide.slug}`)}>
+                      <h3>{guide.title}</h3>
+                      <p>{guide.description}</p>
+                    </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </section>
           </article>
           <WikiSidebar locale={locale} activeSlug={slug} />

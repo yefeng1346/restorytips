@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideIndexPage } from "@/components/pages";
 import { buildPageMetadata } from "@/lib/seo";
-import { getLocaleCopy, isLocale, locales, siteConfig, type Locale } from "@/lib/site-data";
+import { defaultLocale, getLocaleCopy, getLocalizedHomeMeta, isLocale, locales, type Locale } from "@/lib/site-data";
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return locales.filter((locale) => locale !== defaultLocale).map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
-  if (!isLocale(rawLocale)) return {};
+  if (!isLocale(rawLocale) || rawLocale === defaultLocale) return {};
   const copy = getLocaleCopy(rawLocale);
+  const homeMeta = getLocalizedHomeMeta(rawLocale);
   return buildPageMetadata({
     title: `${copy.nav.guides} — ${copy.gameName} Wiki`,
-    description: siteConfig.homepage.meta.description,
+    description: homeMeta.description,
     path: `/${rawLocale}/guides`,
     alternatePath: "/guides",
     locale: rawLocale,
@@ -24,6 +25,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function LocalizedGuideIndex({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  if (!isLocale(locale)) notFound();
+  if (!isLocale(locale) || locale === defaultLocale) notFound();
   return <GuideIndexPage locale={locale as Locale} />;
 }
