@@ -17,6 +17,8 @@ import {
   type Locale,
 } from "@/lib/site-data";
 import { getGuideComponent } from "@/lib/mdx";
+import { GameGallery, GameMedia } from "./game-media";
+import { getArticleMediaKey } from "@/lib/media";
 
 function PageChrome({
   locale,
@@ -94,6 +96,8 @@ export function HomePage({ locale }: { locale: Locale }) {
           </p>
         </section>
 
+        <GameMedia locale={locale} mediaKey="shop" variant="hero" priority />
+
         <section>
           <span className="section-kicker">{copy.labels.quickLookup}</span>
           <h2>{copy.home.quickTitle}</h2>
@@ -167,6 +171,8 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
 
+        <GameGallery locale={locale} mediaKeys={["workbench", "device", "customization"]} />
+
         {home.codeValue ? (
           <section className="codes-panel">
             <span className="section-kicker">{copy.labels.codes}</span>
@@ -220,6 +226,8 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
           <h1><span className="game">{locale === "en" ? "ReStory Repair Guides" : copy.nav.guides}</span></h1>
           <p className="sub">{copy.home.quickDescription}</p>
         </section>
+
+        <GameGallery locale={locale} mediaKeys={["shop", "device"]} />
 
         <div className="wiki-grid">
           <WikiSidebar locale={locale} />
@@ -298,7 +306,7 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
             <header className="article-header">
               <span className="section-kicker">{meta.eyebrow}</span>
               <h1>{meta.title}</h1>
-              <p className="sub" style={{ color: "hsl(var(--dim))", maxWidth: "75ch", fontSize: "1.05rem" }}>{meta.description}</p>
+          <p className="sub" style={{ color: "hsl(var(--dim))", maxWidth: "75ch", fontSize: "1.05rem" }}>{meta.description}</p>
               <div className="article-meta">
                 <span>{meta.readTime}</span>
                 {meta.tags.map((tag) => <span className="chip" key={tag}>{tag}</span>)}
@@ -308,6 +316,7 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
                 <span>{copy.labels.researchStatus}</span>
               </div>
             </header>
+            <GameMedia locale={locale} mediaKey={getArticleMediaKey(slug)} variant="article" priority />
             {guideAnswer ? (
               <aside className="answer-first" aria-labelledby={`answer-${slug}`}>
                 <span className="section-kicker">{copy.labels.shortAnswer}</span>

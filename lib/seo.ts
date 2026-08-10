@@ -57,6 +57,7 @@ export function buildPageMetadata({
   type = "website",
 }: PageMetadataOptions): Metadata {
   const canonical = absoluteUrl(path);
+  const shareImage = absoluteUrl("/media/restory/repair-shop.jpg");
 
   return {
     title,
@@ -77,11 +78,13 @@ export function buildPageMetadata({
       siteName: "ReStorytips",
       type,
       locale: openGraphLocale(locale),
+      images: [{ url: shareImage, width: 1920, height: 1080, alt: "ReStory electronics repair shop" }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [shareImage],
     },
   };
 }

@@ -34,6 +34,7 @@ export function SitePageJsonLd({
   const websiteId = `${siteConfig.siteUrl}/#website`;
   const pageId = `${url}#webpage`;
   const articleId = `${url}#article`;
+  const shareImage = absoluteUrl("/media/restory/repair-shop.jpg");
   const copy = getLocaleCopy(locale);
   const homeMeta = getLocalizedHomeMeta(locale);
 
@@ -64,6 +65,7 @@ export function SitePageJsonLd({
       url,
       name: title,
       description,
+      image: shareImage,
       isPartOf: { "@id": websiteId },
       inLanguage: locale,
       ...(article ? { mainEntity: { "@id": articleId } } : {}),
@@ -79,6 +81,7 @@ export function SitePageJsonLd({
       mainEntityOfPage: { "@id": pageId },
       author: { "@id": organizationId },
       publisher: { "@id": organizationId },
+      image: shareImage,
       inLanguage: locale,
     });
   }

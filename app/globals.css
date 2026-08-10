@@ -376,6 +376,90 @@ section {
   font-size: 1.05rem;
 }
 
+.section-intro {
+  max-width: 72ch;
+  margin-top: -0.15rem;
+  color: hsl(var(--dim));
+}
+
+.media-section {
+  margin-block: 2.8rem;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.game-media {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid hsl(var(--line));
+  background: hsl(var(--panel));
+  box-shadow: 0 8px 20px hsl(var(--shadow) / 0.08);
+}
+
+.game-media__image {
+  overflow: hidden;
+  background: hsl(var(--bg-deep));
+}
+
+.game-media__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.25s ease;
+}
+
+.game-media:hover .game-media__image img {
+  transform: scale(1.025);
+}
+
+.game-media--hero {
+  border-color: hsl(var(--nav-theme));
+  background: hsl(var(--panel-2));
+}
+
+.game-media--hero .game-media__image,
+.game-media--article .game-media__image {
+  aspect-ratio: 16 / 9;
+}
+
+.game-media--hero .game-media__image img,
+.game-media--article .game-media__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-media--hero {
+  margin-block: 1.8rem 2.8rem;
+}
+
+.game-media--article {
+  margin: 0 0 1.7rem;
+}
+
+.game-media figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  padding: 0.6rem 0.75rem;
+  color: hsl(var(--dim));
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.game-media figcaption a {
+  flex: 0 0 auto;
+  color: hsl(var(--nav-theme));
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
 .notice {
   padding: 0.7rem 1rem;
   border: 1px dashed hsl(var(--danger));
@@ -1087,6 +1171,10 @@ html[data-theme="dark"] .callout-gold strong {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .media-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .article-layout .wiki-side {
     grid-template-columns: 1fr;
   }
@@ -1100,7 +1188,8 @@ html[data-theme="dark"] .callout-gold strong {
   .cols-2,
   .cols-3,
   .cols-4,
-  .foot-grid {
+  .foot-grid,
+  .media-grid {
     grid-template-columns: 1fr;
   }
 
