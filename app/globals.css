@@ -187,9 +187,73 @@ input {
 }
 
 @supports selector(.native-banner:has(> div:empty)) {
-  .native-banner:has(> div:empty) {
+.native-banner:has(> div:empty) {
     display: none;
   }
+}
+
+.language-suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px dashed hsl(var(--nav-theme));
+  color: hsl(var(--dim));
+  background: hsl(var(--panel-2));
+  font-size: 0.9rem;
+}
+
+.language-suggestion__message {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 0.65rem;
+}
+
+.language-suggestion__message p {
+  margin: 0;
+}
+
+.language-suggestion__marker {
+  flex: 0 0 auto;
+  color: hsl(var(--nav-theme));
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+}
+
+.language-suggestion__message a {
+  margin-left: 0.35rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+.language-suggestion__dismiss {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid hsl(var(--line-2));
+  color: hsl(var(--dim));
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.language-suggestion__dismiss:hover {
+  border-color: hsl(var(--nav-theme));
+  color: hsl(var(--nav-theme));
+}
+
+.language-suggestion__dismiss:focus-visible,
+.language-suggestion__message a:focus-visible {
+  outline: 2px solid hsl(var(--nav-theme-light));
+  outline-offset: 3px;
 }
 
 .cols-2 {
@@ -1325,6 +1389,23 @@ html[data-theme="dark"] .callout-gold strong {
 
   .header-inner {
     gap: 0.5rem;
+  }
+
+  .language-suggestion {
+    align-items: flex-start;
+  }
+
+  .language-suggestion__message {
+    align-items: flex-start;
+  }
+
+  .language-suggestion__message p {
+    line-height: 1.45;
+  }
+
+  .language-suggestion__message a {
+    display: inline-block;
+    margin: 0.25rem 0 0;
   }
 
   .brand {

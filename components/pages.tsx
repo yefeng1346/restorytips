@@ -19,6 +19,7 @@ import {
 import { getGuideComponent } from "@/lib/mdx";
 import { GameGallery, GameTrailer, GameMedia } from "./game-media";
 import { getArticleMediaKey } from "@/lib/media";
+import { LanguageSuggestion } from "./language-suggestion";
 
 function PageChrome({
   locale,
@@ -67,6 +68,7 @@ export function HomePage({ locale }: { locale: Locale }) {
       pageDescription={home.hero.description}
     >
       <div className="wrap" style={{ paddingTop: "1.6rem" }}>
+        {locale === "en" ? <LanguageSuggestion /> : null}
         <section className="banner">
           <span className="section-kicker">{copy.labels.communityWiki}</span>
           <h1>
