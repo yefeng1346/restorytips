@@ -1,10 +1,13 @@
+import Script from "next/script";
+
 const GOOGLE_ADSENSE_CLIENT = "ca-pub-4496419024798372";
 
 export function GoogleAdsense() {
   return (
-    <script
-      async
+    <Script
+      id="google-adsense"
       src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${GOOGLE_ADSENSE_CLIENT}`}
+      strategy="lazyOnload"
       crossOrigin="anonymous"
     />
   );

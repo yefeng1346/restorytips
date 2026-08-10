@@ -845,6 +845,10 @@ section {
   background: hsl(var(--nav-theme) / 0.08);
 }
 
+.home-answer {
+  margin: 2rem 0 1.7rem;
+}
+
 .answer-first h2 {
   margin-bottom: 0.55rem;
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);

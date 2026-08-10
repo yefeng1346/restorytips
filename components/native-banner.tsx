@@ -12,7 +12,7 @@ export function NativeBanner({ label }: { label: string }) {
         async
         data-cfasync="false"
         src={NATIVE_BANNER_SCRIPT}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <div id={NATIVE_BANNER_CONTAINER} />
     </section>

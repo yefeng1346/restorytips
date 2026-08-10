@@ -7,6 +7,7 @@ export const metadata: Metadata = buildPageMetadata({
   description:
     "Read the ReStory: Chill Electronics Repairs fan Wiki privacy policy, including public page use, analytics notes, external services, and privacy expectations.",
   path: "/privacy",
+  robots: { index: false, follow: true },
 });
 
 export default function Page() {

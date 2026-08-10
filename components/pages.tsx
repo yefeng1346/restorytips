@@ -91,6 +91,12 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
 
+        <section className="answer-first home-answer" aria-labelledby="home-answer-title">
+          <span className="section-kicker">{home.answerKicker}</span>
+          <h2 id="home-answer-title">{home.answerTitle}</h2>
+          <p>{home.answerText}</p>
+        </section>
+
         <section>
           <span className="section-kicker">{copy.labels.quickLookup}</span>
           <h2>{copy.home.quickTitle}</h2>

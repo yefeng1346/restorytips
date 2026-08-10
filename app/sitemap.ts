@@ -6,8 +6,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const urls = [
     absoluteUrl("/"),
     absoluteUrl("/guides"),
-    absoluteUrl("/privacy"),
-    absoluteUrl("/terms"),
     ...locales
       .filter((locale) => locale !== "en")
       .flatMap((locale) => [localizedUrl(locale, "/"), localizedUrl(locale, "/guides")]),
