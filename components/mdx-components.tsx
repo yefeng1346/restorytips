@@ -35,13 +35,14 @@ export function RepairStep({ number, title, children }: RepairStepProps) {
 
 type SourceNoteProps = {
   href: string;
+  label?: string;
   children: ReactNode;
 };
 
-export function SourceNote({ href, children }: SourceNoteProps) {
+export function SourceNote({ href, label = "Official source", children }: SourceNoteProps) {
   return (
     <span className="source-note">
-      <span>Official source</span>
+      <span>{label}</span>
       <a href={href} target="_blank" rel="noreferrer">
         {children} ↗
       </a>

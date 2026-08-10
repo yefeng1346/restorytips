@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
 
-export function ThemeToggle({ label }: { label: string }) {
+export function ThemeToggle({ label, darkText, lightText }: { label: string; darkText: string; lightText: string }) {
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function ThemeToggle({ label }: { label: string }) {
   return (
     <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={label} title={label}>
       <span aria-hidden="true">{theme === "light" ? "☾" : "☀"}</span>
-      <span className="theme-toggle__text">{theme === "light" ? "Dark" : "Light"}</span>
+      <span className="theme-toggle__text">{theme === "light" ? darkText : lightText}</span>
     </button>
   );
 }

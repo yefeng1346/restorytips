@@ -15,35 +15,39 @@ export function SiteFooter({ locale }: { locale: Locale }) {
       <div className="wrap foot-grid">
         <div>
           <Link className="brand" href={localizedPath(locale, "/")}>
-            <img src="/favicon.png" alt="ReStorytips logo" width="30" height="30" loading="lazy" className="pixel" />
+            <img src="/favicon.png" alt={copy.accessibility.logoAlt} width="30" height="30" loading="lazy" className="pixel" />
             <span>
               ReStory
-              <span className="sub">ReStory Repair Wiki</span>
+              <span className="sub">{copy.labels.brandSubtitle}</span>
             </span>
           </Link>
           <p className="footer-about">{about}</p>
-          <p className="footer-description">Cozy Y2K electronics repair shop simulation set in mid-2000s Tokyo.</p>
+          <p className="footer-description">{copy.footerDescription}</p>
         </div>
         <div>
           <h4>{copy.nav.guides}</h4>
           <Link href={localizedPath(locale, "/guides")}>{copy.nav.guides}</Link>
           <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-walkthrough")}>{copy.nav.beginner}</Link>
-          <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-parts-catalog")}>{copy.nav.devices}</Link>
-          <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-achievements")}>{copy.nav.achievements}</Link>
-          <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-resolution-settings")}>{copy.nav.updates}</Link>
+          {locale === "en" ? (
+            <>
+              <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-parts-catalog")}>{copy.nav.devices}</Link>
+              <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-achievements")}>{copy.nav.achievements}</Link>
+              <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-resolution-settings")}>{copy.nav.updates}</Link>
+            </>
+          ) : null}
         </div>
         <div>
           <h4>{copy.labels.official}</h4>
           <a href={siteConfig.official.website} target="_blank" rel="noreferrer">tinyBuild ↗</a>
-          <a href={siteConfig.official.steam} target="_blank" rel="noreferrer">Steam Store ↗</a>
-          <a href={siteConfig.official.discord} target="_blank" rel="noreferrer">Official Discord ↗</a>
-          <a href={siteConfig.official.youtube} target="_blank" rel="noreferrer">Official YouTube ↗</a>
+          <a href={siteConfig.official.steam} target="_blank" rel="noreferrer">{copy.labels.steamStore} ↗</a>
+          <a href={siteConfig.official.discord} target="_blank" rel="noreferrer">{copy.labels.officialDiscord} ↗</a>
+          <a href={siteConfig.official.youtube} target="_blank" rel="noreferrer">{copy.labels.officialYoutube} ↗</a>
           <Link href={localizedPath(locale, "/privacy")}>{copy.labels.privacy}</Link>
           <Link href={localizedPath(locale, "/terms")}>{copy.labels.terms}</Link>
         </div>
       </div>
       <div className="wrap">
-        <p className="foot-note">This is an unofficial fan-made wiki for ReStory: Chill Electronics Repairs. Game names, assets, and trademarks belong to their respective owners.</p>
+        <p className="foot-note">{copy.footerNote}</p>
       </div>
     </footer>
   );

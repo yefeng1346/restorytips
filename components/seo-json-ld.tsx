@@ -1,4 +1,4 @@
-import type { Locale } from "@/lib/site-data";
+import { getLocaleCopy, getLocalizedHomeMeta, type Locale } from "@/lib/site-data";
 import { absoluteUrl, localizedUrl } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-data";
 
@@ -34,6 +34,8 @@ export function SitePageJsonLd({
   const websiteId = `${siteConfig.siteUrl}/#website`;
   const pageId = `${url}#webpage`;
   const articleId = `${url}#article`;
+  const copy = getLocaleCopy(locale);
+  const homeMeta = getLocalizedHomeMeta(locale);
 
   const graph: Record<string, unknown>[] = [
     {
@@ -45,14 +47,14 @@ export function SitePageJsonLd({
         "@type": "ImageObject",
         url: absoluteUrl("/favicon.png"),
       },
-      description: "Independent fan-made community wiki for ReStory: Chill Electronics Repairs.",
+      description: copy.home.hero.description,
     },
     {
       "@type": "WebSite",
       "@id": websiteId,
       url: siteConfig.siteUrl,
       name: "ReStorytips",
-      description: siteConfig.homepage.meta.description,
+      description: homeMeta.description,
       publisher: { "@id": organizationId },
       inLanguage: locale,
     },

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(rawLocale) || rawLocale === defaultLocale) return {};
   return buildPageMetadata({
     title: `${getLocaleCopy(rawLocale).labels.privacy} — ${getLocaleCopy(rawLocale).gameName} Wiki`,
-    description: "Privacy information for the independent ReStory: Chill Electronics Repairs fan Wiki.",
+    description: getLocaleCopy(rawLocale).legal.privacy.intro,
     path: `/${rawLocale}/privacy`,
     locale: rawLocale,
     robots: { index: false, follow: true },

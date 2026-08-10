@@ -16,18 +16,17 @@ import {
 export function generateStaticParams() {
   return locales
     .filter((locale) => locale !== defaultLocale)
-    .flatMap((locale) => guideMeta.map(({ slug }) => ({ locale, slug })));
+    .flatMap((locale) => guideMeta
+      .filter((guide) => hasLocalizedGuide(locale, guide.slug))
+      .map(({ slug }) => ({ locale, slug })));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const { locale: rawLocale, slug } = await params;
   if (!isLocale(rawLocale) || rawLocale === defaultLocale) return {};
   const guide = getGuideMeta(slug);
-  if (!guide) return {};
+  if (!guide || !hasLocalizedGuide(rawLocale, slug)) return {};
   const localizedGuide = getLocalizedGuideMeta(rawLocale, slug) ?? guide;
-  const isTranslated =
-    slug === "restory-chill-electronics-repairs-walkthrough" &&
-    hasLocalizedGuide(rawLocale, slug);
   return buildPageMetadata({
     title: localizedGuide.seoTitle,
     description: localizedGuide.metaDescription,
@@ -35,14 +34,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternatePath: `/guides/${slug}`,
     locale: rawLocale,
     keywords: [guide.keyword, ...guide.tags],
-    supportedLocales: isTranslated ? locales : undefined,
-    robots: rawLocale !== "en" && !isTranslated ? { index: false, follow: true } : undefined,
+    supportedLocales: locales,
     type: "article",
   });
 }
 
 export default async function LocalizedGuideArticle({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale: rawLocale, slug } = await params;
-  if (!isLocale(rawLocale) || rawLocale === defaultLocale || !getGuideMeta(slug)) notFound();
+  if (!isLocale(rawLocale) || rawLocale === defaultLocale || !getGuideMeta(slug) || !hasLocalizedGuide(rawLocale, slug)) notFound();
   return <GuideArticlePage locale={rawLocale as Locale} slug={slug} />;
 }

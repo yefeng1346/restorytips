@@ -4,9 +4,9 @@ const NATIVE_BANNER_SCRIPT =
   "https://pl30770499.effectivecpmnetwork.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js";
 const NATIVE_BANNER_CONTAINER = "container-34a15f6a5d042fa44074d21dd013e6c1";
 
-export function NativeBanner() {
+export function NativeBanner({ label }: { label: string }) {
   return (
-    <section className="native-banner" aria-label="Advertisement">
+    <section className="native-banner" aria-label={label}>
       <Script
         id="native-banner-script"
         async
