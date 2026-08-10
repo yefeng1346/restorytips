@@ -1163,6 +1163,214 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
       readTime: "6 мин чтения",
       tags: ["Разрешение", "VSync", "UltraWide"],
     },
+    "restory-chill-electronics-repairs-cleaning-guide": {
+      category: "Руководство",
+      eyebrow: "Рабочий стол",
+      title: "ReStory: Chill Electronics Repairs — гайд по очистке",
+      keyword: "restory: chill electronics repairs очистка",
+      seoTitle: "ReStory: Chill Electronics Repairs — гайд по очистке",
+      metaDescription:
+        "Гайд по очистке ReStory: Chill Electronics Repairs: место работы, 100 и 1 000 деталей, ультразвуковая ванна и порядок ремонта.",
+      description:
+        "Разберите устройство, очистите детали, замените неисправный компонент и проверьте цели очистки из Steam.",
+      readTime: "6 мин чтения",
+      tags: ["Очистка", "Ремонт", "Достижения"],
+    },
+    "restory-chill-electronics-repairs-endings": {
+      category: "Сюжет и достижения",
+      eyebrow: "Ветвящийся сюжет",
+      title: "ReStory: Chill Electronics Repairs — концовки",
+      keyword: "restory: chill electronics repairs концовки",
+      seoTitle: "ReStory: Chill Electronics Repairs — концовки",
+      metaDescription:
+        "Гайд по концовкам ReStory: Chill Electronics Repairs: выборы клиентов, разветвлённый сюжет, несколько концовок и подтверждённые ограничения.",
+      description:
+        "Отделяйте подтверждённые сюжетные выборы и достижения от неподтверждённых списков концовок и маршрутов.",
+      readTime: "6 мин чтения",
+      tags: ["Концовки", "Выборы", "Сюжет"],
+    },
+    "restory-chill-electronics-repairs-internet-plan": {
+      category: "Устройства и детали",
+      eyebrow: "Браузер эпохи Y2K",
+      title: "ReStory: Chill Electronics Repairs — план интернета",
+      keyword: "restory: chill electronics repairs план интернета",
+      seoTitle: "ReStory: Chill Electronics Repairs — план интернета",
+      metaDescription:
+        "План интернета ReStory: Chill Electronics Repairs: поиск деталей в браузере эпохи Y2K, онлайн-заказы, счета и подтверждённые сведения.",
+      description:
+        "Используйте браузер для поиска запчастей и разделяйте подтверждённые функции, типы заказов и неподтверждённые тарифы.",
+      readTime: "6 мин чтения",
+      tags: ["Интернет", "Заказы", "Детали"],
+    },
+    "restory-chill-electronics-repairs-atari": {
+      category: "Устройства и детали",
+      eyebrow: "Лицензированное оборудование",
+      title: "ReStory: Chill Electronics Repairs — Atari",
+      keyword: "restory: chill electronics repairs Atari",
+      seoTitle: "ReStory: Chill Electronics Repairs — Atari",
+      metaDescription:
+        "Гайд ReStory: Chill Electronics Repairs по Atari: Atari 2600, Atari 2800, CX40, детали разборки и подтверждённые игровые упрощения.",
+      description:
+        "Соберите подтверждённые заметки об Atari 2600, Atari 2800 и джойстике CX40 без добавления неподтверждённого каталога.",
+      readTime: "5 мин чтения",
+      tags: ["Atari", "Устройства", "Ремонт"],
+    },
+    "restory-chill-electronics-repairs-release-date": {
+      category: "Дата релиза",
+      eyebrow: "Хронология релиза",
+      title: "ReStory: Chill Electronics Repairs — дата релиза",
+      keyword: "restory: chill electronics repairs дата релиза",
+      seoTitle: "ReStory: Chill Electronics Repairs — дата релиза",
+      metaDescription:
+        "Дата релиза ReStory: Chill Electronics Repairs — 6 августа 2026 года. Сравните Demo, Playtest, полный релиз и изменяющиеся данные Steam.",
+      description:
+        "Проверьте официальную дату полного релиза и отделите её от Demo, Playtest и последующих обновлений.",
+      readTime: "5 мин чтения",
+      tags: ["Дата релиза", "Steam", "Хронология"],
+    },
+    "restory-chill-electronics-repairs-platforms": {
+      category: "Платформы",
+      eyebrow: "Где играть",
+      title: "ReStory: Chill Electronics Repairs — платформы",
+      keyword: "restory: chill electronics repairs платформы",
+      seoTitle: "ReStory: Chill Electronics Repairs — платформы",
+      metaDescription:
+        "Платформы ReStory: Chill Electronics Repairs: Steam на Windows и macOS, статус Steam Deck Playable и подтверждённые ограничения страницы.",
+      description:
+        "Отделяйте подтверждённые платформы Steam и статус Steam Deck от предположений о консолях и мобильных версиях.",
+      readTime: "5 мин чтения",
+      tags: ["Платформы", "Steam Deck", "macOS"],
+    },
+    "restory-chill-electronics-repairs-demo": {
+      category: "Demo",
+      eyebrow: "Пробная версия",
+      title: "ReStory: Chill Electronics Repairs — Demo",
+      keyword: "restory: chill electronics repairs Demo",
+      seoTitle: "ReStory: Chill Electronics Repairs — Demo",
+      metaDescription:
+        "Гайд по Demo ReStory: Chill Electronics Repairs: дата 15 июня 2026 года, демо-функции, устройства, кастомизация и отличие от полной версии.",
+      description:
+        "Проверьте, что было подтверждено для Demo, и не переносите её поведение на полный релиз без источника.",
+      readTime: "5 мин чтения",
+      tags: ["Demo", "Steam", "Функции"],
+    },
+    "restory-chill-electronics-repairs-price": {
+      category: "Цена",
+      eyebrow: "Стоимость в Steam",
+      title: "ReStory: Chill Electronics Repairs — цена",
+      keyword: "restory: chill electronics repairs цена",
+      seoTitle: "ReStory: Chill Electronics Repairs — цена",
+      metaDescription:
+        "Цена ReStory: Chill Electronics Repairs в Steam: проверяйте регион, валюту, скидки, наборы и текущую карточку магазина перед покупкой.",
+      description:
+        "Смотрите актуальную цену только в официальном Steam-магазине и помечайте региональные и временные изменения.",
+      readTime: "5 мин чтения",
+      tags: ["Цена", "Steam", "Наборы"],
+    },
+    "restory-chill-electronics-repairs-system-requirements": {
+      category: "Системные требования",
+      eyebrow: "Перед установкой",
+      title: "ReStory: Chill Electronics Repairs — системные требования",
+      keyword: "restory: chill electronics repairs системные требования",
+      seoTitle: "ReStory: Chill Electronics Repairs — системные требования",
+      metaDescription:
+        "Системные требования ReStory: Chill Electronics Repairs: проверенные сведения для Windows и macOS, Steam Deck и неподтверждённые поля.",
+      description:
+        "Проверяйте только опубликованные требования Steam и отдельно отмечайте поля, которые ещё ожидают подтверждения.",
+      readTime: "5 мин чтения",
+      tags: ["Требования", "Windows", "macOS"],
+    },
+    "restory-chill-electronics-repairs-controller-support": {
+      category: "Поддержка контроллеров",
+      eyebrow: "Управление",
+      title: "ReStory: Chill Electronics Repairs — поддержка контроллеров",
+      keyword: "restory: chill electronics repairs поддержка контроллеров",
+      seoTitle: "ReStory: Chill Electronics Repairs — поддержка контроллеров",
+      metaDescription:
+        "Поддержка контроллеров ReStory: Chill Electronics Repairs: подтверждённые заметки Steam, Steam Deck, раскладки и известные ограничения.",
+      description:
+        "Разделяйте статус Steam Deck, настройки Steam Input, сообщения игроков и официально подтверждённое поведение.",
+      readTime: "5 мин чтения",
+      tags: ["Контроллер", "Steam Deck", "Ввод"],
+    },
+    "restory-chill-electronics-repairs-language-support": {
+      category: "Поддержка языков",
+      eyebrow: "Локализация",
+      title: "ReStory: Chill Electronics Repairs — языки",
+      keyword: "restory: chill electronics repairs поддержка языков",
+      seoTitle: "ReStory: Chill Electronics Repairs — языки",
+      metaDescription:
+        "Поддержка языков ReStory: Chill Electronics Repairs: 9 языков интерфейса и субтитров, сведения Steam и ограничения Demo.",
+      description:
+        "Проверяйте языки интерфейса и субтитров по официальной карточке Steam и не путайте их с озвучкой.",
+      readTime: "5 мин чтения",
+      tags: ["Языки", "Субтитры", "Demo"],
+    },
+    "restory-chill-electronics-repairs-gameplay": {
+      category: "Руководство",
+      eyebrow: "Основной цикл",
+      title: "ReStory: Chill Electronics Repairs — геймплей",
+      keyword: "restory: chill electronics repairs геймплей",
+      seoTitle: "ReStory: Chill Electronics Repairs — геймплей",
+      metaDescription:
+        "Геймплей ReStory: Chill Electronics Repairs: разборка, очистка, замена деталей, сборка, магазин, клиенты и браузер эпохи Y2K.",
+      description:
+        "Разберите основной цикл игры и отделите подтверждённые действия мастерской от неподтверждённых механик.",
+      readTime: "6 мин чтения",
+      tags: ["Геймплей", "Магазин", "Сюжет"],
+    },
+    "restory-chill-electronics-repairs-trailer": {
+      category: "Официальные материалы",
+      eyebrow: "Видео",
+      title: "ReStory: Chill Electronics Repairs — трейлер",
+      keyword: "restory: chill electronics repairs трейлер",
+      seoTitle: "ReStory: Chill Electronics Repairs — трейлер",
+      metaDescription:
+        "Официальные трейлеры ReStory: Chill Electronics Repairs: Gameplay Trailer, Launch Trailer, устройства, ремонт и ограничения видео.",
+      description:
+        "Смотрите официальные Gameplay и Launch Trailer и не принимайте кадры из видео за полный список функций.",
+      readTime: "5 мин чтения",
+      tags: ["Трейлер", "YouTube", "Официально"],
+    },
+    "restory-chill-electronics-repairs-review": {
+      category: "Обзор",
+      eyebrow: "Снимок исследования",
+      title: "ReStory: Chill Electronics Repairs — обзор",
+      keyword: "restory: chill electronics repairs обзор",
+      seoTitle: "ReStory: Chill Electronics Repairs — обзор",
+      metaDescription:
+        "Обзор ReStory: Chill Electronics Repairs на основе официальных материалов: ремонт, магазин, Y2K, сюжет, отзывы Steam и ограничения данных.",
+      description:
+        "Сопоставьте подтверждённые сильные стороны, динамический снимок Steam и факторы, важные перед покупкой.",
+      readTime: "7 мин чтения",
+      tags: ["Обзор", "Steam", "Вердикт"],
+    },
+    "restory-chill-electronics-repairs-mods": {
+      category: "Руководство",
+      eyebrow: "Статус поддержки",
+      title: "ReStory: Chill Electronics Repairs — гайд по модам",
+      keyword: "restory: chill electronics repairs моды",
+      seoTitle: "ReStory: Chill Electronics Repairs — гайд по модам",
+      metaDescription:
+        "Статус модов ReStory: Chill Electronics Repairs: Steam Workshop не подтверждён, категория Guides, безопасная проверка и Discord.",
+      description:
+        "Проверьте отсутствие подтверждённой поддержки Workshop и не публикуйте неизвестные загрузки или установщики.",
+      readTime: "4 мин чтения",
+      tags: ["Моды", "Workshop", "Поддержка"],
+    },
+    "restory-chill-electronics-repairs-games-like": {
+      category: "Сравнение",
+      eyebrow: "Поиск похожих игр",
+      title: "Игры, похожие на ReStory: Chill Electronics Repairs",
+      keyword: "игры, похожие на ReStory: Chill Electronics Repairs",
+      seoTitle: "Игры, похожие на ReStory: Chill Electronics Repairs",
+      metaDescription:
+        "Как искать игры, похожие на ReStory: Chill Electronics Repairs: ремонт, очистка, управление магазином, сюжет, атмосфера и платформа.",
+      description:
+        "Сравнивайте похожие игры по конкретным механикам, не превращая алгоритмический список Steam в объективный рейтинг.",
+      readTime: "6 мин чтения",
+      tags: ["Похожие игры", "Сравнение", "Уютные игры"],
+    },
   },
   de: {
     "restory-chill-electronics-repairs-walkthrough": {
@@ -1216,6 +1424,214 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
       readTime: "6 Min. Lesezeit",
       tags: ["Auflösung", "VSync", "Ultrawide"],
     },
+    "restory-chill-electronics-repairs-cleaning-guide": {
+      category: "Guide",
+      eyebrow: "Werkbank",
+      title: "ReStory: Chill Electronics Repairs — Reinigungs-Guide",
+      keyword: "restory: chill electronics repairs Reinigung",
+      seoTitle: "ReStory: Chill Electronics Repairs — Reinigungs-Guide",
+      metaDescription:
+        "Reinigungs-Guide für ReStory: Chill Electronics Repairs mit Werkbank, 100 und 1.000 Teilen, Ultraschallbad und Reparaturablauf.",
+      description:
+        "Zerlege das Gerät, reinige die Teile, ersetze das fehlerhafte Bauteil und prüfe die bestätigten Reinigungsziele.",
+      readTime: "6 Min. Lesezeit",
+      tags: ["Reinigung", "Reparatur", "Erfolge"],
+    },
+    "restory-chill-electronics-repairs-endings": {
+      category: "Story und Erfolge",
+      eyebrow: "Verzweigte Story",
+      title: "ReStory: Chill Electronics Repairs — Enden",
+      keyword: "restory: chill electronics repairs Enden",
+      seoTitle: "ReStory: Chill Electronics Repairs — Enden",
+      metaDescription:
+        "Guide zu den Enden von ReStory: Chill Electronics Repairs mit Kundenentscheidungen, verzweigter Story, mehreren Enden und belegten Grenzen.",
+      description:
+        "Trenne bestätigte Storyentscheidungen und Erfolge von unbelegten Listen zu Enden und Routen.",
+      readTime: "6 Min. Lesezeit",
+      tags: ["Enden", "Entscheidungen", "Story"],
+    },
+    "restory-chill-electronics-repairs-internet-plan": {
+      category: "Geräte und Ersatzteile",
+      eyebrow: "Y2K-Browser",
+      title: "ReStory: Chill Electronics Repairs — Internetplan",
+      keyword: "restory: chill electronics repairs Internetplan",
+      seoTitle: "ReStory: Chill Electronics Repairs — Internetplan",
+      metaDescription:
+        "Internetplan für ReStory: Chill Electronics Repairs mit Ersatzteilsuche im Y2K-Browser, Online-Aufträgen, Rechnungen und bestätigten Angaben.",
+      description:
+        "Nutze den Browser zur Ersatzteilsuche und trenne bestätigte Funktionen, Auftragstypen und unbelegte Tarifangaben.",
+      readTime: "6 Min. Lesezeit",
+      tags: ["Internet", "Aufträge", "Ersatzteile"],
+    },
+    "restory-chill-electronics-repairs-atari": {
+      category: "Geräte und Ersatzteile",
+      eyebrow: "Lizenziertes Gerät",
+      title: "ReStory: Chill Electronics Repairs — Atari",
+      keyword: "restory: chill electronics repairs Atari",
+      seoTitle: "ReStory: Chill Electronics Repairs — Atari",
+      metaDescription:
+        "Atari-Guide für ReStory: Chill Electronics Repairs mit Atari 2600, Atari 2800, CX40, Zerlegungsteilen und belegten Vereinfachungen.",
+      description:
+        "Sammle bestätigte Hinweise zu Atari 2600, Atari 2800 und CX40, ohne einen unbelegten Katalog zu ergänzen.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Atari", "Geräte", "Reparatur"],
+    },
+    "restory-chill-electronics-repairs-release-date": {
+      category: "Veröffentlichungsdatum",
+      eyebrow: "Release-Chronologie",
+      title: "ReStory: Chill Electronics Repairs — Veröffentlichungsdatum",
+      keyword: "restory: chill electronics repairs Veröffentlichungsdatum",
+      seoTitle: "ReStory: Chill Electronics Repairs — Veröffentlichungsdatum",
+      metaDescription:
+        "Das Veröffentlichungsdatum von ReStory: Chill Electronics Repairs ist der 6. August 2026. Vergleiche Demo, Playtest, Release und Steam-Daten.",
+      description:
+        "Prüfe das offizielle Datum der Vollversion und trenne es von Demo, Playtest und späteren Updates.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Release", "Steam", "Chronologie"],
+    },
+    "restory-chill-electronics-repairs-platforms": {
+      category: "Plattformen",
+      eyebrow: "Wo du spielen kannst",
+      title: "ReStory: Chill Electronics Repairs — Plattformen",
+      keyword: "restory: chill electronics repairs Plattformen",
+      seoTitle: "ReStory: Chill Electronics Repairs — Plattformen",
+      metaDescription:
+        "Plattformen von ReStory: Chill Electronics Repairs: Steam für Windows und macOS, Steam-Deck-Status Playable und belegte Grenzen.",
+      description:
+        "Trenne bestätigte Steam-Plattformen und den Steam-Deck-Status von Annahmen über Konsolen und Mobilversionen.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Plattformen", "Steam Deck", "macOS"],
+    },
+    "restory-chill-electronics-repairs-demo": {
+      category: "Demo",
+      eyebrow: "Testversion",
+      title: "ReStory: Chill Electronics Repairs — Demo",
+      keyword: "restory: chill electronics repairs Demo",
+      seoTitle: "ReStory: Chill Electronics Repairs — Demo",
+      metaDescription:
+        "Demo-Guide für ReStory: Chill Electronics Repairs mit dem Datum 15. Juni 2026, Demo-Funktionen, Geräten, Anpassung und Vollversion.",
+      description:
+        "Prüfe, was für die Demo bestätigt wurde, und übertrage ihr Verhalten nicht ohne Quelle auf die Vollversion.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Demo", "Steam", "Funktionen"],
+    },
+    "restory-chill-electronics-repairs-price": {
+      category: "Preis",
+      eyebrow: "Steam-Kosten",
+      title: "ReStory: Chill Electronics Repairs — Preis",
+      keyword: "restory: chill electronics repairs Preis",
+      seoTitle: "ReStory: Chill Electronics Repairs — Preis",
+      metaDescription:
+        "Preis von ReStory: Chill Electronics Repairs auf Steam: Prüfe Region, Währung, Rabatte, Bundles und die aktuelle Shopseite.",
+      description:
+        "Prüfe den aktuellen Preis ausschließlich im offiziellen Steam-Shop und markiere regionale oder zeitliche Änderungen.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Preis", "Steam", "Bundles"],
+    },
+    "restory-chill-electronics-repairs-system-requirements": {
+      category: "Systemanforderungen",
+      eyebrow: "Vor der Installation",
+      title: "ReStory: Chill Electronics Repairs — Systemanforderungen",
+      keyword: "restory: chill electronics repairs Systemanforderungen",
+      seoTitle: "ReStory: Chill Electronics Repairs — Systemanforderungen",
+      metaDescription:
+        "Systemanforderungen für ReStory: Chill Electronics Repairs mit belegten Angaben für Windows, macOS, Steam Deck und offenen Feldern.",
+      description:
+        "Verwende nur veröffentlichte Steam-Anforderungen und markiere Felder, die noch auf eine Bestätigung warten.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Anforderungen", "Windows", "macOS"],
+    },
+    "restory-chill-electronics-repairs-controller-support": {
+      category: "Controller Support",
+      eyebrow: "Steuerung",
+      title: "ReStory: Chill Electronics Repairs — Controller Support",
+      keyword: "restory: chill electronics repairs Controller Support",
+      seoTitle: "ReStory: Chill Electronics Repairs — Controller Support",
+      metaDescription:
+        "Controller Support für ReStory: Chill Electronics Repairs mit Steam-Notizen, Steam Deck, Belegungen und bekannten Einschränkungen.",
+      description:
+        "Trenne Steam-Deck-Status, Steam-Input-Einstellungen, Spielermeldungen und offiziell bestätigtes Verhalten.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Controller", "Steam Deck", "Eingabe"],
+    },
+    "restory-chill-electronics-repairs-language-support": {
+      category: "Sprachunterstützung",
+      eyebrow: "Lokalisierung",
+      title: "ReStory: Chill Electronics Repairs — Sprachen",
+      keyword: "restory: chill electronics repairs Sprachunterstützung",
+      seoTitle: "ReStory: Chill Electronics Repairs — Sprachen",
+      metaDescription:
+        "Sprachunterstützung von ReStory: Chill Electronics Repairs: 9 Sprachen für Oberfläche und Untertitel, Steam-Angaben und Demo-Grenzen.",
+      description:
+        "Prüfe die Sprachen für Oberfläche und Untertitel auf der offiziellen Steam-Seite und verwechsle sie nicht mit Sprachausgabe.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Sprachen", "Untertitel", "Demo"],
+    },
+    "restory-chill-electronics-repairs-gameplay": {
+      category: "Guide",
+      eyebrow: "Grundablauf",
+      title: "ReStory: Chill Electronics Repairs — Gameplay",
+      keyword: "restory: chill electronics repairs Gameplay",
+      seoTitle: "ReStory: Chill Electronics Repairs — Gameplay",
+      metaDescription:
+        "Gameplay von ReStory: Chill Electronics Repairs mit Zerlegen, Reinigen, Teiletausch, Zusammenbau, Laden, Kunden und Y2K-Browser.",
+      description:
+        "Erkläre den grundlegenden Ablauf und trenne bestätigte Werkstattaktionen von unbelegten Mechaniken.",
+      readTime: "6 Min. Lesezeit",
+      tags: ["Gameplay", "Laden", "Story"],
+    },
+    "restory-chill-electronics-repairs-trailer": {
+      category: "Offizielle Medien",
+      eyebrow: "Video",
+      title: "ReStory: Chill Electronics Repairs — Trailer",
+      keyword: "restory: chill electronics repairs Trailer",
+      seoTitle: "ReStory: Chill Electronics Repairs — Trailer",
+      metaDescription:
+        "Offizielle Trailer zu ReStory: Chill Electronics Repairs: Gameplay Trailer, Launch Trailer, Geräte, Reparatur und Grenzen von Videos.",
+      description:
+        "Sieh dir die offiziellen Gameplay- und Launch-Trailer an und behandle Videobilder nicht als vollständige Feature-Liste.",
+      readTime: "5 Min. Lesezeit",
+      tags: ["Trailer", "YouTube", "Offiziell"],
+    },
+    "restory-chill-electronics-repairs-review": {
+      category: "Review",
+      eyebrow: "Recherche-Snapshot",
+      title: "ReStory: Chill Electronics Repairs — Review",
+      keyword: "restory: chill electronics repairs Review",
+      seoTitle: "ReStory: Chill Electronics Repairs — Review",
+      metaDescription:
+        "Review von ReStory: Chill Electronics Repairs auf Basis offizieller Quellen: Reparatur, Laden, Y2K, Story, Steam-Reviews und Datenlimits.",
+      description:
+        "Vergleiche belegte Stärken, den dynamischen Steam-Snapshot und wichtige Faktoren vor dem Kauf.",
+      readTime: "7 Min. Lesezeit",
+      tags: ["Review", "Steam", "Fazit"],
+    },
+    "restory-chill-electronics-repairs-mods": {
+      category: "Guide",
+      eyebrow: "Supportstatus",
+      title: "ReStory: Chill Electronics Repairs — Mods-Guide",
+      keyword: "restory: chill electronics repairs Mods",
+      seoTitle: "ReStory: Chill Electronics Repairs — Mods-Guide",
+      metaDescription:
+        "Modstatus von ReStory: Chill Electronics Repairs: Steam Workshop nicht bestätigt, Guides-Kategorie, sichere Prüfung und Discord.",
+      description:
+        "Prüfe den fehlenden bestätigten Workshop-Support und veröffentliche keine unbekannten Downloads oder Installer.",
+      readTime: "4 Min. Lesezeit",
+      tags: ["Mods", "Workshop", "Support"],
+    },
+    "restory-chill-electronics-repairs-games-like": {
+      category: "Vergleich",
+      eyebrow: "Ähnliche Spiele finden",
+      title: "Spiele wie ReStory: Chill Electronics Repairs",
+      keyword: "Spiele wie ReStory: Chill Electronics Repairs",
+      seoTitle: "Spiele wie ReStory: Chill Electronics Repairs",
+      metaDescription:
+        "So findest du Spiele wie ReStory: Chill Electronics Repairs: Reparatur, Reinigung, Ladenverwaltung, Story, Atmosphäre und Plattform.",
+      description:
+        "Vergleiche ähnliche Spiele nach konkreten Mechaniken und behandle Steam-Vorschläge nicht als objektives Ranking.",
+      readTime: "6 Min. Lesezeit",
+      tags: ["Ähnliche Spiele", "Vergleich", "Cozy"],
+    },
   },
   ja: {
     "restory-chill-electronics-repairs-walkthrough": {
@@ -1268,6 +1684,214 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
         "VSync、目標フレームレート、ウィンドウモード、ウルトラワイドでの分解問題に関する情報をまとめます。",
       readTime: "6分で読める",
       tags: ["解像度", "VSync", "ウルトラワイド"],
+    },
+    "restory-chill-electronics-repairs-cleaning-guide": {
+      category: "攻略",
+      eyebrow: "作業台",
+      title: "リ・ストーリー: 思い出修理屋 — 清掃ガイド",
+      keyword: "リ・ストーリー: 思い出修理屋 清掃ガイド",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 清掃ガイド",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の清掃ガイド。作業場所、部品100個と1,000個、超音波洗浄機、修理の順番を確認します。",
+      description:
+        "デバイスを分解し、部品を清掃し、故障部品を交換して、Steamで確認できる清掃目標を進めます。",
+      readTime: "6分で読める",
+      tags: ["清掃", "修理", "実績"],
+    },
+    "restory-chill-electronics-repairs-endings": {
+      category: "物語と実績",
+      eyebrow: "分岐する物語",
+      title: "リ・ストーリー: 思い出修理屋 — エンディング",
+      keyword: "リ・ストーリー: 思い出修理屋 エンディング",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — エンディング",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のエンディングガイド。お客さんの選択、分岐する物語、複数の結末、確認できる範囲を整理します。",
+      description:
+        "確認できる物語の選択と実績を、根拠のないエンディング一覧やルート情報と分けて整理します。",
+      readTime: "6分で読める",
+      tags: ["エンディング", "選択", "物語"],
+    },
+    "restory-chill-electronics-repairs-internet-plan": {
+      category: "デバイスと部品",
+      eyebrow: "Y2Kブラウザ",
+      title: "リ・ストーリー: 思い出修理屋 — インターネットプラン",
+      keyword: "リ・ストーリー: 思い出修理屋 インターネットプラン",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — インターネットプラン",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のインターネットプラン。Y2Kブラウザでの部品検索、オンライン依頼、請求、確認済み情報を整理します。",
+      description:
+        "ブラウザで交換部品を探し、確認済みの機能、依頼の種類、根拠のない料金情報を分けて扱います。",
+      readTime: "6分で読める",
+      tags: ["インターネット", "依頼", "部品"],
+    },
+    "restory-chill-electronics-repairs-atari": {
+      category: "デバイスと部品",
+      eyebrow: "ライセンス機器",
+      title: "リ・ストーリー: 思い出修理屋 — Atari",
+      keyword: "リ・ストーリー: 思い出修理屋 Atari",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — Atari",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のAtariガイド。Atari 2600、Atari 2800、CX40、分解部品、ゲーム内の簡略化を確認します。",
+      description:
+        "Atari 2600、Atari 2800、CX40ジョイスティックについて確認できる情報だけを整理します。",
+      readTime: "5分で読める",
+      tags: ["Atari", "デバイス", "修理"],
+    },
+    "restory-chill-electronics-repairs-release-date": {
+      category: "発売日",
+      eyebrow: "リリース時系列",
+      title: "リ・ストーリー: 思い出修理屋 — 発売日",
+      keyword: "リ・ストーリー: 思い出修理屋 発売日",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 発売日",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の発売日は2026年8月6日。Demo、Playtest、正式版、変動するSteam情報を分けて確認します。",
+      description:
+        "正式版の公式発売日を確認し、Demo、Playtest、その後のアップデートと混同しないように整理します。",
+      readTime: "5分で読める",
+      tags: ["発売日", "Steam", "時系列"],
+    },
+    "restory-chill-electronics-repairs-platforms": {
+      category: "プラットフォーム",
+      eyebrow: "どこで遊べるか",
+      title: "リ・ストーリー: 思い出修理屋 — 対応プラットフォーム",
+      keyword: "リ・ストーリー: 思い出修理屋 対応プラットフォーム",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 対応プラットフォーム",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の対応プラットフォーム。WindowsとmacOSのSteam版、Steam DeckのPlayable表示、確認済みの範囲を整理します。",
+      description:
+        "Steamの対応プラットフォームとSteam Deckの状態を、コンソール版やモバイル版の推測と分けて確認します。",
+      readTime: "5分で読める",
+      tags: ["プラットフォーム", "Steam Deck", "macOS"],
+    },
+    "restory-chill-electronics-repairs-demo": {
+      category: "Demo",
+      eyebrow: "体験版",
+      title: "リ・ストーリー: 思い出修理屋 — Demo",
+      keyword: "リ・ストーリー: 思い出修理屋 Demo",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — Demo",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のDemoガイド。2026年6月15日、体験版の機能、デバイス、カスタマイズ、正式版との差を確認します。",
+      description:
+        "Demoで確認できた内容を整理し、ソースがない状態で正式版の動作へ広げないようにします。",
+      readTime: "5分で読める",
+      tags: ["Demo", "Steam", "機能"],
+    },
+    "restory-chill-electronics-repairs-price": {
+      category: "価格",
+      eyebrow: "Steamの料金",
+      title: "リ・ストーリー: 思い出修理屋 — 価格",
+      keyword: "リ・ストーリー: 思い出修理屋 価格",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 価格",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のSteam価格。購入前に地域、通貨、セール、バンドル、現在のストア表示を確認します。",
+      description:
+        "現在の価格は公式Steamストアで確認し、地域や期間による変化を明記します。",
+      readTime: "5分で読める",
+      tags: ["価格", "Steam", "バンドル"],
+    },
+    "restory-chill-electronics-repairs-system-requirements": {
+      category: "システム要件",
+      eyebrow: "インストール前に",
+      title: "リ・ストーリー: 思い出修理屋 — システム要件",
+      keyword: "リ・ストーリー: 思い出修理屋 システム要件",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — システム要件",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のシステム要件。Windows、macOS、Steam Deckの確認済み情報と、まだ確認できない項目を整理します。",
+      description:
+        "Steamで公開されている要件だけを使い、確認待ちの項目は別に表示します。",
+      readTime: "5分で読める",
+      tags: ["要件", "Windows", "macOS"],
+    },
+    "restory-chill-electronics-repairs-controller-support": {
+      category: "コントローラー対応",
+      eyebrow: "操作方法",
+      title: "リ・ストーリー: 思い出修理屋 — コントローラー対応",
+      keyword: "リ・ストーリー: 思い出修理屋 コントローラー対応",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — コントローラー対応",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のコントローラー対応。Steamの記載、Steam Deck、入力設定、確認できる制限を整理します。",
+      description:
+        "Steam Deckの表示、Steam Inputの設定、プレイヤー報告、公式に確認できた動作を分けて扱います。",
+      readTime: "5分で読める",
+      tags: ["コントローラー", "Steam Deck", "入力"],
+    },
+    "restory-chill-electronics-repairs-language-support": {
+      category: "言語対応",
+      eyebrow: "ローカライズ",
+      title: "リ・ストーリー: 思い出修理屋 — 対応言語",
+      keyword: "リ・ストーリー: 思い出修理屋 対応言語",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 対応言語",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の対応言語。インターフェースと字幕9言語、Steamの記載、Demoの範囲を確認します。",
+      description:
+        "公式Steamページのインターフェースと字幕の言語を確認し、音声対応とは分けて扱います。",
+      readTime: "5分で読める",
+      tags: ["言語", "字幕", "Demo"],
+    },
+    "restory-chill-electronics-repairs-gameplay": {
+      category: "攻略",
+      eyebrow: "基本ループ",
+      title: "リ・ストーリー: 思い出修理屋 — ゲームプレイ",
+      keyword: "リ・ストーリー: 思い出修理屋 ゲームプレイ",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — ゲームプレイ",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のゲームプレイ。分解、清掃、部品交換、組み立て、店、お客さん、Y2Kブラウザを説明します。",
+      description:
+        "ゲームの基本ループを確認し、作業台で確認できる行動と根拠のない仕組みを分けて整理します。",
+      readTime: "6分で読める",
+      tags: ["ゲームプレイ", "店", "物語"],
+    },
+    "restory-chill-electronics-repairs-trailer": {
+      category: "公式メディア",
+      eyebrow: "動画",
+      title: "リ・ストーリー: 思い出修理屋 — トレーラー",
+      keyword: "リ・ストーリー: 思い出修理屋 トレーラー",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — トレーラー",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の公式トレーラー。Gameplay Trailer、Launch Trailer、デバイス、修理、動画で分かる範囲を整理します。",
+      description:
+        "公式GameplayとLaunch Trailerを確認し、動画の場面を機能の完全な一覧として扱わないようにします。",
+      readTime: "5分で読める",
+      tags: ["トレーラー", "YouTube", "公式"],
+    },
+    "restory-chill-electronics-repairs-review": {
+      category: "レビュー",
+      eyebrow: "調査スナップショット",
+      title: "リ・ストーリー: 思い出修理屋 — レビュー",
+      keyword: "リ・ストーリー: 思い出修理屋 レビュー",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — レビュー",
+      metaDescription:
+        "公式資料をもとにしたリ・ストーリー: 思い出修理屋レビュー。修理、店、Y2K、物語、Steamレビュー、データの注意点を確認します。",
+      description:
+        "確認できる長所、変動するSteamスナップショット、購入前に重要な点を照らし合わせます。",
+      readTime: "7分で読める",
+      tags: ["レビュー", "Steam", "結論"],
+    },
+    "restory-chill-electronics-repairs-mods": {
+      category: "攻略",
+      eyebrow: "対応状況",
+      title: "リ・ストーリー: 思い出修理屋 — Modガイド",
+      keyword: "リ・ストーリー: 思い出修理屋 Mod",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — Modガイド",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋のMod対応状況。Steam Workshopは未確認、Guidesのカテゴリー、安全な確認方法、Discordを整理します。",
+      description:
+        "Workshop対応が確認されていないことを説明し、不明なダウンロードやインストーラーを掲載しません。",
+      readTime: "4分で読める",
+      tags: ["Mod", "Workshop", "対応状況"],
+    },
+    "restory-chill-electronics-repairs-games-like": {
+      category: "比較",
+      eyebrow: "似たゲームを探す",
+      title: "リ・ストーリー: 思い出修理屋に似たゲーム",
+      keyword: "リ・ストーリー: 思い出修理屋に似たゲーム",
+      seoTitle: "リ・ストーリー: 思い出修理屋に似たゲーム",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋に似たゲームの探し方。修理、清掃、店の管理、物語、雰囲気、プラットフォームで比較します。",
+      description:
+        "Steamの候補を客観的なランキングにせず、具体的なゲームシステムで比較します。",
+      readTime: "6分で読める",
+      tags: ["似たゲーム", "比較", "居心地のよいゲーム"],
     },
   },
 };

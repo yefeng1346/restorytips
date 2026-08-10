@@ -63,17 +63,28 @@ describe("ReStory site contract", () => {
   it("keeps guide availability strict by locale", () => {
     const partsSlug = "restory-chill-electronics-repairs-parts-catalog";
     const walkthroughSlug = "restory-chill-electronics-repairs-walkthrough";
+    const cleaningSlug = "restory-chill-electronics-repairs-cleaning-guide";
 
     expect(hasLocalizedGuide("en", partsSlug)).toBe(true);
     expect(hasLocalizedGuide("ru", partsSlug)).toBe(true);
     expect(hasLocalizedGuide("de", partsSlug)).toBe(true);
     expect(hasLocalizedGuide("ja", partsSlug)).toBe(true);
     expect(getGuideLocales(partsSlug)).toEqual(["en", "ru", "de", "ja"]);
-    expect(getGuideLocales("restory-chill-electronics-repairs-cleaning-guide")).toEqual(["en"]);
+    expect(getGuideLocales(cleaningSlug)).toEqual(["en", "ru", "de", "ja"]);
     expect(getLocalizedGuideMeta("ru", partsSlug)?.title).toContain("каталог деталей");
-    expect(getLocalizedGuideMeta("ru", "restory-chill-electronics-repairs-cleaning-guide")).toBeUndefined();
+    expect(getLocalizedGuideMeta("ru", cleaningSlug)?.title).toContain("гайд по очистке");
     expect(getLocalizedGuideMeta("ru", walkthroughSlug)?.title).toContain("гайд для новичков");
     expect(localizedPagePath("ru", `/guides/${partsSlug}`)).toBe(`/ru/guides/${partsSlug}`);
-    expect(localizedPagePath("ru", "/guides/restory-chill-electronics-repairs-cleaning-guide")).toBe("/ru/guides");
+    expect(localizedPagePath("ru", `/guides/${cleaningSlug}`)).toBe(`/ru/guides/${cleaningSlug}`);
+    expect(localizedPagePath("ru", "/guides/not-translated")).toBe("/ru/guides");
+  });
+
+  it("covers every guide in every supported non-English locale", () => {
+    const supportedLocales = ["ru", "de", "ja"] as const;
+
+    supportedLocales.forEach((locale) => {
+      expect(guideMeta.every(({ slug }) => hasLocalizedGuide(locale, slug))).toBe(true);
+      expect(guideMeta.every(({ slug }) => Boolean(getLocalizedGuideMeta(locale, slug)))).toBe(true);
+    });
   });
 });
