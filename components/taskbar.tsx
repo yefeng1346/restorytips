@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLocaleCopy, localizedPath, siteConfig, type Locale } from "@/lib/site-data";
+import { getLocaleCopy, hasLocalizedGuide, localizedPath, siteConfig, type Locale } from "@/lib/site-data";
 
 export function Taskbar({ locale }: { locale: Locale }) {
   const copy = getLocaleCopy(locale);
@@ -12,7 +12,7 @@ export function Taskbar({ locale }: { locale: Locale }) {
       </Link>
       <div className="tasks">
         <Link className="task" href={localizedPath(locale, "/guides")}>◉ {copy.nav.guides}</Link>
-        {locale === "en" ? <Link className="task" href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-parts-catalog")}>◈ {copy.nav.devices}</Link> : null}
+        {hasLocalizedGuide(locale, "restory-chill-electronics-repairs-parts-catalog") ? <Link className="task" href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-parts-catalog")}>◈ {copy.nav.devices}</Link> : null}
         <Link className="task" href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-walkthrough")}>✦ {copy.nav.beginner}</Link>
       </div>
       <div className="tray">

@@ -1,5 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { getLocaleCopy, guideMeta, siteConfig } from "../lib/site-data";
+import {
+  getGuideLocales,
+  getLocalizedGuideMeta,
+  getLocaleCopy,
+  guideMeta,
+  hasLocalizedGuide,
+  localizedPagePath,
+  siteConfig,
+} from "../lib/site-data";
 
 describe("ReStory site contract", () => {
   it("uses the researched game identity and official links", () => {
@@ -50,5 +58,22 @@ describe("ReStory site contract", () => {
       expect(page.metaDescription.length).toBeGreaterThanOrEqual(140);
       expect(page.metaDescription.length).toBeLessThanOrEqual(160);
     });
+  });
+
+  it("keeps guide availability strict by locale", () => {
+    const partsSlug = "restory-chill-electronics-repairs-parts-catalog";
+    const walkthroughSlug = "restory-chill-electronics-repairs-walkthrough";
+
+    expect(hasLocalizedGuide("en", partsSlug)).toBe(true);
+    expect(hasLocalizedGuide("ru", partsSlug)).toBe(true);
+    expect(hasLocalizedGuide("de", partsSlug)).toBe(true);
+    expect(hasLocalizedGuide("ja", partsSlug)).toBe(true);
+    expect(getGuideLocales(partsSlug)).toEqual(["en", "ru", "de", "ja"]);
+    expect(getGuideLocales("restory-chill-electronics-repairs-cleaning-guide")).toEqual(["en"]);
+    expect(getLocalizedGuideMeta("ru", partsSlug)?.title).toContain("каталог деталей");
+    expect(getLocalizedGuideMeta("ru", "restory-chill-electronics-repairs-cleaning-guide")).toBeUndefined();
+    expect(getLocalizedGuideMeta("ru", walkthroughSlug)?.title).toContain("гайд для новичков");
+    expect(localizedPagePath("ru", `/guides/${partsSlug}`)).toBe(`/ru/guides/${partsSlug}`);
+    expect(localizedPagePath("ru", "/guides/restory-chill-electronics-repairs-cleaning-guide")).toBe("/ru/guides");
   });
 });

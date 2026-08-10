@@ -1,10 +1,6 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, localizedUrl } from "@/lib/seo";
-import { guideMeta, locales } from "@/lib/site-data";
-
-const localizedContentSlugs = new Set([
-  "restory-chill-electronics-repairs-walkthrough",
-]);
+import { guideMeta, hasLocalizedGuide, locales } from "@/lib/site-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls = [
@@ -19,7 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...locales
       .filter((locale) => locale !== "en")
       .flatMap((locale) =>
-        [...localizedContentSlugs].map((slug) => localizedUrl(locale, `/guides/${slug}`)),
+        guideMeta
+          .filter((guide) => hasLocalizedGuide(locale, guide.slug))
+          .map((guide) => localizedUrl(locale, `/guides/${guide.slug}`)),
       ),
   ];
 

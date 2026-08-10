@@ -604,17 +604,17 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     quickLinks: [
       { stat: "15+", title: "Гайд для новичков", description: "Начните первую смену и изучите подтверждённый основной цикл ремонта.", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "первые часы" },
       { stat: "4", title: "Цикл ремонта", description: "Разберите устройство, очистите детали, замените неисправную часть и соберите его.", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "подтверждённая последовательность" },
-      { stat: "Y2K", title: "Устройства и детали", description: "Читайте заметки об устройствах, браузере и инструментах мастерской.", href: "/guides", label: "справочник мастерской" },
-      { stat: "50", title: "Сюжет и достижения", description: "Следите за выборами клиентов, несколькими концовками и достижениями Steam.", href: "/guides", label: "достижения Steam" },
-      { stat: "Авг.", title: "Известные проблемы", description: "Читайте официальные сообщения о запуске и заметки о настройках.", href: "/guides", label: "заметки о запуске" },
+      { stat: "Y2K", title: "Устройства и детали", description: "Читайте заметки об устройствах, браузере и инструментах мастерской.", href: "/guides/restory-chill-electronics-repairs-parts-catalog", label: "справочник мастерской" },
+      { stat: "50", title: "Сюжет и достижения", description: "Следите за выборами клиентов, несколькими концовками и достижениями Steam.", href: "/guides/restory-chill-electronics-repairs-achievements", label: "достижения Steam" },
+      { stat: "Авг.", title: "Известные проблемы", description: "Читайте официальные сообщения о запуске и заметки о настройках.", href: "/guides/restory-chill-electronics-repairs-resolution-settings", label: "заметки о запуске" },
       { stat: "▶", title: "Официальные материалы", description: "Посмотрите официальный трейлер игрового процесса от tinyBuildGAMES.", href: siteConfig.official.gameplayTrailer, label: "YouTube", external: true },
     ],
     startTitle: "Ваш путь в ReStory: Chill Electronics Repairs",
     startCards: [
       { number: "1", title: "Гайд для новичков", description: "Откройте мастерскую, примите первый заказ и разберитесь в основном цикле.", href: "/guides/restory-chill-electronics-repairs-walkthrough" },
       { number: "2", title: "Цикл ремонта", description: "Изучите разборку, очистку, замену деталей и сборку устройства.", href: "/guides" },
-      { number: "3", title: "Устройства и инструменты", description: "Найдите подтверждённые сведения о браузере, деталях и мастерской.", href: "/guides" },
-      { number: "4", title: "Выборы и достижения", description: "Следите за выборами клиентов, историей и достижениями Steam.", href: "/guides" },
+      { number: "3", title: "Устройства и инструменты", description: "Найдите подтверждённые сведения о браузере, деталях и мастерской.", href: "/guides/restory-chill-electronics-repairs-parts-catalog" },
+      { number: "4", title: "Выборы и достижения", description: "Следите за выборами клиентов, историей и достижениями Steam.", href: "/guides/restory-chill-electronics-repairs-achievements" },
     ],
     aboutTitle: "Что такое ReStory: Chill Electronics Repairs?",
     aboutParagraphs: [
@@ -661,17 +661,17 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     quickLinks: [
       { stat: "15+", title: "Einsteiger-Guide", description: "Starte die erste Schicht und lerne den bestätigten Reparaturkreislauf.", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "erste Stunden" },
       { stat: "4", title: "Reparaturkreislauf", description: "Gerät zerlegen, Teile reinigen, defekte Teile ersetzen und wieder zusammenbauen.", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "bestätigte Reihenfolge" },
-      { stat: "Y2K", title: "Geräte und Ersatzteile", description: "Notizen zu Geräten, Browser und Werkzeugen der Werkstatt.", href: "/guides", label: "Werkstatt-Referenz" },
-      { stat: "50", title: "Story und Erfolge", description: "Kundenentscheidungen, mehrere Enden und Steam-Erfolge im Blick behalten.", href: "/guides", label: "Steam-Erfolge" },
-      { stat: "Aug.", title: "Bekannte Probleme", description: "Offizielle Startberichte und dokumentierte Einstellungsnotizen ansehen.", href: "/guides", label: "Startnotizen" },
+      { stat: "Y2K", title: "Geräte und Ersatzteile", description: "Notizen zu Geräten, Browser und Werkzeugen der Werkstatt.", href: "/guides/restory-chill-electronics-repairs-parts-catalog", label: "Werkstatt-Referenz" },
+      { stat: "50", title: "Story und Erfolge", description: "Kundenentscheidungen, mehrere Enden und Steam-Erfolge im Blick behalten.", href: "/guides/restory-chill-electronics-repairs-achievements", label: "Steam-Erfolge" },
+      { stat: "Aug.", title: "Bekannte Probleme", description: "Offizielle Startberichte und dokumentierte Einstellungsnotizen ansehen.", href: "/guides/restory-chill-electronics-repairs-resolution-settings", label: "Startnotizen" },
       { stat: "▶", title: "Offizielle Medien", description: "Den offiziellen Gameplay-Trailer von tinyBuildGAMES ansehen.", href: siteConfig.official.gameplayTrailer, label: "YouTube", external: true },
     ],
     startTitle: "Deine Reise durch ReStory: Chill Electronics Repairs",
     startCards: [
       { number: "1", title: "Einsteiger-Guide", description: "Öffne die Werkstatt, nimm den ersten Auftrag an und lerne den Kernablauf.", href: "/guides/restory-chill-electronics-repairs-walkthrough" },
       { number: "2", title: "Reparaturkreislauf", description: "Lerne Zerlegen, Reinigen, Ersatzteile und den Zusammenbau kennen.", href: "/guides" },
-      { number: "3", title: "Geräte und Werkzeuge", description: "Finde bestätigte Hinweise zu Browser, Ersatzteilen und Werkstatt.", href: "/guides" },
-      { number: "4", title: "Entscheidungen und Erfolge", description: "Kundenentscheidungen, Story und Steam-Erfolge verfolgen.", href: "/guides" },
+      { number: "3", title: "Geräte und Werkzeuge", description: "Finde bestätigte Hinweise zu Browser, Ersatzteilen und Werkstatt.", href: "/guides/restory-chill-electronics-repairs-parts-catalog" },
+      { number: "4", title: "Entscheidungen und Erfolge", description: "Kundenentscheidungen, Story und Steam-Erfolge verfolgen.", href: "/guides/restory-chill-electronics-repairs-achievements" },
     ],
     aboutTitle: "Was ist ReStory: Chill Electronics Repairs?",
     aboutParagraphs: [
@@ -718,17 +718,17 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     quickLinks: [
       { stat: "15+", title: "初心者ガイド", description: "最初の勤務から確認済みの修理ループまで学べます。", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "最初の数時間" },
       { stat: "4", title: "修理の流れ", description: "分解、清掃、故障部品の交換、組み立てを確認します。", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "確認済みの順序" },
-      { stat: "Y2K", title: "デバイスと部品", description: "デバイス、ブラウザ、修理店の道具に関する情報をまとめています。", href: "/guides", label: "修理店リファレンス" },
-      { stat: "50", title: "物語と実績", description: "客の選択、複数エンディング、Steam実績を確認できます。", href: "/guides", label: "Steam実績" },
-      { stat: "8月", title: "既知の問題", description: "公式の発売情報と設定に関するメモを確認できます。", href: "/guides", label: "発売時のメモ" },
+      { stat: "Y2K", title: "デバイスと部品", description: "デバイス、ブラウザ、修理店の道具に関する情報をまとめています。", href: "/guides/restory-chill-electronics-repairs-parts-catalog", label: "修理店リファレンス" },
+      { stat: "50", title: "物語と実績", description: "客の選択、複数エンディング、Steam実績を確認できます。", href: "/guides/restory-chill-electronics-repairs-achievements", label: "Steam実績" },
+      { stat: "8月", title: "既知の問題", description: "公式の発売情報と設定に関するメモを確認できます。", href: "/guides/restory-chill-electronics-repairs-resolution-settings", label: "発売時のメモ" },
       { stat: "▶", title: "公式メディア", description: "tinyBuildGAMESの公式ゲームプレイトレーラーを視聴できます。", href: siteConfig.official.gameplayTrailer, label: "YouTube", external: true },
     ],
     startTitle: "リ・ストーリー: 思い出修理屋の進め方",
     startCards: [
       { number: "1", title: "初心者ガイド", description: "店を開き、最初の依頼を受け、基本の修理ループを学びます。", href: "/guides/restory-chill-electronics-repairs-walkthrough" },
       { number: "2", title: "修理の流れ", description: "分解、清掃、部品交換、組み立ての順序を確認します。", href: "/guides" },
-      { number: "3", title: "デバイスと道具", description: "ブラウザ、部品、修理店に関する確認済みの情報を探せます。", href: "/guides" },
-      { number: "4", title: "選択と実績", description: "客の選択、物語、Steam実績を確認できます。", href: "/guides" },
+      { number: "3", title: "デバイスと道具", description: "ブラウザ、部品、修理店に関する確認済みの情報を探せます。", href: "/guides/restory-chill-electronics-repairs-parts-catalog" },
+      { number: "4", title: "選択と実績", description: "客の選択、物語、Steam実績を確認できます。", href: "/guides/restory-chill-electronics-repairs-achievements" },
     ],
     aboutTitle: "リ・ストーリー: 思い出修理屋とは？",
     aboutParagraphs: [
@@ -1124,6 +1124,45 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
       readTime: "7 мин чтения",
       tags: ["Прохождение", "Мастерская", "Сюжет"],
     },
+    "restory-chill-electronics-repairs-parts-catalog": {
+      category: "Устройства и детали",
+      eyebrow: "Справочник мастерской",
+      title: "ReStory: Chill Electronics Repairs — каталог деталей",
+      keyword: "restory: chill electronics repairs каталог деталей",
+      seoTitle: "ReStory: Chill Electronics Repairs — каталог деталей",
+      metaDescription:
+        "Каталог деталей ReStory: Chill Electronics Repairs: семейства устройств, названное оборудование, браузер эпохи Y2K, запчасти и этапы ремонта.",
+      description:
+        "Изучите подтверждённые семейства устройств, названия оборудования, источники запчастей и этапы ремонта.",
+      readTime: "7 мин чтения",
+      tags: ["Устройства", "Детали", "Каталог"],
+    },
+    "restory-chill-electronics-repairs-achievements": {
+      category: "Достижения Steam",
+      eyebrow: "Прогресс Steam",
+      title: "ReStory: Chill Electronics Repairs — достижения",
+      keyword: "restory: chill electronics repairs достижения",
+      seoTitle: "ReStory: Chill Electronics Repairs — достижения",
+      metaDescription:
+        "Гайд по достижениям ReStory: Chill Electronics Repairs: 50 достижений Steam, открытые условия, очистка, заказы, рынок, инструменты и заметки об ошибках.",
+      description:
+        "Отслеживайте 50 достижений Steam по ремонту, бизнесу, очистке, заказам, инструментам, оформлению, времени и сюжету.",
+      readTime: "8 мин чтения",
+      tags: ["Достижения", "Steam", "Чек-лист"],
+    },
+    "restory-chill-electronics-repairs-resolution-settings": {
+      category: "Технические настройки",
+      eyebrow: "Производительность",
+      title: "ReStory: Chill Electronics Repairs — настройки разрешения",
+      keyword: "restory: chill electronics repairs настройки разрешения",
+      seoTitle: "ReStory: Chill Electronics Repairs — настройки разрешения",
+      metaDescription:
+        "Настройки разрешения ReStory: Chill Electronics Repairs: VSync, цели 30/60 кадров, оконные режимы, проблемы UltraWide и заметки о запуске.",
+      description:
+        "Проверьте заметки о VSync, целевой частоте кадров, оконном режиме и проблеме разборки на ультрашироком экране.",
+      readTime: "6 мин чтения",
+      tags: ["Разрешение", "VSync", "UltraWide"],
+    },
   },
   de: {
     "restory-chill-electronics-repairs-walkthrough": {
@@ -1138,6 +1177,45 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
       readTime: "7 Min. Lesezeit",
       tags: ["Walkthrough", "Werkstatt", "Story"],
     },
+    "restory-chill-electronics-repairs-parts-catalog": {
+      category: "Geräte und Ersatzteile",
+      eyebrow: "Werkstatt-Referenz",
+      title: "ReStory: Chill Electronics Repairs — Teilekatalog",
+      keyword: "restory: chill electronics repairs Teilekatalog",
+      seoTitle: "ReStory: Chill Electronics Repairs — Teilekatalog",
+      metaDescription:
+        "Teilekatalog für ReStory: Chill Electronics Repairs mit Gerätefamilien, benannter Hardware, Y2K-Browser, Ersatzteilen und Reparaturphasen.",
+      description:
+        "Finde bestätigte Gerätefamilien, benannte Hardware, Ersatzteilquellen und die einzelnen Phasen des Reparaturablaufs.",
+      readTime: "7 Min. Lesezeit",
+      tags: ["Geräte", "Ersatzteile", "Katalog"],
+    },
+    "restory-chill-electronics-repairs-achievements": {
+      category: "Steam-Erfolge",
+      eyebrow: "Steam-Fortschritt",
+      title: "ReStory: Chill Electronics Repairs — Erfolge",
+      keyword: "restory: chill electronics repairs Erfolge",
+      seoTitle: "ReStory: Chill Electronics Repairs — Erfolge",
+      metaDescription:
+        "Erfolge-Guide für ReStory: Chill Electronics Repairs mit 50 Steam-Erfolgen, öffentlichen Bedingungen, Reinigung, Aufträgen, Markt und Werkzeugen.",
+      description:
+        "Verfolge 50 Steam-Erfolge für Reparaturen, Geschäft, Reinigung, Aufträge, Werkzeuge, Anpassung, Zeit, Wettbewerbe und Story.",
+      readTime: "8 Min. Lesezeit",
+      tags: ["Erfolge", "Steam", "Checkliste"],
+    },
+    "restory-chill-electronics-repairs-resolution-settings": {
+      category: "Technische Einstellungen",
+      eyebrow: "Performance",
+      title: "ReStory: Chill Electronics Repairs — Auflösungseinstellungen",
+      keyword: "restory: chill electronics repairs Auflösungseinstellungen",
+      seoTitle: "ReStory: Chill Electronics Repairs — Auflösungseinstellungen",
+      metaDescription:
+        "Auflösungseinstellungen für ReStory: Chill Electronics Repairs mit VSync, Zielwerten 30/60, Fenstermodi, Ultrawide-Problemen und Startnotizen.",
+      description:
+        "Prüfe Hinweise zu VSync, Zielbildrate, Fenstermodus und dem Ultrawide-Problem bei der Gerätezerlegung.",
+      readTime: "6 Min. Lesezeit",
+      tags: ["Auflösung", "VSync", "Ultrawide"],
+    },
   },
   ja: {
     "restory-chill-electronics-repairs-walkthrough": {
@@ -1151,6 +1229,45 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
         "最初の依頼から修理の基本ループまで、ゲームの進め方をわかりやすく紹介します。",
       readTime: "7分で読める",
       tags: ["初心者", "修理店", "物語"],
+    },
+    "restory-chill-electronics-repairs-parts-catalog": {
+      category: "デバイスと部品",
+      eyebrow: "修理店リファレンス",
+      title: "リ・ストーリー: 思い出修理屋 — 部品カタログ",
+      keyword: "リ・ストーリー: 思い出修理屋 部品カタログ",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 部品カタログ",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の部品カタログ。デバイスの種類、確認済みの機器、Y2Kブラウザ、交換部品、修理段階を整理します。",
+      description:
+        "確認できるデバイスの種類、機器名、部品の入手先、修理の各段階をリファレンスとしてまとめます。",
+      readTime: "7分で読める",
+      tags: ["デバイス", "部品", "カタログ"],
+    },
+    "restory-chill-electronics-repairs-achievements": {
+      category: "Steam実績",
+      eyebrow: "Steamの進行",
+      title: "リ・ストーリー: 思い出修理屋 — 実績",
+      keyword: "リ・ストーリー: 思い出修理屋 実績",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — Steam実績",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の実績ガイド。Steam実績50個の公開条件、清掃、依頼、マーケット、道具、ストーリーを整理します。",
+      description:
+        "修理、店の進行、清掃、依頼、道具、カスタマイズ、時間、競技、ストーリーの実績を確認できます。",
+      readTime: "8分で読める",
+      tags: ["実績", "Steam", "チェックリスト"],
+    },
+    "restory-chill-electronics-repairs-resolution-settings": {
+      category: "技術設定",
+      eyebrow: "パフォーマンス",
+      title: "リ・ストーリー: 思い出修理屋 — 解像度設定",
+      keyword: "リ・ストーリー: 思い出修理屋 解像度設定",
+      seoTitle: "リ・ストーリー: 思い出修理屋 — 解像度設定",
+      metaDescription:
+        "リ・ストーリー: 思い出修理屋の解像度設定。VSync、30/60の目標値、ウィンドウモード、ウルトラワイド問題を確認します。",
+      description:
+        "VSync、目標フレームレート、ウィンドウモード、ウルトラワイドでの分解問題に関する情報をまとめます。",
+      readTime: "6分で読める",
+      tags: ["解像度", "VSync", "ウルトラワイド"],
     },
   },
 };
@@ -1220,10 +1337,15 @@ export function getGuideAnswer(slug: string): GuideAnswer | undefined {
 export function getLocalizedGuideMeta(locale: Locale, slug: string): GuideMeta | undefined {
   const guide = getGuideMeta(slug);
   if (!guide) return undefined;
+  if (locale === defaultLocale) return guide;
   const override = localizedGuideOverrides[locale]?.[slug];
-  return override ? { ...guide, ...override } : guide;
+  return override ? { ...guide, ...override } : undefined;
 }
 
 export function hasLocalizedGuide(locale: Locale, slug: string): boolean {
-  return Boolean(localizedGuideOverrides[locale]?.[slug]);
+  return locale === defaultLocale || Boolean(localizedGuideOverrides[locale]?.[slug]);
+}
+
+export function getGuideLocales(slug: string): Locale[] {
+  return locales.filter((locale) => hasLocalizedGuide(locale, slug));
 }

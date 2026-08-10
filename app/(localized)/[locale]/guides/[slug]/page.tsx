@@ -4,6 +4,7 @@ import { GuideArticlePage } from "@/components/pages";
 import { buildPageMetadata } from "@/lib/seo";
 import {
   getGuideMeta,
+  getGuideLocales,
   getLocalizedGuideMeta,
   guideMeta,
   hasLocalizedGuide,
@@ -26,7 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(rawLocale) || rawLocale === defaultLocale) return {};
   const guide = getGuideMeta(slug);
   if (!guide || !hasLocalizedGuide(rawLocale, slug)) return {};
-  const localizedGuide = getLocalizedGuideMeta(rawLocale, slug) ?? guide;
+  const localizedGuide = getLocalizedGuideMeta(rawLocale, slug);
+  if (!localizedGuide) return {};
   return buildPageMetadata({
     title: localizedGuide.seoTitle,
     description: localizedGuide.metaDescription,
@@ -34,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     alternatePath: `/guides/${slug}`,
     locale: rawLocale,
     keywords: [guide.keyword, ...guide.tags],
-    supportedLocales: locales,
+    supportedLocales: getGuideLocales(slug),
     type: "article",
   });
 }

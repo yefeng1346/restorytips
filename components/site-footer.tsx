@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLocaleCopy, localizedPath, siteConfig, type Locale } from "@/lib/site-data";
+import { getLocaleCopy, hasLocalizedGuide, localizedPath, siteConfig, type Locale } from "@/lib/site-data";
 
 export function SiteFooter({ locale }: { locale: Locale }) {
   const copy = getLocaleCopy(locale);
@@ -27,14 +27,14 @@ export function SiteFooter({ locale }: { locale: Locale }) {
         <div>
           <h4>{copy.nav.guides}</h4>
           <Link href={localizedPath(locale, "/guides")}>{copy.nav.guides}</Link>
-          <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-walkthrough")}>{copy.nav.beginner}</Link>
-          {locale === "en" ? (
-            <>
-              <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-parts-catalog")}>{copy.nav.devices}</Link>
-              <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-achievements")}>{copy.nav.achievements}</Link>
-              <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-resolution-settings")}>{copy.nav.updates}</Link>
-            </>
-          ) : null}
+          {[
+            { slug: "restory-chill-electronics-repairs-walkthrough", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: copy.nav.beginner },
+            { slug: "restory-chill-electronics-repairs-parts-catalog", href: "/guides/restory-chill-electronics-repairs-parts-catalog", label: copy.nav.devices },
+            { slug: "restory-chill-electronics-repairs-achievements", href: "/guides/restory-chill-electronics-repairs-achievements", label: copy.nav.achievements },
+            { slug: "restory-chill-electronics-repairs-resolution-settings", href: "/guides/restory-chill-electronics-repairs-resolution-settings", label: copy.nav.updates },
+          ].filter((item) => hasLocalizedGuide(locale, item.slug)).map((item) => (
+            <Link key={item.slug} href={localizedPath(locale, item.href)}>{item.label}</Link>
+          ))}
         </div>
         <div>
           <h4>{copy.labels.official}</h4>

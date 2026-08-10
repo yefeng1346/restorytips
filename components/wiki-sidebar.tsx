@@ -16,7 +16,7 @@ export function WikiSidebar({ locale, activeSlug }: WikiSidebarProps) {
     { href: "/guides/restory-chill-electronics-repairs-resolution-settings", label: copy.nav.updates, icon: "◷", slug: "restory-chill-electronics-repairs-resolution-settings" },
   ];
 
-  const visibleItems = sidebarItems.filter((item) => locale === "en" || item.slug === undefined || hasLocalizedGuide(locale, item.slug));
+  const visibleItems = sidebarItems.filter((item) => item.slug === undefined || hasLocalizedGuide(locale, item.slug));
 
   return (
     <aside className="wiki-side">

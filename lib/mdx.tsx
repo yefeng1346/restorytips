@@ -20,8 +20,17 @@ import SystemRequirementsGuide from "@/content/en/guides/restory-chill-electroni
 import TrailerGuide from "@/content/en/guides/restory-chill-electronics-repairs-trailer.mdx";
 import WalkthroughGuide from "@/content/en/guides/restory-chill-electronics-repairs-walkthrough.mdx";
 import GermanBeginnerGuide from "@/content/de/guides/beginner-guide.mdx";
+import GermanAchievementsGuide from "@/content/de/guides/achievements.mdx";
+import GermanPartsCatalogGuide from "@/content/de/guides/parts-catalog.mdx";
+import GermanResolutionSettingsGuide from "@/content/de/guides/resolution-settings.mdx";
 import JapaneseBeginnerGuide from "@/content/ja/guides/beginner-guide.mdx";
+import JapaneseAchievementsGuide from "@/content/ja/guides/achievements.mdx";
+import JapanesePartsCatalogGuide from "@/content/ja/guides/parts-catalog.mdx";
+import JapaneseResolutionSettingsGuide from "@/content/ja/guides/resolution-settings.mdx";
 import RussianBeginnerGuide from "@/content/ru/guides/beginner-guide.mdx";
+import RussianAchievementsGuide from "@/content/ru/guides/achievements.mdx";
+import RussianPartsCatalogGuide from "@/content/ru/guides/parts-catalog.mdx";
+import RussianResolutionSettingsGuide from "@/content/ru/guides/resolution-settings.mdx";
 import type { Locale } from "./site-data";
 
 export type MdxArticle = ComponentType<Record<string, unknown>>;
@@ -51,15 +60,24 @@ const articles: Record<Locale, Record<string, MdxArticle>> = {
   },
   ru: {
     "restory-chill-electronics-repairs-walkthrough": RussianBeginnerGuide,
+    "restory-chill-electronics-repairs-parts-catalog": RussianPartsCatalogGuide,
+    "restory-chill-electronics-repairs-achievements": RussianAchievementsGuide,
+    "restory-chill-electronics-repairs-resolution-settings": RussianResolutionSettingsGuide,
   },
   de: {
     "restory-chill-electronics-repairs-walkthrough": GermanBeginnerGuide,
+    "restory-chill-electronics-repairs-parts-catalog": GermanPartsCatalogGuide,
+    "restory-chill-electronics-repairs-achievements": GermanAchievementsGuide,
+    "restory-chill-electronics-repairs-resolution-settings": GermanResolutionSettingsGuide,
   },
   ja: {
     "restory-chill-electronics-repairs-walkthrough": JapaneseBeginnerGuide,
+    "restory-chill-electronics-repairs-parts-catalog": JapanesePartsCatalogGuide,
+    "restory-chill-electronics-repairs-achievements": JapaneseAchievementsGuide,
+    "restory-chill-electronics-repairs-resolution-settings": JapaneseResolutionSettingsGuide,
   },
 };
 
 export function getGuideComponent(locale: Locale, slug: string): MdxArticle | undefined {
-  return articles[locale][slug] ?? articles.en[slug];
+  return articles[locale][slug];
 }

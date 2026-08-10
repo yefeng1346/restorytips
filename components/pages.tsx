@@ -80,7 +80,7 @@ export function HomePage({ locale }: { locale: Locale }) {
             <Link className="btn" href={localizedPath(locale, "/guides")}>
               {home.hero.secondaryCta}
             </Link>
-            <Link className="btn danger" href={localizedPath(locale, locale === "en" ? "/guides/restory-chill-electronics-repairs-resolution-settings" : "/guides")}>
+            <Link className="btn danger" href={localizedPath(locale, hasLocalizedGuide(locale, "restory-chill-electronics-repairs-resolution-settings") ? "/guides/restory-chill-electronics-repairs-resolution-settings" : "/guides")}>
               {home.hero.tertiaryCta}
             </Link>
           </div>
@@ -201,8 +201,11 @@ export function HomePage({ locale }: { locale: Locale }) {
 export function GuideIndexPage({ locale }: { locale: Locale }) {
   const copy = getLocaleCopy(locale);
   const guides = guideMeta
-    .filter((guide) => locale === "en" || hasLocalizedGuide(locale, guide.slug))
-    .map((guide) => getLocalizedGuideMeta(locale, guide.slug) ?? guide);
+    .filter((guide) => hasLocalizedGuide(locale, guide.slug))
+    .flatMap((guide) => {
+      const localizedGuide = getLocalizedGuideMeta(locale, guide.slug);
+      return localizedGuide ? [localizedGuide] : [];
+    });
   return (
     <PageChrome
       locale={locale}
@@ -260,18 +263,22 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
 
 export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: string }) {
   const copy = getLocaleCopy(locale);
-  const meta = getLocalizedGuideMeta(locale, slug);
-  const Article = getGuideComponent(locale, slug);
+  const isAvailable = hasLocalizedGuide(locale, slug);
+  const meta = isAvailable ? getLocalizedGuideMeta(locale, slug) : undefined;
+  const Article = isAvailable ? getGuideComponent(locale, slug) : undefined;
   const guideAnswer = locale === "en" ? getGuideAnswer(slug) : undefined;
   const articleMediaKey = getArticleMediaKey(slug);
 
-  if (!meta || !Article || (locale !== "en" && !hasLocalizedGuide(locale, slug))) {
+  if (!meta || !Article) {
     return null;
   }
 
   const related = guideMeta
-    .filter((guide) => guide.slug !== slug && (locale === "en" || hasLocalizedGuide(locale, guide.slug)))
-    .map((guide) => getLocalizedGuideMeta(locale, guide.slug) ?? guide)
+    .filter((guide) => guide.slug !== slug && hasLocalizedGuide(locale, guide.slug))
+    .flatMap((guide) => {
+      const localizedGuide = getLocalizedGuideMeta(locale, guide.slug);
+      return localizedGuide ? [localizedGuide] : [];
+    })
     .slice(0, 3);
 
   return (

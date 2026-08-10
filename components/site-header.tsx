@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLocaleCopy, locales, localizedPagePath, localizedPath, siteConfig, type Locale } from "@/lib/site-data";
+import { getLocaleCopy, hasLocalizedGuide, locales, localizedPagePath, localizedPath, siteConfig, type Locale } from "@/lib/site-data";
 import { ThemeToggle } from "./theme-toggle";
 
 type SiteHeaderProps = {
@@ -8,18 +8,18 @@ type SiteHeaderProps = {
 };
 
 const navItems = [
-  { key: "home", href: "/", icon: "⌂" },
-  { key: "guides", href: "/guides", icon: "◉" },
-  { key: "devices", href: "/guides/restory-chill-electronics-repairs-parts-catalog", icon: "◈" },
-  { key: "achievements", href: "/guides/restory-chill-electronics-repairs-achievements", icon: "★" },
-  { key: "updates", href: "/guides/restory-chill-electronics-repairs-resolution-settings", icon: "◷" },
-  { key: "beginner", href: "/guides/restory-chill-electronics-repairs-walkthrough", icon: "✦" },
+  { key: "home", href: "/", icon: "⌂", slug: undefined },
+  { key: "guides", href: "/guides", icon: "◉", slug: undefined },
+  { key: "devices", href: "/guides/restory-chill-electronics-repairs-parts-catalog", icon: "◈", slug: "restory-chill-electronics-repairs-parts-catalog" },
+  { key: "achievements", href: "/guides/restory-chill-electronics-repairs-achievements", icon: "★", slug: "restory-chill-electronics-repairs-achievements" },
+  { key: "updates", href: "/guides/restory-chill-electronics-repairs-resolution-settings", icon: "◷", slug: "restory-chill-electronics-repairs-resolution-settings" },
+  { key: "beginner", href: "/guides/restory-chill-electronics-repairs-walkthrough", icon: "✦", slug: "restory-chill-electronics-repairs-walkthrough" },
 ] as const;
 
 export function SiteHeader({ locale, currentPath }: SiteHeaderProps) {
   const copy = getLocaleCopy(locale);
   const inputId = `nav-toggle-${locale}`;
-  const visibleNavItems = navItems.filter((item) => locale === "en" || item.key === "home" || item.key === "guides" || item.key === "beginner");
+  const visibleNavItems = navItems.filter((item) => item.slug === undefined || hasLocalizedGuide(locale, item.slug));
 
   return (
     <header className="site-header">
@@ -42,7 +42,7 @@ export function SiteHeader({ locale, currentPath }: SiteHeaderProps) {
             const label = copy.nav[item.key];
             const isCurrent = item.href === "/" ? currentPath === "/" : currentPath.startsWith(item.href);
             return (
-              <Link key={item.key} href={localizedPath(locale, item.href)} aria-current={isCurrent ? "page" : undefined}>
+              <Link key={item.key} href={localizedPagePath(locale, item.href)} aria-current={isCurrent ? "page" : undefined}>
                 <span className="i" aria-hidden="true">
                   {item.icon}
                 </span>
