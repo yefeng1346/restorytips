@@ -166,7 +166,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
 
-        <GameGallery locale={locale} mediaKeys={["workbench", "device", "customization"]} />
+        <GameGallery locale={locale} mediaKeys={["workbench", "shop", "customization"]} />
 
         {home.codeValue ? (
           <section className="codes-panel">
@@ -222,8 +222,6 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
           <p className="sub">{copy.home.quickDescription}</p>
         </section>
 
-        <GameGallery locale={locale} mediaKeys={["shop", "device"]} />
-
         <div className="wiki-grid">
           <WikiSidebar locale={locale} />
           <div>
@@ -265,6 +263,7 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
   const meta = getLocalizedGuideMeta(locale, slug);
   const Article = getGuideComponent(locale, slug);
   const guideAnswer = locale === "en" ? getGuideAnswer(slug) : undefined;
+  const articleMediaKey = getArticleMediaKey(slug);
 
   if (!meta || !Article || (locale !== "en" && !hasLocalizedGuide(locale, slug))) {
     return null;
@@ -311,7 +310,9 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
                 <span>{copy.labels.researchStatus}</span>
               </div>
             </header>
-            <GameMedia locale={locale} mediaKey={getArticleMediaKey(slug)} variant="article" priority />
+            {articleMediaKey ? (
+              <GameMedia locale={locale} mediaKey={articleMediaKey} variant="article" priority />
+            ) : null}
             {guideAnswer ? (
               <aside className="answer-first" aria-labelledby={`answer-${slug}`}>
                 <span className="section-kicker">{copy.labels.shortAnswer}</span>

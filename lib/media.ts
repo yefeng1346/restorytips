@@ -136,33 +136,14 @@ export const mediaSectionCopy: Record<Locale, { kicker: string; title: string; d
   },
 };
 
-const articleMedia: Record<string, GameMediaKey> = {
-  "restory-chill-electronics-repairs-walkthrough": "shop",
-  "restory-chill-electronics-repairs-cleaning-guide": "device",
-  "restory-chill-electronics-repairs-endings": "shop",
-  "restory-chill-electronics-repairs-achievements": "customization",
+const articleMedia: Partial<Record<string, GameMediaKey>> = {
   "restory-chill-electronics-repairs-parts-catalog": "device",
-  "restory-chill-electronics-repairs-internet-plan": "workbench",
-  "restory-chill-electronics-repairs-atari": "device",
-  "restory-chill-electronics-repairs-release-date": "shop",
-  "restory-chill-electronics-repairs-platforms": "shop",
-  "restory-chill-electronics-repairs-demo": "customization",
-  "restory-chill-electronics-repairs-price": "shop",
-  "restory-chill-electronics-repairs-system-requirements": "workbench",
-  "restory-chill-electronics-repairs-controller-support": "workbench",
-  "restory-chill-electronics-repairs-language-support": "customization",
-  "restory-chill-electronics-repairs-resolution-settings": "workbench",
-  "restory-chill-electronics-repairs-gameplay": "shop",
-  "restory-chill-electronics-repairs-trailer": "shop",
-  "restory-chill-electronics-repairs-review": "shop",
-  "restory-chill-electronics-repairs-mods": "device",
-  "restory-chill-electronics-repairs-games-like": "shop",
 };
 
 export function getGameMedia(locale: Locale, key: GameMediaKey): GameMedia {
   return { ...mediaAssets[key], ...mediaText[locale][key] };
 }
 
-export function getArticleMediaKey(slug: string): GameMediaKey {
-  return articleMedia[slug] ?? "shop";
+export function getArticleMediaKey(slug: string): GameMediaKey | undefined {
+  return articleMedia[slug];
 }
