@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --bg: 42 33% 97%;
   --bg-deep: 202 33% 14%;
   --panel: 0 0% 100%;
@@ -23,6 +24,7 @@
 }
 
 html[data-theme="dark"] {
+  color-scheme: dark;
   --bg: 207 21% 10%;
   --bg-deep: 210 24% 7%;
   --panel: 210 19% 14%;

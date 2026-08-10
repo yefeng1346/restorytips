@@ -5,13 +5,15 @@ import { useEffect, useState } from "react";
 type Theme = "light" | "dark";
 
 export function ThemeToggle({ label, darkText, lightText }: { label: string; darkText: string; lightText: string }) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
     const saved = window.localStorage.getItem("restory-theme");
     if (saved === "dark" || saved === "light") {
       setTheme(saved);
       document.documentElement.dataset.theme = saved;
+    } else {
+      document.documentElement.dataset.theme = "dark";
     }
   }, []);
 

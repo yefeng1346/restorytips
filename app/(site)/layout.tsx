@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { GoogleAdsense } from "@/components/google-adsense";
 import { GoogleAnalytics } from "@/components/google-analytics";
+import { ThemeInit } from "@/components/theme-init";
 import { siteConfig } from "@/lib/site-data";
 
 export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default function SiteRootLayout({ children }: Readonly<{ children: React.
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <ThemeInit />
         <GoogleAdsense />
       </head>
       <body>
