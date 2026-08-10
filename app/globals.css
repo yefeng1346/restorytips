@@ -167,8 +167,8 @@ input {
 }
 
 .native-banner {
-  min-height: 90px;
-  margin: 1.5rem 0;
+  min-height: 0;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +177,17 @@ input {
 
 .native-banner > div {
   width: 100%;
-  min-height: 90px;
+  min-height: 0;
+}
+
+.native-banner > div:empty {
+  display: none;
+}
+
+@supports selector(.native-banner:has(> div:empty)) {
+  .native-banner:has(> div:empty) {
+    display: none;
+  }
 }
 
 .cols-2 {
@@ -235,6 +245,30 @@ section {
   background: hsl(var(--panel-2));
   text-decoration: none;
   transform: translateY(-2px);
+}
+
+.guide-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.guide-card__footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 0.8rem;
+  color: hsl(var(--dim));
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.guide-card__footer span:last-child {
+  flex: 0 0 auto;
+  color: hsl(var(--nav-theme));
+  white-space: nowrap;
 }
 
 .card h3 {
@@ -388,7 +422,7 @@ section {
 
 .media-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1rem;
 }
 
@@ -971,9 +1005,28 @@ html[data-theme="dark"] .callout-gold strong {
   font-size: 0.9rem;
 }
 
-.source-note span {
+.source-note > span {
+  flex: 0 0 auto;
   color: hsl(var(--nav-theme));
   font-family: var(--font-mono);
+}
+
+.source-note > a {
+  display: inline-flex;
+  flex: 1 1 18rem;
+  min-width: 0;
+  align-items: baseline;
+  gap: 0.35em;
+  line-height: 1.4;
+}
+
+.source-note__label {
+  min-width: 0;
+}
+
+.source-note__arrow {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .site-footer {

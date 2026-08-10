@@ -44,7 +44,8 @@ export function SourceNote({ href, label = "Official source", children }: Source
     <span className="source-note">
       <span>{label}</span>
       <a href={href} target="_blank" rel="noreferrer">
-        {children} ↗
+        <span className="source-note__label">{children}</span>
+        <span className="source-note__arrow" aria-hidden="true">↗</span>
       </a>
     </span>
   );
