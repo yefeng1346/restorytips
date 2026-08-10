@@ -92,9 +92,24 @@ export function HomePage({ locale }: { locale: Locale }) {
         </section>
 
         <section className="answer-first home-answer" aria-labelledby="home-answer-title">
-          <span className="section-kicker">{home.answerKicker}</span>
-          <h2 id="home-answer-title">{home.answerTitle}</h2>
-          <p>{home.answerText}</p>
+          <div className="home-answer__layout">
+            <div className="home-answer__copy">
+              <span className="section-kicker">{home.answerKicker}</span>
+              <h2 id="home-answer-title">{home.answerTitle}</h2>
+              <p>{home.answerText}</p>
+            </div>
+            <div className="home-answer__loop">
+              <span className="home-answer__loop-title">{home.answerLoopTitle}</span>
+              <ol className="home-answer__steps">
+                {home.answerSteps.map((step, index) => (
+                  <li key={step}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <strong>{step}</strong>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
         </section>
 
         <section>

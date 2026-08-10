@@ -849,13 +849,68 @@ section {
   margin: 2rem 0 1.7rem;
 }
 
+.home-answer__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(230px, 0.75fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.home-answer__copy {
+  min-width: 0;
+}
+
 .answer-first h2 {
   margin-bottom: 0.55rem;
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);
 }
 
 .answer-first p {
-  max-width: 78ch;
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.home-answer__loop {
+  align-self: stretch;
+  padding: 0.95rem 1rem;
+  border-left: 1px dashed hsl(var(--line-2));
+  background: hsl(var(--panel) / 0.58);
+}
+
+.home-answer__loop-title {
+  display: block;
+  color: hsl(var(--nav-theme));
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.home-answer__steps {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-answer__steps li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.55rem;
+  align-items: start;
+}
+
+.home-answer__steps li > span {
+  color: hsl(var(--nav-theme));
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.home-answer__steps strong {
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.45;
 }
 
 .answer-first ul {
@@ -1232,6 +1287,16 @@ html[data-theme="dark"] .callout-gold strong {
   .cols-4,
   .foot-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-answer__layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .home-answer__loop {
+    border-top: 1px dashed hsl(var(--line-2));
+    border-left: 0;
   }
 
   .media-grid {
