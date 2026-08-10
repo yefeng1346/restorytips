@@ -17,7 +17,7 @@ const contentSecurityPolicy = [
   "media-src 'self' https:",
   "style-src 'self' 'unsafe-inline'",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://pl30770499.effectivecpmnetwork.com",
-  "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://pl30770499.effectivecpmnetwork.com https://fizzyacerbitymellow.com https://protrafficinspector.com",
+  "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://pl30770499.effectivecpmnetwork.com https://fizzyacerbitymellow.com https://protrafficinspector.com",
   "font-src 'self' data:",
   "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://cdn.cloudvideosa.com",
 ].join("; ");
