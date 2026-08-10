@@ -1,6 +1,34 @@
 import Image from "next/image";
 import { getGameMedia, mediaSectionCopy, type GameMediaKey } from "@/lib/media";
-import type { Locale } from "@/lib/site-data";
+import { siteConfig, type Locale } from "@/lib/site-data";
+
+const gameplayTrailerId = new URL(siteConfig.official.gameplayTrailer).pathname.replace(/^\//, "");
+
+const gameplayTrailerCopy: Record<Locale, { title: string; caption: string }> = {
+  en: {
+    title: "ReStory: Chill Electronics Repairs official Gameplay Trailer",
+    caption: "Official Gameplay Trailer.",
+  },
+  ru: {
+    title: "Официальный геймплейный трейлер ReStory: Chill Electronics Repairs",
+    caption: "Официальный геймплейный трейлер.",
+  },
+  de: {
+    title: "Offizieller Gameplay-Trailer zu ReStory: Chill Electronics Repairs",
+    caption: "Offizieller Gameplay-Trailer.",
+  },
+  ja: {
+    title: "リ・ストーリー: 思い出修理屋 公式ゲームプレイトレーラー",
+    caption: "公式ゲームプレイトレーラー。",
+  },
+};
+
+const gameplayTrailerPlayerLanguage: Record<Locale, string> = {
+  en: "en",
+  ru: "ru",
+  de: "de",
+  ja: "ja",
+};
 
 type GameMediaProps = {
   locale: Locale;
@@ -31,6 +59,27 @@ export function GameMedia({ locale, mediaKey, variant = "gallery", priority = fa
       </div>
       <figcaption>
         <span>{media.caption}</span>
+      </figcaption>
+    </figure>
+  );
+}
+
+export function GameTrailer({ locale }: { locale: Locale }) {
+  const copy = gameplayTrailerCopy[locale];
+
+  return (
+    <figure className="game-media game-media--hero game-video">
+      <div className="game-media__image game-video__frame">
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${gameplayTrailerId}?hl=${gameplayTrailerPlayerLanguage[locale]}&rel=0`}
+          title={copy.title}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+      <figcaption>
+        <span>{copy.caption}</span>
       </figcaption>
     </figure>
   );

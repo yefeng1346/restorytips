@@ -17,7 +17,7 @@ import {
   type Locale,
 } from "@/lib/site-data";
 import { getGuideComponent } from "@/lib/mdx";
-import { GameGallery, GameMedia } from "./game-media";
+import { GameGallery, GameTrailer, GameMedia } from "./game-media";
 import { getArticleMediaKey } from "@/lib/media";
 
 function PageChrome({
@@ -96,7 +96,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           </p>
         </section>
 
-        <GameMedia locale={locale} mediaKey="shop" variant="hero" priority />
+        <GameTrailer locale={locale} />
 
         <section>
           <span className="section-kicker">{copy.labels.quickLookup}</span>
