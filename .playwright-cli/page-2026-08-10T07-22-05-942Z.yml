@@ -1,0 +1,288 @@
+- generic [active] [ref=f24e1]:
+  - banner [ref=f24e2]:
+    - generic [ref=f24e3]:
+      - link "ReStorytips logo ReStory Repair Wiki" [ref=f24e4] [cursor=pointer]:
+        - /url: /
+        - img "ReStorytips logo" [ref=f24e5]
+        - generic [ref=f24e6]:
+          - text: ReStory
+          - generic [ref=f24e7]: Repair Wiki
+      - navigation "Primary navigation" [ref=f24e8]:
+        - link "Home" [ref=f24e9] [cursor=pointer]:
+          - /url: /
+          - generic [ref=f24e10]: ⌂
+          - text: Home
+        - link "Guides" [ref=f24e11] [cursor=pointer]:
+          - /url: /guides
+          - generic [ref=f24e12]: ◉
+          - text: Guides
+        - link "Devices" [ref=f24e13] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-parts-catalog
+          - generic [ref=f24e14]: ◈
+          - text: Devices
+        - link "Achievements" [ref=f24e15] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-achievements
+          - generic [ref=f24e16]: ★
+          - text: Achievements
+        - link "Known Issues" [ref=f24e17] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-resolution-settings
+          - generic [ref=f24e18]: ◷
+          - text: Known Issues
+        - link "Beginner Guide" [ref=f24e19] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-walkthrough
+          - generic [ref=f24e20]: ✦
+          - text: Beginner Guide
+      - group [ref=f24e21]:
+        - generic "Change language" [ref=f24e22] [cursor=pointer]:
+          - generic [ref=f24e23]: 🌐
+          - generic [ref=f24e24]: English
+      - 'button "Theme: Dark" [ref=f24e25] [cursor=pointer]':
+        - generic [ref=f24e26]: ☾
+        - generic [ref=f24e27]: Dark
+  - main [ref=f24e28]:
+    - generic [ref=f24e29]:
+      - generic [ref=f24e30]:
+        - generic [ref=f24e31]: Independent Fan-Made Community Wiki
+        - 'heading "ReStory: Chill Electronics Repairs" [level=1] [ref=f24e32]'
+        - paragraph [ref=f24e33]: Run a cozy electronics repair shop in mid-2000s Tokyo. Restore nostalgic consoles, phones, cameras, and music players while customer choices shape the shop and its stories.
+        - generic [ref=f24e34]:
+          - link "Start Beginner Guide" [ref=f24e35] [cursor=pointer]:
+            - /url: /guides/restory-chill-electronics-repairs-walkthrough
+          - link "Browse Repair Guides" [ref=f24e36] [cursor=pointer]:
+            - /url: /guides
+          - link "Check Known Issues" [ref=f24e37] [cursor=pointer]:
+            - /url: /guides/restory-chill-electronics-repairs-resolution-settings
+        - generic [ref=f24e38]:
+          - generic [ref=f24e39]: Launched Aug 6, 2026
+          - generic [ref=f24e40]: ·15+ Hour Story
+          - generic [ref=f24e41]: ·50 Steam Achievements
+          - generic [ref=f24e42]: ·9 Interface & Subtitle Languages
+      - region [ref=f24e43]:
+        - generic [ref=f24e44]: Short answer
+        - 'heading "What do you do in ReStory: Chill Electronics Repairs?" [level=2] [ref=f24e45]'
+        - paragraph [ref=f24e46]: "ReStory: Chill Electronics Repairs is a cozy, narrative-driven shop management simulation on Steam for Windows and macOS, with Steam Deck listed as Playable. You run an electronics repair shop in mid-2000s Tokyo: accept customer orders, take nostalgic devices apart, clean the parts, replace faulty components, rebuild the device, and deliver the result. A Y2K-era browser helps you search for spare parts and handle online requests while money, tools, decoration, and customer choices shape the shop. Official materials describe consoles, handhelds, phones, cameras, music players, and home appliances, plus a branching story with multiple endings. The full release is confirmed for August 6, 2026, and the store lists 50 Steam Achievements and nine interface/subtitle languages. This wiki separates confirmed official information from reports and unconfirmed details. Guide pages explain the confirmed loop and separate official facts from player reports, so readers can verify what is known before following a repair, story, or settings recommendation."
+      - generic [ref=f24e47]:
+        - generic [ref=f24e48]: Quick lookup
+        - heading "Find the repair answer fast" [level=2] [ref=f24e49]
+        - paragraph [ref=f24e50]: Repair steps, device notes, story choices, and launch-build checks in one place.
+        - list [ref=f24e51]:
+          - listitem [ref=f24e52]:
+            - link "15+ Beginner Guide Start the first repair-shop shift and learn the confirmed core loop. first hours" [ref=f24e53] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-walkthrough
+              - generic [ref=f24e54]: 15+
+              - heading "Beginner Guide" [level=3] [ref=f24e55]
+              - paragraph [ref=f24e56]: Start the first repair-shop shift and learn the confirmed core loop.
+              - text: first hours
+          - listitem [ref=f24e57]:
+            - link "4 Repair Workflow Disassemble, clean, replace faulty parts, and reassemble. confirmed sequence" [ref=f24e58] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-cleaning-guide
+              - generic [ref=f24e59]: "4"
+              - heading "Repair Workflow" [level=3] [ref=f24e60]
+              - paragraph [ref=f24e61]: Disassemble, clean, replace faulty parts, and reassemble.
+              - text: confirmed sequence
+          - listitem [ref=f24e62]:
+            - link "Y2K Devices & Parts Browse the research-backed device, browser, and shop-tool notes. shop reference" [ref=f24e63] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-parts-catalog
+              - generic [ref=f24e64]: Y2K
+              - heading "Devices & Parts" [level=3] [ref=f24e65]
+              - paragraph [ref=f24e66]: Browse the research-backed device, browser, and shop-tool notes.
+              - text: shop reference
+          - listitem [ref=f24e67]:
+            - link "50 Story & Achievements Track customer choices, multiple endings, and Steam achievements. Steam Achievements" [ref=f24e68] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-achievements
+              - generic [ref=f24e69]: "50"
+              - heading "Story & Achievements" [level=3] [ref=f24e70]
+              - paragraph [ref=f24e71]: Track customer choices, multiple endings, and Steam achievements.
+              - text: Steam Achievements
+          - listitem [ref=f24e72]:
+            - link "Aug Known Issues Review official launch reports and the documented settings notes. launch notes" [ref=f24e73] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-resolution-settings
+              - generic [ref=f24e74]: Aug
+              - heading "Known Issues" [level=3] [ref=f24e75]
+              - paragraph [ref=f24e76]: Review official launch reports and the documented settings notes.
+              - text: launch notes
+          - listitem [ref=f24e77]:
+            - link "▶ Official Media Watch the official Gameplay Trailer from tinyBuildGAMES. YouTube" [ref=f24e78] [cursor=pointer]:
+              - /url: https://youtu.be/JrusjsK51Gw
+              - generic [ref=f24e79]: ▶
+              - heading "Official Media" [level=3] [ref=f24e80]
+              - paragraph [ref=f24e81]: Watch the official Gameplay Trailer from tinyBuildGAMES.
+              - text: YouTube
+      - generic [ref=f24e82]:
+        - generic [ref=f24e83]: Start Here
+        - 'heading "Your ReStory: Chill Electronics Repairs Journey" [level=2] [ref=f24e84]'
+        - list [ref=f24e85]:
+          - listitem [ref=f24e86]:
+            - link [ref=f24e87] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-walkthrough
+              - text: "1"
+              - generic [ref=f24e88]:
+                - heading "Beginner Guide" [level=3] [ref=f24e89]
+                - paragraph [ref=f24e90]: Learn the first repair-shop shift, open the shop, use the workbench, and understand the core loop.
+          - listitem [ref=f24e91]:
+            - link [ref=f24e92] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-cleaning-guide
+              - text: "2"
+              - generic [ref=f24e93]:
+                - heading "Cleaning & Repair Workflow" [level=3] [ref=f24e94]
+                - paragraph [ref=f24e95]: Follow the confirmed sequence of disassembly, cleaning, part replacement, and reassembly.
+          - listitem [ref=f24e96]:
+            - link [ref=f24e97] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-parts-catalog
+              - text: "3"
+              - generic [ref=f24e98]:
+                - heading "Devices, Parts & Shop Tools" [level=3] [ref=f24e99]
+                - paragraph [ref=f24e100]: Find the Y2K-era browser, spare-part research, tools, and nostalgic devices covered by the game.
+          - listitem [ref=f24e101]:
+            - link [ref=f24e102] [cursor=pointer]:
+              - /url: /guides/restory-chill-electronics-repairs-achievements
+              - text: "4"
+              - generic [ref=f24e103]:
+                - heading "Choices, Endings & Achievements" [level=3] [ref=f24e104]
+                - paragraph [ref=f24e105]: Track customer decisions, the branching story, multiple endings, and Steam Achievements.
+      - figure "Official Gameplay Trailer." [ref=f24e106]:
+        - iframe [ref=f24e108]:
+          - generic [ref=f25e1]:
+            - generic "YouTube Video Player" [ref=f25e3]
+            - generic [ref=f25e5]:
+              - generic:
+                - generic:
+                  - generic [ref=f25e6] [cursor=pointer]
+                  - button "Play video" [ref=f25e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f25e12] [cursor=pointer]
+                  - generic [ref=f25e14]:
+                    - generic [ref=f25e19]:
+                      - generic [ref=f25e20]:
+                        - 'link "ReStory: Chill Electronics Repairs - Gameplay Trailer" [ref=f25e21] [cursor=pointer]':
+                          - /url: https://www.youtube.com/watch?v=JrusjsK51Gw
+                        - link "tinyBuildGAMES" [ref=f25e22] [cursor=pointer]:
+                          - /url: /channel/UCHLuN_JL66bD8fdJWmQ-gNw
+                      - generic [ref=f25e24]:
+                        - button [ref=f25e25] [cursor=pointer]
+                        - generic [ref=f25e27]:
+                          - generic: tinyBuildGAMES
+                          - generic: 869K subscribers
+                    - generic [ref=f25e28]:
+                      - button "Copy link" [ref=f25e31] [cursor=pointer]
+                      - link "Watch on YouTube" [ref=f25e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=JrusjsK51Gw
+                        - generic [ref=f25e43]: Watch on
+      - generic [ref=f24e111]:
+        - generic [ref=f24e112]: ★
+        - 'heading "What is ReStory: Chill Electronics Repairs?" [level=2] [ref=f24e113]'
+        - generic [ref=f24e114]:
+          - paragraph [ref=f24e115]: "ReStory: Chill Electronics Repairs is a cozy, narrative-driven shop management simulation developed by Mandragora and published by tinyBuild. Set in mid-2000s Tokyo, it puts you behind the counter of a small electronics repair shop."
+          - paragraph [ref=f24e116]: Take devices apart, clean them, replace faulty parts, and rebuild them while managing money and searching a Y2K-era web browser for supplies. Conversations and decisions create a branching story with multiple endings.
+      - generic [ref=f24e117]:
+        - generic [ref=f24e118]: Game at a glance
+        - generic [ref=f24e119]:
+          - generic [ref=f24e120]:
+            - generic [ref=f24e121]: 15+
+            - text: Story hours
+          - generic [ref=f24e122]:
+            - generic [ref=f24e123]: "50"
+            - text: Steam Achievements
+          - generic [ref=f24e124]:
+            - generic [ref=f24e125]: "9"
+            - text: Languages
+          - generic [ref=f24e126]:
+            - generic [ref=f24e127]: Y2K
+            - text: Tokyo setting
+      - generic [ref=f24e128]:
+        - generic [ref=f24e129]: About the game
+        - generic [ref=f24e130]:
+          - generic [ref=f24e131]:
+            - generic [ref=f24e132]: Mandragora
+            - text: Developer
+          - generic [ref=f24e133]:
+            - generic [ref=f24e134]: tinyBuild
+            - text: Publisher
+          - generic [ref=f24e135]:
+            - generic [ref=f24e136]: Steam on Windows and macOS; Steam Deck Playable
+            - text: Platform
+          - generic [ref=f24e137]:
+            - generic [ref=f24e138]: Cozy narrative shop management simulation
+            - text: Genre
+          - generic [ref=f24e139]:
+            - generic [ref=f24e140]: 15+ hours for the main story
+            - text: Story Length
+          - generic [ref=f24e141]:
+            - generic [ref=f24e142]: 50 Steam Achievements
+            - text: Achievements
+          - generic [ref=f24e143]:
+            - generic [ref=f24e144]: 9 interface and subtitle languages
+            - text: Supported Languages
+      - region [ref=f24e145]:
+        - generic [ref=f24e146]: In-game visuals
+        - heading "Inside the repair shop" [level=2] [ref=f24e147]
+        - paragraph [ref=f24e148]: See the workbench, device restoration, customization, and the small shop you manage.
+        - generic [ref=f24e149]:
+          - figure "A workbench view with a device, paint tools, and an active order." [ref=f24e150]:
+            - img "ReStory workbench with a compact device, paint tools, and a repair checklist" [ref=f24e152]
+          - figure "The repair shop interior and its Y2K-era Tokyo atmosphere." [ref=f24e155]:
+            - img "ReStory repair shop interior with shelves, electronics, a workbench, and a Tokyo street view" [ref=f24e157]
+          - figure "Device customization with stickers on the repair bench." [ref=f24e160]:
+            - img "ReStory handheld device decorated with colorful stickers on the repair bench" [ref=f24e162]
+      - generic [ref=f24e165]:
+        - 'heading "Ready to Master ReStory: Chill Electronics Repairs?" [level=2] [ref=f24e166]'
+        - paragraph [ref=f24e167]: From your first device on the workbench to the last customer story in Akiba, use the wiki to repair smarter, find parts, unlock achievements, and handle launch-build issues.
+        - generic [ref=f24e168]:
+          - link "Read the Beginner Guide" [ref=f24e169] [cursor=pointer]:
+            - /url: /guides/restory-chill-electronics-repairs-walkthrough
+          - link "Play on Steam ↗" [ref=f24e170] [cursor=pointer]:
+            - /url: https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/
+  - contentinfo [ref=f24e171]:
+    - generic [ref=f24e172]:
+      - generic [ref=f24e173]:
+        - link "ReStorytips logo ReStory Repair Wiki" [ref=f24e174] [cursor=pointer]:
+          - /url: /
+          - img "ReStorytips logo" [ref=f24e175]
+          - generic [ref=f24e176]:
+            - text: ReStory
+            - generic [ref=f24e177]: Repair Wiki
+        - paragraph [ref=f24e178]: "ReStory: Chill Electronics Repairs Wiki is an independent fan-made guide for the Steam game. It organizes repair walkthroughs, device notes, story choices, achievements, and known issues. It is not affiliated with Mandragora, tinyBuild, or Valve."
+        - paragraph [ref=f24e179]: Cozy Y2K electronics repair shop simulation set in mid-2000s Tokyo.
+      - generic [ref=f24e180]:
+        - heading "Guides" [level=4] [ref=f24e181]
+        - link "Guides" [ref=f24e182] [cursor=pointer]:
+          - /url: /guides
+        - link "Beginner Guide" [ref=f24e183] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-walkthrough
+        - link "Devices" [ref=f24e184] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-parts-catalog
+        - link "Achievements" [ref=f24e185] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-achievements
+        - link "Known Issues" [ref=f24e186] [cursor=pointer]:
+          - /url: /guides/restory-chill-electronics-repairs-resolution-settings
+      - generic [ref=f24e187]:
+        - heading "Official" [level=4] [ref=f24e188]
+        - link "tinyBuild ↗" [ref=f24e189] [cursor=pointer]:
+          - /url: https://www.tinybuild.com/games/restory
+        - link "Steam Store ↗" [ref=f24e190] [cursor=pointer]:
+          - /url: https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/
+        - link "Official Discord ↗" [ref=f24e191] [cursor=pointer]:
+          - /url: https://discord.gg/restory
+        - link "Official YouTube ↗" [ref=f24e192] [cursor=pointer]:
+          - /url: https://www.youtube.com/@tinyBuildGAMES
+        - link "Privacy Policy" [ref=f24e193] [cursor=pointer]:
+          - /url: /privacy
+        - link "Terms of Service" [ref=f24e194] [cursor=pointer]:
+          - /url: /terms
+    - paragraph [ref=f24e196]: "This is an unofficial fan-made wiki for ReStory: Chill Electronics Repairs. Game names, assets, and trademarks belong to their respective owners."
+  - navigation "Taskbar shortcuts" [ref=f24e197]:
+    - link "ReStorytips logo ReStory" [ref=f24e198] [cursor=pointer]:
+      - /url: /
+      - img "ReStorytips logo" [ref=f24e199]
+      - generic [ref=f24e200]: ReStory
+    - generic [ref=f24e201]:
+      - link "◉ Guides" [ref=f24e202] [cursor=pointer]:
+        - /url: /guides
+      - link "◈ Devices" [ref=f24e203] [cursor=pointer]:
+        - /url: /guides/restory-chill-electronics-repairs-parts-catalog
+      - link "✦ Beginner Guide" [ref=f24e204] [cursor=pointer]:
+        - /url: /guides/restory-chill-electronics-repairs-walkthrough
+    - generic [ref=f24e205]:
+      - generic "Live" [ref=f24e206]
+      - generic [ref=f24e207]: Aug 2026
+      - generic [ref=f24e208]: ReStory
+  - alert [ref=f24e209]

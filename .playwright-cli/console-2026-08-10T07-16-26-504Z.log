@@ -1,0 +1,5 @@
+[    2980ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4496419024798372:225
+[    4267ms] [ERROR] Loading the script 'https://ep2.adtrafficquality.google/sodar/sodar2.js' violates the following Content Security Policy directive: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://pl30770499.effectivecpmnetwork.com". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202608050101/show_ads_impl_fy2021.js?bust=122880219:93
+[    4272ms] Uncaught (in promise) undefined
+    at f.onerror (https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202608050101/show_ads_impl_fy2021.js?bust=122880219:93:412)
+[    4760ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ https://pl30770499.effectivecpmnetwork.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js:0

@@ -1,0 +1,7 @@
+[    1160ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4496419024798372:225
+[    1493ms] [ERROR] Framing 'https://ep2.adtrafficquality.google/' violates the following Content Security Policy directive: "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://cdn.cloudvideosa.com". The request has been blocked.
+ @ https://ep2.adtrafficquality.google/:0
+[    1497ms] [ERROR] Framing 'https://www.google.com/' violates the following Content Security Policy directive: "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://cdn.cloudvideosa.com". The request has been blocked.
+ @ https://ep2.adtrafficquality.google/:0
+[    1506ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://ep2.adtrafficquality.google') does not match the recipient window's origin ('null'). @ https://ep2.adtrafficquality.google/sodar/sodar2.js:34
+[    2471ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ https://pl30770499.effectivecpmnetwork.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js:0

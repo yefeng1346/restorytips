@@ -1,0 +1,305 @@
+- generic [active] [ref=f40e1]:
+  - banner [ref=f40e2]:
+    - generic [ref=f40e3]:
+      - link "Логотип ReStorytips ReStory Wiki о ремонте" [ref=f40e4] [cursor=pointer]:
+        - /url: /ru
+        - img "Логотип ReStorytips" [ref=f40e5]
+        - generic [ref=f40e6]:
+          - text: ReStory
+          - generic [ref=f40e7]: Wiki о ремонте
+      - navigation "Основная навигация" [ref=f40e8]:
+        - link "Главная" [ref=f40e9] [cursor=pointer]:
+          - /url: /ru
+          - generic [ref=f40e10]: ⌂
+          - text: Главная
+        - link "Руководства" [ref=f40e11] [cursor=pointer]:
+          - /url: /ru/guides
+          - generic [ref=f40e12]: ◉
+          - text: Руководства
+        - link "Устройства" [ref=f40e13] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-parts-catalog
+          - generic [ref=f40e14]: ◈
+          - text: Устройства
+        - link "Достижения" [ref=f40e15] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-achievements
+          - generic [ref=f40e16]: ★
+          - text: Достижения
+        - link "Проблемы" [ref=f40e17] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-resolution-settings
+          - generic [ref=f40e18]: ◷
+          - text: Проблемы
+        - link "Гайд для новичков" [ref=f40e19] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+          - generic [ref=f40e20]: ✦
+          - text: Гайд для новичков
+      - group [ref=f40e21]:
+        - generic "Изменить язык" [ref=f40e22] [cursor=pointer]:
+          - generic [ref=f40e23]: 🌐
+          - generic [ref=f40e24]: Русский
+      - 'button "Тема: Тёмная" [ref=f40e25] [cursor=pointer]':
+        - generic [ref=f40e26]: ☾
+        - generic [ref=f40e27]: Тёмная
+  - main [ref=f40e28]:
+    - generic [ref=f40e29]:
+      - generic [ref=f40e30]:
+        - generic [ref=f40e31]: Независимая фанатская Wiki
+        - 'heading "ReStory: Chill Electronics Repairs" [level=1] [ref=f40e32]'
+        - paragraph [ref=f40e33]: Управляйте уютной мастерской по ремонту электроники в Токио середины 2000-х. Восстанавливайте приставки, телефоны, камеры и музыкальные устройства, а выборы клиентов влияют на мастерскую и истории.
+        - generic [ref=f40e34]:
+          - link "Начать гайд для новичков" [ref=f40e35] [cursor=pointer]:
+            - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+          - link "Открыть руководства" [ref=f40e36] [cursor=pointer]:
+            - /url: /ru/guides
+          - link "Проверить известные проблемы" [ref=f40e37] [cursor=pointer]:
+            - /url: /ru/guides/restory-chill-electronics-repairs-resolution-settings
+        - generic [ref=f40e38]:
+          - generic [ref=f40e39]: Релиз 6 августа 2026
+          - generic [ref=f40e40]: ·История на 15+ часов
+          - generic [ref=f40e41]: ·50 достижений Steam
+          - generic [ref=f40e42]: ·9 языков интерфейса и субтитров
+      - region [ref=f40e43]:
+        - generic [ref=f40e44]:
+          - generic [ref=f40e45]:
+            - generic [ref=f40e46]: Короткий ответ
+            - 'heading "Что вы делаете в ReStory: Chill Electronics Repairs?" [level=2] [ref=f40e47]'
+            - paragraph [ref=f40e48]: "ReStory: Chill Electronics Repairs — уютная сюжетная симуляция мастерской в Steam. В Токио середины 2000-х вы принимаете заказы, разбираете и очищаете ностальгические устройства, заменяете неисправные детали, собираете их и возвращаете клиентам. Браузер эпохи Y2K помогает искать запчасти и обрабатывать онлайн-запросы, а деньги, инструменты, декор и выборы клиентов влияют на мастерскую и разветвлённую историю."
+          - generic [ref=f40e49]:
+            - generic [ref=f40e50]: Цикл ремонта
+            - list [ref=f40e51]:
+              - listitem [ref=f40e52]:
+                - generic [ref=f40e53]: "01"
+                - strong [ref=f40e54]: Принять заказ клиента
+              - listitem [ref=f40e55]:
+                - generic [ref=f40e56]: "02"
+                - strong [ref=f40e57]: Разобрать и очистить устройство
+              - listitem [ref=f40e58]:
+                - generic [ref=f40e59]: "03"
+                - strong [ref=f40e60]: Заменить неисправные детали
+              - listitem [ref=f40e61]:
+                - generic [ref=f40e62]: "04"
+                - strong [ref=f40e63]: Собрать и вернуть устройство
+      - generic [ref=f40e64]:
+        - generic [ref=f40e65]: Быстрый поиск
+        - heading "Быстро найдите ответ по ремонту" [level=2] [ref=f40e66]
+        - paragraph [ref=f40e67]: Ремонт, устройства, выборы сюжета и проблемы запуска в одном месте.
+        - list [ref=f40e68]:
+          - listitem [ref=f40e69]:
+            - link "15+ Гайд для новичков Начните первую смену и изучите подтверждённый основной цикл ремонта. первые часы" [ref=f40e70] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+              - generic [ref=f40e71]: 15+
+              - heading "Гайд для новичков" [level=3] [ref=f40e72]
+              - paragraph [ref=f40e73]: Начните первую смену и изучите подтверждённый основной цикл ремонта.
+              - text: первые часы
+          - listitem [ref=f40e74]:
+            - link "4 Цикл ремонта Разберите устройство, очистите детали, замените неисправную часть и соберите его. подтверждённая последовательность" [ref=f40e75] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+              - generic [ref=f40e76]: "4"
+              - heading "Цикл ремонта" [level=3] [ref=f40e77]
+              - paragraph [ref=f40e78]: Разберите устройство, очистите детали, замените неисправную часть и соберите его.
+              - text: подтверждённая последовательность
+          - listitem [ref=f40e79]:
+            - link "Y2K Устройства и детали Читайте заметки об устройствах, браузере и инструментах мастерской. справочник мастерской" [ref=f40e80] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-parts-catalog
+              - generic [ref=f40e81]: Y2K
+              - heading "Устройства и детали" [level=3] [ref=f40e82]
+              - paragraph [ref=f40e83]: Читайте заметки об устройствах, браузере и инструментах мастерской.
+              - text: справочник мастерской
+          - listitem [ref=f40e84]:
+            - link "50 Сюжет и достижения Следите за выборами клиентов, несколькими концовками и достижениями Steam. достижения Steam" [ref=f40e85] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-achievements
+              - generic [ref=f40e86]: "50"
+              - heading "Сюжет и достижения" [level=3] [ref=f40e87]
+              - paragraph [ref=f40e88]: Следите за выборами клиентов, несколькими концовками и достижениями Steam.
+              - text: достижения Steam
+          - listitem [ref=f40e89]:
+            - link "Авг. Известные проблемы Читайте официальные сообщения о запуске и заметки о настройках. заметки о запуске" [ref=f40e90] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-resolution-settings
+              - generic [ref=f40e91]: Авг.
+              - heading "Известные проблемы" [level=3] [ref=f40e92]
+              - paragraph [ref=f40e93]: Читайте официальные сообщения о запуске и заметки о настройках.
+              - text: заметки о запуске
+          - listitem [ref=f40e94]:
+            - link "▶ Официальные материалы Посмотрите официальный трейлер игрового процесса от tinyBuildGAMES. YouTube" [ref=f40e95] [cursor=pointer]:
+              - /url: https://youtu.be/JrusjsK51Gw
+              - generic [ref=f40e96]: ▶
+              - heading "Официальные материалы" [level=3] [ref=f40e97]
+              - paragraph [ref=f40e98]: Посмотрите официальный трейлер игрового процесса от tinyBuildGAMES.
+              - text: YouTube
+      - generic [ref=f40e99]:
+        - generic [ref=f40e100]: Начать здесь
+        - 'heading "Ваш путь в ReStory: Chill Electronics Repairs" [level=2] [ref=f40e101]'
+        - list [ref=f40e102]:
+          - listitem [ref=f40e103]:
+            - link [ref=f40e104] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+              - text: "1"
+              - generic [ref=f40e105]:
+                - heading "Гайд для новичков" [level=3] [ref=f40e106]
+                - paragraph [ref=f40e107]: Откройте мастерскую, примите первый заказ и разберитесь в основном цикле.
+          - listitem [ref=f40e108]:
+            - link [ref=f40e109] [cursor=pointer]:
+              - /url: /ru/guides
+              - text: "2"
+              - generic [ref=f40e110]:
+                - heading "Цикл ремонта" [level=3] [ref=f40e111]
+                - paragraph [ref=f40e112]: Изучите разборку, очистку, замену деталей и сборку устройства.
+          - listitem [ref=f40e113]:
+            - link [ref=f40e114] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-parts-catalog
+              - text: "3"
+              - generic [ref=f40e115]:
+                - heading "Устройства и инструменты" [level=3] [ref=f40e116]
+                - paragraph [ref=f40e117]: Найдите подтверждённые сведения о браузере, деталях и мастерской.
+          - listitem [ref=f40e118]:
+            - link [ref=f40e119] [cursor=pointer]:
+              - /url: /ru/guides/restory-chill-electronics-repairs-achievements
+              - text: "4"
+              - generic [ref=f40e120]:
+                - heading "Выборы и достижения" [level=3] [ref=f40e121]
+                - paragraph [ref=f40e122]: Следите за выборами клиентов, историей и достижениями Steam.
+      - figure "Официальный геймплейный трейлер." [ref=f40e123]:
+        - iframe [ref=f40e125]:
+          - generic [ref=f41e1]:
+            - generic "Проигрыватель YouTube" [ref=f41e3]
+            - generic [ref=f41e5]:
+              - generic:
+                - generic:
+                  - generic [ref=f41e6] [cursor=pointer]
+                  - button "Воспроизвести видео" [ref=f41e10] [cursor=pointer]
+                  - button "Скрыть панель управления" [ref=f41e12] [cursor=pointer]
+                  - generic [ref=f41e14]:
+                    - generic [ref=f41e19]:
+                      - generic [ref=f41e20]:
+                        - 'link "ReStory: Chill Electronics Repairs - Gameplay Trailer" [ref=f41e21] [cursor=pointer]':
+                          - /url: https://www.youtube.com/watch?v=JrusjsK51Gw
+                        - link "tinyBuildGAMES" [ref=f41e22] [cursor=pointer]:
+                          - /url: /channel/UCHLuN_JL66bD8fdJWmQ-gNw
+                      - generic [ref=f41e24]:
+                        - button [ref=f41e25] [cursor=pointer]
+                        - generic [ref=f41e27]:
+                          - generic: tinyBuildGAMES
+                          - generic: 869 тыс. подписчиков
+                    - generic [ref=f41e28]:
+                      - button "Коп. ссылку" [ref=f41e31] [cursor=pointer]
+                      - link "Посмотреть на YouTube" [ref=f41e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=JrusjsK51Gw
+                        - generic [ref=f41e43]: Смотреть на
+      - generic [ref=f40e128]:
+        - generic [ref=f40e129]: ★
+        - 'heading "Что такое ReStory: Chill Electronics Repairs?" [level=2] [ref=f40e130]'
+        - generic [ref=f40e131]:
+          - paragraph [ref=f40e132]: "ReStory: Chill Electronics Repairs — уютная сюжетная симуляция управления мастерской от Mandragora, изданная tinyBuild. Действие происходит в Токио середины 2000-х, где вы работаете за стойкой небольшой мастерской электроники."
+          - paragraph [ref=f40e133]: Разбирайте устройства, очищайте их, заменяйте неисправные детали и собирайте заново, одновременно управляя деньгами и ища материалы в браузере эпохи Y2K. Разговоры и решения формируют разветвлённую историю с несколькими концовками.
+      - generic [ref=f40e134]:
+        - generic [ref=f40e135]: Игра в цифрах
+        - generic [ref=f40e136]:
+          - generic [ref=f40e137]:
+            - generic [ref=f40e138]: 15+
+            - text: Часов истории
+          - generic [ref=f40e139]:
+            - generic [ref=f40e140]: "50"
+            - text: Достижений Steam
+          - generic [ref=f40e141]:
+            - generic [ref=f40e142]: "9"
+            - text: Языков
+          - generic [ref=f40e143]:
+            - generic [ref=f40e144]: Y2K
+            - text: Токио середины 2000-х
+      - generic [ref=f40e145]:
+        - generic [ref=f40e146]: Об игре
+        - generic [ref=f40e147]:
+          - generic [ref=f40e148]:
+            - generic [ref=f40e149]: Mandragora
+            - text: Разработчик
+          - generic [ref=f40e150]:
+            - generic [ref=f40e151]: tinyBuild
+            - text: Издатель
+          - generic [ref=f40e152]:
+            - generic [ref=f40e153]: Steam для Windows и macOS; Steam Deck — Playable
+            - text: Платформа
+          - generic [ref=f40e154]:
+            - generic [ref=f40e155]: Уютная сюжетная симуляция управления мастерской
+            - text: Жанр
+          - generic [ref=f40e156]:
+            - generic [ref=f40e157]: 15+ часов основной истории
+            - text: Продолжительность истории
+          - generic [ref=f40e158]:
+            - generic [ref=f40e159]: 50 достижений Steam
+            - text: Достижения
+          - generic [ref=f40e160]:
+            - generic [ref=f40e161]: 9 языков интерфейса и субтитров
+            - text: Поддерживаемые языки
+      - region [ref=f40e162]:
+        - generic [ref=f40e163]: Скриншоты из игры
+        - heading "Внутри ремонтной мастерской" [level=2] [ref=f40e164]
+        - paragraph [ref=f40e165]: Посмотрите на верстак, восстановление устройств, кастомизацию и небольшую мастерскую.
+        - generic [ref=f40e166]:
+          - figure "Верстак с устройством, инструментами для покраски и активным заказом." [ref=f40e167]:
+            - img "Верстак ReStory с небольшим устройством, инструментами для покраски и списком заказа" [ref=f40e169]
+          - figure "Интерьер мастерской и атмосфера Токио эпохи Y2K." [ref=f40e172]:
+            - img "Интерьер ремонтной мастерской ReStory со стеллажами, электроникой, верстаком и видом на улицу Токио" [ref=f40e174]
+          - figure "Кастомизация устройства с наклейками на ремонтном верстаке." [ref=f40e177]:
+            - img "Портативное устройство ReStory с яркими наклейками на ремонтном верстаке" [ref=f40e179]
+      - generic [ref=f40e182]:
+        - 'heading "Готовы освоить ReStory: Chill Electronics Repairs?" [level=2] [ref=f40e183]'
+        - paragraph [ref=f40e184]: От первого устройства на верстаке до последней истории клиента — используйте Wiki для ремонта, поиска деталей и достижений.
+        - generic [ref=f40e185]:
+          - link "Открыть гайд для новичков" [ref=f40e186] [cursor=pointer]:
+            - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+          - link "Играть в Steam ↗" [ref=f40e187] [cursor=pointer]:
+            - /url: https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/
+  - contentinfo [ref=f40e188]:
+    - generic [ref=f40e189]:
+      - generic [ref=f40e190]:
+        - link "Логотип ReStorytips ReStory Wiki о ремонте" [ref=f40e191] [cursor=pointer]:
+          - /url: /ru
+          - img "Логотип ReStorytips" [ref=f40e192]
+          - generic [ref=f40e193]:
+            - text: ReStory
+            - generic [ref=f40e194]: Wiki о ремонте
+        - paragraph [ref=f40e195]: "ReStory: Chill Electronics Repairs Wiki — независимый фанатский справочник по игре в Steam. Здесь собраны ремонты, устройства, сюжетные решения, достижения и известные проблемы. Wiki не связана с Mandragora, tinyBuild или Valve."
+        - paragraph [ref=f40e196]: Уютная симуляция ремонта электроники в Токио середины 2000-х.
+      - generic [ref=f40e197]:
+        - heading "Руководства" [level=4] [ref=f40e198]
+        - link "Руководства" [ref=f40e199] [cursor=pointer]:
+          - /url: /ru/guides
+        - link "Гайд для новичков" [ref=f40e200] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+        - link "Устройства" [ref=f40e201] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-parts-catalog
+        - link "Достижения" [ref=f40e202] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-achievements
+        - link "Проблемы" [ref=f40e203] [cursor=pointer]:
+          - /url: /ru/guides/restory-chill-electronics-repairs-resolution-settings
+      - generic [ref=f40e204]:
+        - heading "Официальное" [level=4] [ref=f40e205]
+        - link "tinyBuild ↗" [ref=f40e206] [cursor=pointer]:
+          - /url: https://www.tinybuild.com/games/restory
+        - link "Магазин Steam ↗" [ref=f40e207] [cursor=pointer]:
+          - /url: https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/
+        - link "Официальный Discord ↗" [ref=f40e208] [cursor=pointer]:
+          - /url: https://discord.gg/restory
+        - link "Официальный YouTube ↗" [ref=f40e209] [cursor=pointer]:
+          - /url: https://www.youtube.com/@tinyBuildGAMES
+        - link "Политика конфиденциальности" [ref=f40e210] [cursor=pointer]:
+          - /url: /ru/privacy
+        - link "Условия использования" [ref=f40e211] [cursor=pointer]:
+          - /url: /ru/terms
+    - paragraph [ref=f40e213]: "Это неофициальная фанатская Wiki по ReStory: Chill Electronics Repairs. Названия игр, материалы и товарные знаки принадлежат соответствующим владельцам."
+  - navigation "Ярлыки панели задач" [ref=f40e214]:
+    - link "Логотип ReStorytips ReStory" [ref=f40e215] [cursor=pointer]:
+      - /url: /ru
+      - img "Логотип ReStorytips" [ref=f40e216]
+      - generic [ref=f40e217]: ReStory
+    - generic [ref=f40e218]:
+      - link "◉ Руководства" [ref=f40e219] [cursor=pointer]:
+        - /url: /ru/guides
+      - link "◈ Устройства" [ref=f40e220] [cursor=pointer]:
+        - /url: /ru/guides/restory-chill-electronics-repairs-parts-catalog
+      - link "✦ Гайд для новичков" [ref=f40e221] [cursor=pointer]:
+        - /url: /ru/guides/restory-chill-electronics-repairs-walkthrough
+    - generic [ref=f40e222]:
+      - generic "В эфире" [ref=f40e223]
+      - generic [ref=f40e224]: Авг. 2026
+      - generic [ref=f40e225]: ReStory
+  - alert [ref=f40e226]

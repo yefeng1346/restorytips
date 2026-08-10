@@ -1,0 +1,3 @@
+[     505ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBHMdazTgWw.woff2 @ https://www.youtube-nocookie.com/embed/JrusjsK51Gw?hl=ru&rel=0:0
+[    1018ms] [WARNING] AdSense head tag doesn't support data-nscript attribute. @ https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4496419024798372:224
+[    2623ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ https://pl30770499.effectivecpmnetwork.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js:0
