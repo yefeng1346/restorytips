@@ -27,7 +27,7 @@ export const siteConfig = {
       navThemeLight: "166 66% 65%",
     },
   },
-  sidebarCodes: ["No confirmed codes"],
+  sidebarCodes: [],
   homepage: {
     meta: {
       title: "ReStory: Chill Electronics Repairs Wiki — Guides, Repairs",
@@ -43,10 +43,9 @@ export const siteConfig = {
         "Run a cozy electronics repair shop in mid-2000s Tokyo. Restore nostalgic consoles, phones, cameras, and music players while customer choices shape the shop and its stories.",
       stats: [
         "Launched Aug 6, 2026",
-        "Current Steam Price $17.99",
         "15+ Hour Story",
         "50 Steam Achievements",
-        "97% Positive Reviews",
+        "9 Interface & Subtitle Languages",
       ],
       primaryCta: "Start Beginner Guide",
       secondaryCta: "Browse Repair Guides",
@@ -105,9 +104,9 @@ export const siteConfig = {
       cta: "Explore All Guides",
     },
     codes: {
-      title: "Active Codes",
-      description: "No confirmed ReStory redemption codes were found in the research.",
-      value: "No confirmed codes",
+      title: "",
+      description: "",
+      value: "",
     },
     finalCta: {
       title: "Ready to Master ReStory: Chill Electronics Repairs?",
@@ -173,8 +172,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs walkthrough",
     seoTitle: "ReStory: Chill Electronics Repairs Walkthrough",
     metaDescription:
-      "ReStory: Chill Electronics Repairs walkthrough covers the first repair day, the full repair loop, shop orders, web spare parts, choices, and pending details.",
-    description: "Start the shop, follow the confirmed repair loop, and separate verified progression from details still awaiting in-game confirmation.",
+      "ReStory: Chill Electronics Repairs walkthrough covers the first repair day, customer orders, disassembly, cleaning, parts, choices, and shop management.",
+    description: "Start the shop and follow the repair loop from the first customer order through disassembly, cleaning, replacement, reassembly, and delivery.",
     readTime: "7 min read",
     tags: ["Walkthrough", "Shop", "Story"],
   },
@@ -186,8 +185,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs cleaning guide",
     seoTitle: "ReStory: Chill Electronics Repairs Cleaning Guide",
     metaDescription:
-      "ReStory: Chill Electronics Repairs cleaning guide explains the confirmed cleaning loop, ultrasonic bath achievements, reported issues, and pending details.",
-    description: "Use the confirmed cleaning sequence, review cleaning achievements, and isolate community workarounds that still need rechecking.",
+      "ReStory: Chill Electronics Repairs cleaning guide covers the repair loop, ultrasonic bath achievements, workspace cleaning, parts, and delivery.",
+    description: "Follow the cleaning sequence, review ultrasonic bath achievements, and connect workspace cleaning with each repair order.",
     readTime: "6 min read",
     tags: ["Cleaning", "Repair", "Achievements"],
   },
@@ -199,8 +198,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs endings",
     seoTitle: "ReStory: Chill Electronics Repairs Endings",
     metaDescription:
-      "ReStory: Chill Electronics Repairs endings guide confirms branching stories and multiple endings, explains choice tracking, and marks route details Unconfirmed.",
-    description: "Track the confirmed branching story without turning unverified ending names or route conditions into facts.",
+      "ReStory: Chill Electronics Repairs endings guide explains the branching story, customer choices, multiple endings, repair orders, and story progression.",
+    description: "Track the branching story, customer choices, and multiple endings while keeping repair progress connected to story decisions.",
     readTime: "6 min read",
     tags: ["Endings", "Choices", "Story"],
   },
@@ -225,8 +224,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs parts catalog",
     seoTitle: "ReStory: Chill Electronics Repairs Parts Catalog",
     metaDescription:
-      "ReStory: Chill Electronics Repairs parts catalog separates devices from spare parts, covers browser sourcing, named hardware, and pending fields.",
-    description: "Separate the confirmed device families and named hardware from the complete part names, prices, and inventory still awaiting verification.",
+      "ReStory: Chill Electronics Repairs parts catalog covers device families, named hardware, browser sourcing, repair tools, and the shop's spare-part workflow.",
+    description: "Use the device and hardware notes to research spare parts, browser listings, tools, and each customer order.",
     readTime: "7 min read",
     tags: ["Parts", "Devices", "Catalog"],
   },
@@ -238,7 +237,7 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs internet plan",
     seoTitle: "ReStory: Chill Electronics Repairs Internet Plan",
     metaDescription:
-      "ReStory: Chill Electronics Repairs internet plan guide covers the in-game browser, email orders, spare parts, speed questions, and unverified effects.",
+      "ReStory: Chill Electronics Repairs internet plan guide covers the Y2K browser, email orders, spare parts, online work, and the shop's repair workflow.",
     description: "Interpret Internet Plan as the in-game browser and online-order system, not a real-world broadband product.",
     readTime: "6 min read",
     tags: ["Internet", "Orders", "Parts"],
@@ -251,7 +250,7 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs atari",
     seoTitle: "ReStory: Chill Electronics Repairs Atari",
     metaDescription:
-      "ReStory: Chill Electronics Repairs Atari guide covers the licensed Atari link, 2600/2800, CX40 parts, official teardown notes, and Lynx status.",
+      "ReStory: Chill Electronics Repairs Atari guide covers Atari 2600, 2800, CX40 joystick, licensed hardware, and the official in-game teardown.",
     description: "Review the officially described Atari devices and in-game teardown notes without turning them into real-world electronics instructions.",
     readTime: "5 min read",
     tags: ["Atari", "Devices", "Repair"],
@@ -277,8 +276,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs platforms",
     seoTitle: "ReStory: Chill Electronics Repairs Platforms",
     metaDescription:
-      "ReStory: Chill Electronics Repairs platforms guide compares Windows, macOS, Steam Deck Playable status, and consoles not announced officially.",
-    description: "Compare the confirmed Windows and macOS Steam release with Steam Deck's Playable label and unannounced console availability.",
+      "ReStory: Chill Electronics Repairs platforms guide covers Steam on Windows and macOS, Steam Deck Playable status, and official launch platform details.",
+    description: "Compare the confirmed Windows and macOS Steam release with Steam Deck's Playable label.",
     readTime: "5 min read",
     tags: ["Platforms", "Steam Deck", "macOS"],
   },
@@ -290,7 +289,7 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs demo",
     seoTitle: "ReStory: Chill Electronics Repairs Demo Guide",
     metaDescription:
-      "ReStory: Chill Electronics Repairs demo guide explains the free June 15, 2026 Demo, repair features, language differences, and pending details.",
+      "ReStory: Chill Electronics Repairs demo guide covers the free June 15, 2026 Demo, repair features, customers, customization, online requests, and languages.",
     description: "The standalone Steam Demo is free and shows repair, customers, customization, online requests, and tips before the full release.",
     readTime: "5 min read",
     tags: ["Demo", "Steam", "Features"],
@@ -316,8 +315,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs system requirements",
     seoTitle: "ReStory: Chill Electronics Repairs System Requirements",
     metaDescription:
-      "ReStory: Chill Electronics Repairs system requirements lists Windows and macOS minimum specs, Demo overlap, unlisted recommended specs, and pending tests.",
-    description: "Check the confirmed Windows and macOS minimum requirements; recommended settings and performance tests remain unconfirmed.",
+      "ReStory: Chill Electronics Repairs system requirements lists official Windows and macOS minimum specs, Steam Deck status, and Steam launch details.",
+    description: "Check the official Windows and macOS minimum requirements and compare them with the Steam launch platform information.",
     readTime: "6 min read",
     tags: ["Requirements", "Windows", "macOS"],
   },
@@ -329,7 +328,7 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs controller support",
     seoTitle: "ReStory: Chill Electronics Repairs Controller Support",
     metaDescription:
-      "ReStory: Chill Electronics Repairs controller support guide separates Steam Deck Playable from confirmed controller support and pending input tests.",
+      "ReStory: Chill Electronics Repairs controller support guide explains Steam Deck Playable, Steam features, repair input context, and support information.",
     description: "The official store does not publish a full controller statement or button map; Steam Deck Playable is not proof of native optimization.",
     readTime: "5 min read",
     tags: ["Controller", "Steam Deck", "Input"],
@@ -355,8 +354,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs resolution settings",
     seoTitle: "ReStory: Chill Electronics Repairs Resolution Settings",
     metaDescription:
-      "ReStory: Chill Electronics Repairs resolution settings guide covers VSync, 30/60 target framerate, window modes, ultrawide issues, and pending checks.",
-    description: "Use the confirmed VSync and target-framerate notes while treating resolution lists, window modes, and configuration paths as pending.",
+      "ReStory: Chill Electronics Repairs resolution settings guide covers VSync, 30/60 target framerate, window modes, ultrawide reports, and launch settings.",
+    description: "Use the VSync, target-framerate, window-mode, and ultrawide notes collected from launch materials.",
     readTime: "6 min read",
     tags: ["Resolution", "VSync", "Ultrawide"],
   },
@@ -407,8 +406,8 @@ export const guideMeta: GuideMeta[] = [
     keyword: "restory: chill electronics repairs mods",
     seoTitle: "ReStory: Chill Electronics Repairs Mods Guide",
     metaDescription:
-      "ReStory: Chill Electronics Repairs mods guide reports no verified official Workshop or Mod support, separates settings from mods, and flags status.",
-    description: "No verified official Workshop or Mod support is documented in the supplied sources; community categories are not an API promise.",
+      "ReStory: Chill Electronics Repairs mods guide explains the official Steam feature list, community guides, and where to check Workshop support.",
+    description: "Review official Steam features, community guides, and the available information about Workshop support.",
     readTime: "4 min read",
     tags: ["Mods", "Workshop", "Support"],
   },
@@ -566,7 +565,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { stat: "4", title: "Repair Workflow", description: "Disassemble, clean, replace faulty parts, and reassemble.", href: "/guides/restory-chill-electronics-repairs-cleaning-guide", label: "confirmed sequence" },
       { stat: "Y2K", title: "Devices & Parts", description: "Browse the research-backed device, browser, and shop-tool notes.", href: "/guides/restory-chill-electronics-repairs-parts-catalog", label: "shop reference" },
       { stat: "50", title: "Story & Achievements", description: "Track customer choices, multiple endings, and Steam achievements.", href: "/guides/restory-chill-electronics-repairs-achievements", label: "Steam Achievements" },
-      { stat: "Aug", title: "Known Issues", description: "Separate official launch reports from details still needing verification.", href: "/guides/restory-chill-electronics-repairs-resolution-settings", label: "launch notes" },
+      { stat: "Aug", title: "Known Issues", description: "Review official launch reports and the documented settings notes.", href: "/guides/restory-chill-electronics-repairs-resolution-settings", label: "launch notes" },
       { stat: "▶", title: "Official Media", description: "Watch the official Gameplay Trailer from tinyBuildGAMES.", href: siteConfig.official.gameplayTrailer, label: "YouTube", external: true },
     ],
     startTitle: siteConfig.homepage.start.title,
@@ -583,7 +582,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     ],
     codesTitle: siteConfig.homepage.codes.title,
     codeDescription: siteConfig.homepage.codes.description,
-    codeValue: "No confirmed codes",
+    codeValue: "",
     finalTitle: siteConfig.homepage.finalCta.title,
     finalDescription: siteConfig.homepage.finalCta.description,
     finalPrimary: siteConfig.homepage.finalCta.primary,
@@ -596,7 +595,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       eyebrow: "Независимая фанатская Wiki",
       title: siteConfig.gameName,
       description: "Управляйте уютной мастерской по ремонту электроники в Токио середины 2000-х. Восстанавливайте приставки, телефоны, камеры и музыкальные устройства, а выборы клиентов влияют на мастерскую и истории.",
-      stats: ["Релиз 6 августа 2026", "Цена в Steam $17.99", "История на 15+ часов", "50 достижений Steam", "97% положительных отзывов"],
+      stats: ["Релиз 6 августа 2026", "История на 15+ часов", "50 достижений Steam", "9 языков интерфейса и субтитров"],
       primaryCta: "Начать гайд для новичков",
       secondaryCta: "Открыть руководства",
       tertiaryCta: "Проверить известные проблемы",
@@ -607,7 +606,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { stat: "4", title: "Цикл ремонта", description: "Разберите устройство, очистите детали, замените неисправную часть и соберите его.", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "подтверждённая последовательность" },
       { stat: "Y2K", title: "Устройства и детали", description: "Читайте заметки об устройствах, браузере и инструментах мастерской.", href: "/guides", label: "справочник мастерской" },
       { stat: "50", title: "Сюжет и достижения", description: "Следите за выборами клиентов, несколькими концовками и достижениями Steam.", href: "/guides", label: "достижения Steam" },
-      { stat: "Авг.", title: "Известные проблемы", description: "Отделяйте официальные сообщения о запуске от деталей, которые ещё нужно проверить.", href: "/guides", label: "заметки о запуске" },
+      { stat: "Авг.", title: "Известные проблемы", description: "Читайте официальные сообщения о запуске и заметки о настройках.", href: "/guides", label: "заметки о запуске" },
       { stat: "▶", title: "Официальные материалы", description: "Посмотрите официальный трейлер игрового процесса от tinyBuildGAMES.", href: siteConfig.official.gameplayTrailer, label: "YouTube", external: true },
     ],
     startTitle: "Ваш путь в ReStory: Chill Electronics Repairs",
@@ -615,7 +614,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { number: "1", title: "Гайд для новичков", description: "Откройте мастерскую, примите первый заказ и разберитесь в основном цикле.", href: "/guides/restory-chill-electronics-repairs-walkthrough" },
       { number: "2", title: "Цикл ремонта", description: "Изучите разборку, очистку, замену деталей и сборку устройства.", href: "/guides" },
       { number: "3", title: "Устройства и инструменты", description: "Найдите подтверждённые сведения о браузере, деталях и мастерской.", href: "/guides" },
-      { number: "4", title: "Выборы и достижения", description: "Отделяйте подтверждённые факты о сюжете от деталей, которые ещё нужно проверить.", href: "/guides" },
+      { number: "4", title: "Выборы и достижения", description: "Следите за выборами клиентов, историей и достижениями Steam.", href: "/guides" },
     ],
     aboutTitle: "Что такое ReStory: Chill Electronics Repairs?",
     aboutParagraphs: [
@@ -638,9 +637,9 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { value: "9", label: "Языков" },
       { value: "Y2K", label: "Токио середины 2000-х" },
     ],
-    codesTitle: "Активные коды",
-    codeDescription: "В исследованных источниках подтверждённых кодов ReStory не найдено.",
-    codeValue: "Нет подтверждённых кодов",
+    codesTitle: "",
+    codeDescription: "",
+    codeValue: "",
     finalTitle: "Готовы освоить ReStory: Chill Electronics Repairs?",
     finalDescription: "От первого устройства на верстаке до последней истории клиента — используйте Wiki для ремонта, поиска деталей и достижений.",
     finalPrimary: "Открыть гайд для новичков",
@@ -653,7 +652,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       eyebrow: "Unabhängige Fan-Wiki",
       title: siteConfig.gameName,
       description: "Führe eine gemütliche Elektronikwerkstatt im Tokio der mittleren 2000er. Repariere Konsolen, Telefone, Kameras und Musikgeräte, während Kundenentscheidungen die Werkstatt und ihre Geschichten prägen.",
-      stats: ["Veröffentlicht am 6. Aug. 2026", "Steam-Preis $17.99", "15+ Stunden Geschichte", "50 Steam-Erfolge", "97% positive Bewertungen"],
+      stats: ["Veröffentlicht am 6. Aug. 2026", "15+ Stunden Geschichte", "50 Steam-Erfolge", "9 Interface- und Untertitelsprachen"],
       primaryCta: "Einsteiger-Guide starten",
       secondaryCta: "Reparatur-Guides öffnen",
       tertiaryCta: "Bekannte Probleme prüfen",
@@ -664,7 +663,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { stat: "4", title: "Reparaturkreislauf", description: "Gerät zerlegen, Teile reinigen, defekte Teile ersetzen und wieder zusammenbauen.", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "bestätigte Reihenfolge" },
       { stat: "Y2K", title: "Geräte und Ersatzteile", description: "Notizen zu Geräten, Browser und Werkzeugen der Werkstatt.", href: "/guides", label: "Werkstatt-Referenz" },
       { stat: "50", title: "Story und Erfolge", description: "Kundenentscheidungen, mehrere Enden und Steam-Erfolge im Blick behalten.", href: "/guides", label: "Steam-Erfolge" },
-      { stat: "Aug.", title: "Bekannte Probleme", description: "Offizielle Startberichte von noch zu prüfenden Details trennen.", href: "/guides", label: "Startnotizen" },
+      { stat: "Aug.", title: "Bekannte Probleme", description: "Offizielle Startberichte und dokumentierte Einstellungsnotizen ansehen.", href: "/guides", label: "Startnotizen" },
       { stat: "▶", title: "Offizielle Medien", description: "Den offiziellen Gameplay-Trailer von tinyBuildGAMES ansehen.", href: siteConfig.official.gameplayTrailer, label: "YouTube", external: true },
     ],
     startTitle: "Deine Reise durch ReStory: Chill Electronics Repairs",
@@ -672,7 +671,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { number: "1", title: "Einsteiger-Guide", description: "Öffne die Werkstatt, nimm den ersten Auftrag an und lerne den Kernablauf.", href: "/guides/restory-chill-electronics-repairs-walkthrough" },
       { number: "2", title: "Reparaturkreislauf", description: "Lerne Zerlegen, Reinigen, Ersatzteile und den Zusammenbau kennen.", href: "/guides" },
       { number: "3", title: "Geräte und Werkzeuge", description: "Finde bestätigte Hinweise zu Browser, Ersatzteilen und Werkstatt.", href: "/guides" },
-      { number: "4", title: "Entscheidungen und Erfolge", description: "Bestätigte Story-Fakten von noch offenen Details unterscheiden.", href: "/guides" },
+      { number: "4", title: "Entscheidungen und Erfolge", description: "Kundenentscheidungen, Story und Steam-Erfolge verfolgen.", href: "/guides" },
     ],
     aboutTitle: "Was ist ReStory: Chill Electronics Repairs?",
     aboutParagraphs: [
@@ -695,9 +694,9 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { value: "9", label: "Sprachen" },
       { value: "Y2K", label: "Tokio-Setting" },
     ],
-    codesTitle: "Aktive Codes",
-    codeDescription: "In den recherchierten Quellen wurden keine bestätigten ReStory-Codes gefunden.",
-    codeValue: "Keine bestätigten Codes",
+    codesTitle: "",
+    codeDescription: "",
+    codeValue: "",
     finalTitle: "Bereit, ReStory: Chill Electronics Repairs zu meistern?",
     finalDescription: "Vom ersten Gerät auf der Werkbank bis zur letzten Kundengeschichte hilft dir die Wiki bei Reparaturen, Ersatzteilen und Erfolgen.",
     finalPrimary: "Einsteiger-Guide lesen",
@@ -710,7 +709,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       eyebrow: "独立ファンメイド Wiki",
       title: "リ・ストーリー: 思い出修理屋",
       description: "2000年代半ばの東京で、懐かしい電子機器の修理店を経営します。ゲーム機、携帯電話、カメラ、音楽プレーヤーを修理しながら、客の選択で店と物語が変化します。",
-      stats: ["2026年8月6日発売", "Steam価格 $17.99", "15時間以上の物語", "Steam実績50個", "好評率97%"],
+      stats: ["2026年8月6日発売", "15時間以上の物語", "Steam実績50個", "インターフェースと字幕9言語"],
       primaryCta: "初心者ガイドを始める",
       secondaryCta: "修理攻略を見る",
       tertiaryCta: "既知の問題を確認",
@@ -721,7 +720,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { stat: "4", title: "修理の流れ", description: "分解、清掃、故障部品の交換、組み立てを確認します。", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "確認済みの順序" },
       { stat: "Y2K", title: "デバイスと部品", description: "デバイス、ブラウザ、修理店の道具に関する情報をまとめています。", href: "/guides", label: "修理店リファレンス" },
       { stat: "50", title: "物語と実績", description: "客の選択、複数エンディング、Steam実績を確認できます。", href: "/guides", label: "Steam実績" },
-      { stat: "8月", title: "既知の問題", description: "公式の発売情報と、まだ確認が必要な内容を分けて整理します。", href: "/guides", label: "発売時のメモ" },
+      { stat: "8月", title: "既知の問題", description: "公式の発売情報と設定に関するメモを確認できます。", href: "/guides", label: "発売時のメモ" },
       { stat: "▶", title: "公式メディア", description: "tinyBuildGAMESの公式ゲームプレイトレーラーを視聴できます。", href: siteConfig.official.gameplayTrailer, label: "YouTube", external: true },
     ],
     startTitle: "リ・ストーリー: 思い出修理屋の進め方",
@@ -729,7 +728,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { number: "1", title: "初心者ガイド", description: "店を開き、最初の依頼を受け、基本の修理ループを学びます。", href: "/guides/restory-chill-electronics-repairs-walkthrough" },
       { number: "2", title: "修理の流れ", description: "分解、清掃、部品交換、組み立ての順序を確認します。", href: "/guides" },
       { number: "3", title: "デバイスと道具", description: "ブラウザ、部品、修理店に関する確認済みの情報を探せます。", href: "/guides" },
-      { number: "4", title: "選択と実績", description: "確認済みの物語情報と、まだ確認されていない詳細を分けて扱います。", href: "/guides" },
+      { number: "4", title: "選択と実績", description: "客の選択、物語、Steam実績を確認できます。", href: "/guides" },
     ],
     aboutTitle: "リ・ストーリー: 思い出修理屋とは？",
     aboutParagraphs: [
@@ -752,9 +751,9 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
       { value: "9", label: "対応言語" },
       { value: "Y2K", label: "東京の舞台" },
     ],
-    codesTitle: "有効なコード",
-    codeDescription: "調査した情報源では、確認済みの交換コードは見つかりませんでした。",
-    codeValue: "確認済みコードなし",
+    codesTitle: "",
+    codeDescription: "",
+    codeValue: "",
     finalTitle: "リ・ストーリー: 思い出修理屋を始めましょう",
     finalDescription: "最初のデバイスから最後の客の物語まで、修理、部品、実績に関する情報をWikiで確認できます。",
     finalPrimary: "初心者ガイドを読む",
@@ -835,7 +834,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       terms: {
         intro: "This is an unofficial fan-made Wiki for ReStory: Chill Electronics Repairs. It is not affiliated with Mandragora, tinyBuild, or Valve.",
         contentTitle: "Content status",
-        content: "Research-based pages identify unverified details as Unconfirmed. Game names, assets, and trademarks belong to their respective owners.",
+        content: "Pages use official sources and identify the current scope of each guide. Game names, assets, and trademarks belong to their respective owners.",
         useTitle: "Use of the site",
         use: "Use the information as a reference, check official announcements for changing launch information, and do not treat this Wiki as an official support channel.",
       },
@@ -913,7 +912,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       terms: {
         intro: "Это неофициальная фанатская Wiki по ReStory: Chill Electronics Repairs. Она не связана с Mandragora, tinyBuild или Valve.",
         contentTitle: "Статус материалов",
-        content: "На страницах, основанных на исследовании, непроверенные детали отмечены как «Не подтверждено». Названия игр, материалы и товарные знаки принадлежат соответствующим владельцам.",
+        content: "Страницы используют официальные источники и указывают область каждого руководства. Названия игр, материалы и товарные знаки принадлежат соответствующим владельцам.",
         useTitle: "Использование сайта",
         use: "Используйте информацию как справочную, проверяйте официальные объявления об изменениях запуска и не воспринимайте Wiki как официальный канал поддержки.",
       },
@@ -991,7 +990,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       terms: {
         intro: "Dies ist eine inoffizielle Fan-Wiki zu ReStory: Chill Electronics Repairs. Sie ist nicht mit Mandragora, tinyBuild oder Valve verbunden.",
         contentTitle: "Status der Inhalte",
-        content: "Recherchebasierte Seiten kennzeichnen nicht bestätigte Details als „Nicht bestätigt“. Spielnamen, Assets und Marken gehören ihren jeweiligen Eigentümern.",
+        content: "Die Seiten verwenden offizielle Quellen und beschreiben den Umfang jedes Guides. Spielnamen, Assets und Marken gehören ihren jeweiligen Eigentümern.",
         useTitle: "Nutzung der Website",
         use: "Verwende die Informationen als Referenz, prüfe offizielle Ankündigungen zu Änderungen beim Start und betrachte diese Wiki nicht als offiziellen Supportkanal.",
       },
@@ -1069,7 +1068,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       terms: {
         intro: "これはリ・ストーリー: 思い出修理屋の非公式ファンメイドWikiです。Mandragora、tinyBuild、Valveとは提携していません。",
         contentTitle: "コンテンツの状態",
-        content: "調査に基づくページでは、確認できていない詳細を「未確認」と表示します。ゲーム名、素材、商標はそれぞれの権利者に帰属します。",
+        content: "各ページでは公式ソースとガイドの対象範囲を示します。ゲーム名、素材、商標はそれぞれの権利者に帰属します。",
         useTitle: "サイトの利用",
         use: "情報は参考として利用し、発売情報の変更については公式発表を確認してください。このWikiを公式サポート窓口として扱わないでください。",
       },
@@ -1121,7 +1120,7 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
       metaDescription:
         "Гайд для новичков по ReStory: Chill Electronics Repairs — первый заказ, основной цикл ремонта, детали, мастерская и подтверждённые сведения.",
       description:
-        "Начните с первого заказа, пройдите подтверждённый цикл ремонта и отделяйте проверенные сведения от деталей, которые ещё нужно подтвердить.",
+        "Начните с первого заказа и пройдите основной цикл ремонта: от разборки устройства до его выдачи клиенту.",
       readTime: "7 мин чтения",
       tags: ["Прохождение", "Мастерская", "Сюжет"],
     },
@@ -1135,7 +1134,7 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
       metaDescription:
         "Einsteiger-Guide für ReStory: Chill Electronics Repairs mit dem ersten Auftrag, dem Reparaturkreislauf, Ersatzteilen, Werkstatt und bestätigten Informationen.",
       description:
-        "Starte mit dem ersten Auftrag, folge dem bestätigten Reparaturkreislauf und trenne geprüfte Informationen von offenen Details.",
+        "Starte mit dem ersten Auftrag und folge dem Reparaturkreislauf von der Zerlegung bis zur Abgabe des Geräts.",
       readTime: "7 Min. Lesezeit",
       tags: ["Walkthrough", "Werkstatt", "Story"],
     },
@@ -1149,7 +1148,7 @@ const localizedGuideOverrides: Partial<Record<Locale, Record<string, Partial<Gui
       metaDescription:
         "リ・ストーリー: 思い出修理屋の初心者ガイド。最初の依頼、修理の基本ループ、交換部品、店の管理、Steam版の確認済み情報をまとめます。",
       description:
-        "最初の依頼から確認済みの修理ループまで、ゲーム内で確認できた情報と未確認の詳細を分けて紹介します。",
+        "最初の依頼から修理の基本ループまで、ゲームの進め方をわかりやすく紹介します。",
       readTime: "7分で読める",
       tags: ["初心者", "修理店", "物語"],
     },
@@ -1164,37 +1163,37 @@ export type GuideAnswer = {
 const guideAnswers: Partial<Record<string, GuideAnswer>> = {
   "restory-chill-electronics-repairs-walkthrough": {
     summary:
-      "Start the ReStory: Chill Electronics Repairs walkthrough by treating each job as the same confirmed repair loop: accept a customer device, disassemble it, clean the separated parts, replace the faulty component, reassemble the device, and deliver the order. The shop also involves money management, a Y2K-era browser for spare parts, and offline or online requests. Customer conversations and choices connect repairs to the branching story, but the supplied official material does not confirm a universal first-day route, chapter order, unlock dates, ending count, or every device-to-part relationship. For a reliable first playthrough, record the customer request, device category, faulty part, source for the spare, and whether the order was offline or online. Use the confirmed loop as your route and mark chapter names, exact triggers, and post-story behavior as Unconfirmed until they are verified in the full release.",
+      "Start the ReStory: Chill Electronics Repairs walkthrough by treating each job as the same repair loop: accept a customer device, disassemble it, clean the separated parts, replace the faulty component, reassemble the device, and deliver the order. The shop also involves money management, a Y2K-era browser for spare parts, offline or online requests, and customer choices that connect repairs to the branching story. For a reliable first playthrough, record the customer request, device category, faulty part, source for the spare, and whether the order was offline or online.",
     points: [
       "Accept the customer device and read the request.",
       "Disassemble, clean, replace the faulty part, then reassemble.",
       "Use the Y2K-era browser for spare-part research and online requests.",
-      "Treat chapter order, unlock dates, and ending conditions as Unconfirmed.",
+      "Record the customer request, device, faulty part, spare source, and order type.",
     ],
   },
   "restory-chill-electronics-repairs-cleaning-guide": {
     summary:
-      "Cleaning belongs between disassembly and faulty-part replacement in the confirmed ReStory: Chill Electronics Repairs repair loop. Separate the device, clean the exposed parts, replace the faulty component, and reassemble the order before delivery. The public achievement list confirms cumulative targets for cleaning the workspace, 100 parts, and 1,000 parts, and it identifies the automatic ultrasonic bath as part of the cleaning system. The supplied research does not confirm a universal keybind, cleaning radius, bath price, unlock day, or a single fix for every sonic-bath issue. Track the device, part, tool, and repair stage when a cleaning action does not register. Community workarounds should remain marked Unconfirmed until they are re-tested against the current full-release build.",
+      "Cleaning belongs between disassembly and faulty-part replacement in the ReStory: Chill Electronics Repairs repair loop. Separate the device, clean the exposed parts, replace the faulty component, and reassemble the order before delivery. The public achievement list confirms cumulative targets for cleaning the workspace, 100 parts, and 1,000 parts, and it identifies the automatic ultrasonic bath as part of the cleaning system. Track the device, part, tool, and repair stage when a cleaning action does not register.",
     points: [
       "Disassemble before starting the cleaning stage.",
       "Clean the separated parts before replacing the faulty component.",
       "Track the workspace, 100-part, and 1,000-part cleaning goals.",
-      "Keep controls, prices, unlocks, and workarounds marked Unconfirmed.",
+      "Record the device, part, tool, and repair stage if cleaning does not register.",
     ],
   },
   "restory-chill-electronics-repairs-parts-catalog": {
     summary:
-      "The ReStory: Chill Electronics Repairs parts catalog should be used as a research reference rather than an invented inventory list. The confirmed game loop combines device disassembly, cleaning, faulty-part replacement, reassembly, money management, and a Y2K-era browser used to search for supplies. The available research identifies device families and named hardware in the official material, but it does not confirm every part name, price, stock rule, browser result, or device-to-part mapping. Use the catalog to separate confirmed devices and hardware from fields that still need an in-game check. For each job, record the device, customer request, suspected faulty component, browser or shop source, and whether the order was offline or online. Do not turn one early build, Demo result, or community report into a universal part table until the full-release behavior has been verified.",
+      "The ReStory: Chill Electronics Repairs parts catalog is a research reference for device families and named hardware. The confirmed game loop combines device disassembly, cleaning, faulty-part replacement, reassembly, money management, and a Y2K-era browser used to search for supplies. For each job, record the device, customer request, suspected faulty component, browser or shop source, and whether the order was offline or online.",
     points: [
       "Use the browser and shop systems to research spare parts.",
       "Separate confirmed hardware from incomplete inventory fields.",
       "Record device, faulty component, source, and order type for each job.",
-      "Keep complete prices, stock rules, and mappings as Unconfirmed.",
+      "Record the device, faulty component, source, and order type for each job.",
     ],
   },
   "restory-chill-electronics-repairs-achievements": {
     summary:
-      "ReStory: Chill Electronics Repairs has 50 Steam Achievements, and the safest way to use the achievement guide is to group them by the activity they confirm. The public list covers repairs, shop and business progress, cleaning, orders, tools, customization, time, assembly competitions, and story. It confirms cumulative cleaning goals, email-order milestones, and competition achievements, but the supplied research does not establish every hidden trigger, route condition, fastest order, or whether a Demo result carries into the full release. Track achievements alongside normal repair jobs instead of forcing an unverified farming route. When an achievement depends on a customer choice, device type, competition, or shop upgrade, record the exact in-game context and label the condition Unconfirmed until it has been checked in the current release.",
+      "ReStory: Chill Electronics Repairs has 50 Steam Achievements, and the safest way to use the achievement guide is to group them by the activity they confirm. The public list covers repairs, shop and business progress, cleaning, orders, tools, customization, time, assembly competitions, and story. It confirms cumulative cleaning goals, email-order milestones, and competition achievements. Track achievements alongside normal repair jobs, and record the exact in-game context when an achievement depends on a customer choice, device type, competition, or shop upgrade.",
     points: [
       "Use the 50-achievement list as a checklist by activity.",
       "Track cleaning, email orders, repairs, tools, and competitions together.",

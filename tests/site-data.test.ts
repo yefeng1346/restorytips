@@ -6,7 +6,7 @@ describe("ReStory site contract", () => {
     expect(siteConfig.gameName).toBe("ReStory: Chill Electronics Repairs");
     expect(siteConfig.official.discord).toBe("https://discord.gg/restory");
     expect(siteConfig.official.youtube).toBe("https://www.youtube.com/@tinyBuildGAMES");
-    expect(siteConfig.sidebarCodes).toEqual(["No confirmed codes"]);
+    expect(siteConfig.sidebarCodes).toEqual([]);
   });
 
   it("exposes the four researched locales without the old game label", () => {

@@ -94,12 +94,6 @@ export function HomePage({ locale }: { locale: Locale }) {
           </p>
         </section>
 
-        <div className="notice teal" style={{ marginTop: "1.2rem" }}>
-          {locale === "en"
-            ? "Launch snapshot · Aug 6, 2026 · Steam currently shows $17.99 and 97% positive reviews. Dynamic figures can change."
-            : copy.labels.lastUpdated}
-        </div>
-
         <section>
           <span className="section-kicker">{copy.labels.quickLookup}</span>
           <h2>{copy.home.quickTitle}</h2>
@@ -173,16 +167,18 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
 
-        <section className="codes-panel">
-          <span className="section-kicker">{copy.labels.codes}</span>
-          <div className="panel raised code-row">
-            <div>
-              <h2>{home.codesTitle}</h2>
-              <p>{home.codeDescription}</p>
+        {home.codeValue ? (
+          <section className="codes-panel">
+            <span className="section-kicker">{copy.labels.codes}</span>
+            <div className="panel raised code-row">
+              <div>
+                <h2>{home.codesTitle}</h2>
+                <p>{home.codeDescription}</p>
+              </div>
+              <span className="code-value">{home.codeValue}</span>
             </div>
-            <span className="code-value">{home.codeValue}</span>
-          </div>
-        </section>
+          </section>
+        ) : null}
 
         <section className="panel raised final-cta">
           <h2>{home.finalTitle}</h2>

@@ -25,7 +25,7 @@ export function GET() {
     `- [Official Discord](${siteConfig.official.discord})`,
     `- [Official YouTube channel](${siteConfig.official.youtube})`,
     "",
-    "Content status: details that are not verified in the supplied research are marked Unconfirmed on the relevant page. This site is not affiliated with Mandragora, tinyBuild, or Valve.",
+    "Content status: pages use official sources and describe the confirmed scope of each guide. This site is not affiliated with Mandragora, tinyBuild, or Valve.",
   ].join("\n");
 
   return new Response(body, {

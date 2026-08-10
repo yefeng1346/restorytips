@@ -31,12 +31,14 @@ export function WikiSidebar({ locale, activeSlug }: WikiSidebarProps) {
         ))}
       </nav>
 
-      <div className="sidebar-card">
-        <span className="section-kicker">{copy.labels.codes}</span>
-        <h3>{copy.labels.codes}</h3>
-        <p>{copy.home.codeValue}</p>
-        <small>{copy.home.codeDescription}</small>
-      </div>
+      {copy.home.codeValue ? (
+        <div className="sidebar-card">
+          <span className="section-kicker">{copy.labels.codes}</span>
+          <h3>{copy.labels.codes}</h3>
+          <p>{copy.home.codeValue}</p>
+          <small>{copy.home.codeDescription}</small>
+        </div>
+      ) : null}
 
       <div className="sidebar-card sidebar-card--muted">
         <span className="section-kicker">{copy.labels.official}</span>
