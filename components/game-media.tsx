@@ -13,7 +13,9 @@ export function GameMedia({ locale, mediaKey, variant = "gallery", priority = fa
   const media = getGameMedia(locale, mediaKey);
   const sizes = variant === "gallery"
     ? "(max-width: 760px) 100vw, 33vw"
-    : "(max-width: 900px) 100vw, 760px";
+    : variant === "hero"
+      ? "(max-width: 900px) 100vw, 900px"
+      : "(max-width: 760px) 100vw, 760px";
 
   return (
     <figure className={`game-media game-media--${variant}`}>
@@ -29,9 +31,6 @@ export function GameMedia({ locale, mediaKey, variant = "gallery", priority = fa
       </div>
       <figcaption>
         <span>{media.caption}</span>
-        <a href={media.sourceHref} target="_blank" rel="noreferrer">
-          {media.sourceLabel} ↗
-        </a>
       </figcaption>
     </figure>
   );

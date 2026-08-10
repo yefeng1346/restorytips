@@ -417,13 +417,18 @@ section {
 }
 
 .game-media--hero {
+  width: min(100%, 900px);
+  margin-inline: auto;
   border-color: hsl(var(--nav-theme));
   background: hsl(var(--panel-2));
 }
 
-.game-media--hero .game-media__image,
+.game-media--hero .game-media__image {
+  aspect-ratio: 16 / 7;
+}
+
 .game-media--article .game-media__image {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 8;
 }
 
 .game-media--hero .game-media__image img,
@@ -438,26 +443,20 @@ section {
 }
 
 .game-media--article {
-  margin: 0 0 1.7rem;
+  width: min(100%, 760px);
+  margin: 0 auto 1.7rem;
 }
 
 .game-media figcaption {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0.35rem 1rem;
   padding: 0.6rem 0.75rem;
   color: hsl(var(--dim));
   font-size: 0.78rem;
   line-height: 1.4;
-}
-
-.game-media figcaption a {
-  flex: 0 0 auto;
-  color: hsl(var(--nav-theme));
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
 }
 
 .notice {
