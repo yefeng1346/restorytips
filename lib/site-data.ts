@@ -561,7 +561,7 @@ type LocaleCopy = {
 const localizedHomeCopy: Record<Locale, HomeCopy> = {
   en: {
     answerKicker: "Short answer",
-    answerTitle: "What is ReStory: Chill Electronics Repairs?",
+    answerTitle: "What do you do in ReStory: Chill Electronics Repairs?",
     answerText:
       "ReStory: Chill Electronics Repairs is a cozy, narrative-driven shop management simulation on Steam for Windows and macOS, with Steam Deck listed as Playable. You run an electronics repair shop in mid-2000s Tokyo: accept customer orders, take nostalgic devices apart, clean the parts, replace faulty components, rebuild the device, and deliver the result. A Y2K-era browser helps you search for spare parts and handle online requests while money, tools, decoration, and customer choices shape the shop. Official materials describe consoles, handhelds, phones, cameras, music players, and home appliances, plus a branching story with multiple endings. The full release is confirmed for August 6, 2026, and the store lists 50 Steam Achievements and nine interface/subtitle languages. This wiki separates confirmed official information from reports and unconfirmed details. Guide pages explain the confirmed loop and separate official facts from player reports, so readers can verify what is known before following a repair, story, or settings recommendation.",
     quickTitle: "Find the repair answer fast",
@@ -597,7 +597,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
   },
   ru: {
     answerKicker: "Короткий ответ",
-    answerTitle: "Что такое ReStory: Chill Electronics Repairs?",
+    answerTitle: "Что вы делаете в ReStory: Chill Electronics Repairs?",
     answerText:
       "ReStory: Chill Electronics Repairs — уютная сюжетная симуляция управления мастерской в Steam для Windows и macOS; в магазине Steam Deck отмечен как Playable. Вы управляете мастерской электроники в Токио середины 2000-х: принимаете заказы клиентов, разбираете ностальгические устройства, очищаете детали, заменяете неисправные компоненты, собираете устройство и возвращаете его владельцу. Браузер эпохи Y2K помогает искать запчасти и обрабатывать онлайн-запросы, а деньги, инструменты, декор и решения клиентов влияют на мастерскую. В официальных материалах упомянуты приставки, портативные устройства, телефоны, камеры, музыкальные плееры и бытовая техника, а также разветвлённая история с несколькими концовками. Полный релиз подтверждён на 6 августа 2026 года; в магазине указаны 50 достижений Steam и девять языков интерфейса и субтитров. Эта Wiki отделяет подтверждённые факты от сообщений игроков и неподтверждённых деталей. Страницы руководств описывают подтверждённый цикл и отмечают, где информация основана на официальных источниках, а где остаётся сообщением игроков, чтобы перед советом по ремонту, истории или настройкам было понятно, что подтверждено.",
     quickTitle: "Быстро найдите ответ по ремонту",
@@ -658,7 +658,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
   },
   de: {
     answerKicker: "Kurzantwort",
-    answerTitle: "Was ist ReStory: Chill Electronics Repairs?",
+    answerTitle: "Was machst du in ReStory: Chill Electronics Repairs?",
     answerText:
       "ReStory: Chill Electronics Repairs ist eine gemütliche, erzählerische Werkstatt-Simulation auf Steam für Windows und macOS; Steam Deck ist im Store als Playable eingestuft. Du leitest eine Elektronikwerkstatt im Tokio der mittleren 2000er: Kundenaufträge annehmen, nostalgische Geräte zerlegen, Teile reinigen, defekte Komponenten ersetzen, das Gerät wieder zusammenbauen und zurückgeben. Ein Y2K-Browser hilft bei der Suche nach Ersatzteilen und bei Online-Anfragen, während Geld, Werkzeuge, Dekoration und Kundenentscheidungen die Werkstatt prägen. Offizielle Materialien nennen Konsolen, Handhelds, Telefone, Kameras, Musikplayer und Haushaltsgeräte sowie eine verzweigte Geschichte mit mehreren Enden. Der vollständige Release ist für den 6. August 2026 bestätigt; der Store nennt 50 Steam-Erfolge und neun Interface- und Untertitelsprachen. Diese Wiki trennt bestätigte offizielle Informationen von Spielerberichten und unbestätigten Details. Die Guide-Seiten erklären den bestätigten Ablauf und kennzeichnen, welche Hinweise aus offiziellen Quellen stammen oder nur von Spielern berichtet werden, damit Reparatur-, Story- und Einstellungstipps nachvollziehbar bleiben.",
     quickTitle: "Die passende Reparatur schnell finden",
@@ -719,7 +719,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
   },
   ja: {
     answerKicker: "要点",
-    answerTitle: "『リ・ストーリー: 思い出修理屋』とは？",
+    answerTitle: "『リ・ストーリー: 思い出修理屋』では何をする？",
     answerText:
       "『リ・ストーリー: 思い出修理屋』は、WindowsとmacOS向けSteamで配信される、物語重視の修理店シミュレーションです。SteamストアではSteam Deck対応がPlayableと表示されています。2000年代半ばの東京で電子機器修理店を営み、客の依頼を受け、懐かしい機器を分解し、部品を清掃して故障した部品を交換し、組み立て直して返却します。Y2K時代のブラウザで交換部品やオンラインの依頼を探しながら、お金、道具、店内の装飾、客との選択が店の運営に影響します。公式情報にはゲーム機、携帯機器、電話、カメラ、音楽プレーヤー、家電と、複数エンディングにつながる物語が紹介されています。正式リリース日は2026年8月6日で、Steamには実績50個とインターフェース・字幕9言語が掲載されています。このWikiでは確認済み情報とプレイヤー報告、未確認の内容を分けて整理します。攻略ページでは確認できた修理の流れと情報の根拠を整理し、修理、物語、設定に関する案内で何が確認済みかを判断できるようにしています。",
     quickTitle: "修理の答えをすぐに見つける",
