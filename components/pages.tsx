@@ -89,11 +89,6 @@ export function HomePage({ locale }: { locale: Locale }) {
               <span key={stat}>{stat}</span>
             ))}
           </div>
-          <p className="hero-media-link">
-            <a href={siteConfig.official.gameplayTrailer} target="_blank" rel="noreferrer">
-              {home.hero.videoLabel} ↗
-            </a>
-          </p>
         </section>
 
         <GameTrailer locale={locale} />
