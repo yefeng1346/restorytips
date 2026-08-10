@@ -91,8 +91,6 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
 
-        <GameTrailer locale={locale} />
-
         <section>
           <span className="section-kicker">{copy.labels.quickLookup}</span>
           <h2>{copy.home.quickTitle}</h2>
@@ -135,6 +133,8 @@ export function HomePage({ locale }: { locale: Locale }) {
             ))}
           </ul>
         </section>
+
+        <GameTrailer locale={locale} />
 
         <section>
           <span className="section-kicker">★</span>
