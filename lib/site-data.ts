@@ -550,7 +550,6 @@ type LocaleCopy = {
     primaryNav: string;
     changeLanguage: string;
     taskbar: string;
-    advertisement: string;
     wikiSections: string;
     logoAlt: string;
   };
@@ -843,7 +842,6 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       primaryNav: "Primary navigation",
       changeLanguage: "Change language",
       taskbar: "Taskbar shortcuts",
-      advertisement: "Advertisement",
       wikiSections: "Wiki sections",
       logoAlt: "ReStorytips logo",
     },
@@ -856,7 +854,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
         informationTitle: "Information on this site",
         information: "Google Analytics is enabled to measure visits and page usage through measurement ID G-NGY82QT3YL. Google may process technical and usage data under its own policies. Do not submit private information through guide comments or external links.",
         advertisingTitle: "Advertising",
-        advertising: "Public content pages may load Google AdSense with publisher ID ca-pub-4496419024798372 and a third-party native advertising script from effectivecpmnetwork.com. Any data processing by those providers is governed by their own policies.",
+        advertising: "Public content pages may load Google AdSense with publisher ID ca-pub-4496419024798372. Google’s data processing is governed by its own policies.",
         externalTitle: "External services",
         external: "Official Steam, Discord, YouTube, and tinyBuild links leave this Wiki and are governed by their own policies.",
       },
@@ -921,7 +919,6 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       primaryNav: "Основная навигация",
       changeLanguage: "Изменить язык",
       taskbar: "Ярлыки панели задач",
-      advertisement: "Реклама",
       wikiSections: "Разделы Wiki",
       logoAlt: "Логотип ReStorytips",
     },
@@ -934,7 +931,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
         informationTitle: "Информация на сайте",
         information: "Google Analytics используется для измерения посещений и использования страниц через идентификатор G-NGY82QT3YL. Google может обрабатывать технические данные и сведения об использовании в соответствии со своими правилами. Не отправляйте личную информацию через комментарии к руководствам или внешние ссылки.",
         advertisingTitle: "Реклама",
-        advertising: "На открытых страницах может загружаться Google AdSense с идентификатором издателя ca-pub-4496419024798372 и сторонний нативный рекламный скрипт effectivecpmnetwork.com. Обработка данных этими провайдерами регулируется их собственными правилами.",
+        advertising: "На открытых страницах может загружаться Google AdSense с идентификатором издателя ca-pub-4496419024798372. Обработка данных Google регулируется его собственными правилами.",
         externalTitle: "Внешние сервисы",
         external: "Ссылки на Steam, Discord, YouTube и tinyBuild ведут за пределы Wiki и регулируются политиками соответствующих сервисов.",
       },
@@ -999,7 +996,6 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       primaryNav: "Hauptnavigation",
       changeLanguage: "Sprache ändern",
       taskbar: "Taskbar-Verknüpfungen",
-      advertisement: "Werbung",
       wikiSections: "Wiki-Bereiche",
       logoAlt: "ReStorytips-Logo",
     },
@@ -1012,7 +1008,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
         informationTitle: "Informationen auf dieser Website",
         information: "Google Analytics misst Besuche und die Nutzung der Seiten mit der Mess-ID G-NGY82QT3YL. Google kann technische und Nutzungsdaten nach den eigenen Richtlinien verarbeiten. Sende keine privaten Informationen über Guide-Kommentare oder externe Links.",
         advertisingTitle: "Werbung",
-        advertising: "Öffentliche Inhaltsseiten können Google AdSense mit der Publisher-ID ca-pub-4496419024798372 und ein natives Werbeskript von effectivecpmnetwork.com laden. Die Datenverarbeitung dieser Anbieter richtet sich nach deren eigenen Richtlinien.",
+        advertising: "Öffentliche Inhaltsseiten können Google AdSense mit der Publisher-ID ca-pub-4496419024798372 laden. Die Datenverarbeitung durch Google richtet sich nach den eigenen Richtlinien.",
         externalTitle: "Externe Dienste",
         external: "Offizielle Links zu Steam, Discord, YouTube und tinyBuild verlassen diese Wiki und unterliegen den Richtlinien der jeweiligen Dienste.",
       },
@@ -1077,7 +1073,6 @@ const localeCopy: Record<Locale, LocaleCopy> = {
       primaryNav: "メインナビゲーション",
       changeLanguage: "言語を変更",
       taskbar: "タスクバーのショートカット",
-      advertisement: "広告",
       wikiSections: "Wikiのセクション",
       logoAlt: "ReStorytipsのロゴ",
     },
@@ -1090,7 +1085,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
         informationTitle: "サイト上の情報",
         information: "Google Analyticsは測定ID G-NGY82QT3YLを使い、訪問数とページ利用状況を測定します。Googleは独自のポリシーに基づいて技術情報や利用情報を処理する場合があります。攻略コメントや外部リンクに個人情報を送信しないでください。",
         advertisingTitle: "広告",
-        advertising: "公開コンテンツページでは、パブリッシャーID ca-pub-4496419024798372のGoogle AdSenseと、effectivecpmnetwork.comのネイティブ広告スクリプトが読み込まれる場合があります。各プロバイダーによるデータ処理は、それぞれのポリシーに従います。",
+        advertising: "公開コンテンツページでは、パブリッシャーID ca-pub-4496419024798372のGoogle AdSenseが読み込まれる場合があります。Googleによるデータ処理は、Googleのポリシーに従います。",
         externalTitle: "外部サービス",
         external: "Steam、Discord、YouTube、tinyBuildへの公式リンクはWikiの外部へ移動し、各サービスのポリシーが適用されます。",
       },
