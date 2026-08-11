@@ -136,6 +136,22 @@ export function HomePage({ locale }: { locale: Locale }) {
           </ul>
         </section>
 
+        <section className="faq-section" aria-labelledby="home-faq-title">
+          <div className="faq-section__intro">
+            <span className="section-kicker">{copy.labels.faq}</span>
+            <h2 id="home-faq-title">{home.faqTitle}</h2>
+            <p className="section-intro">{home.faqDescription}</p>
+          </div>
+          <div className="faq-list">
+            {home.faqItems.map((item) => (
+              <details className="faq-item" key={item.question}>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+
         <section>
           <span className="section-kicker">{copy.labels.startHere}</span>
           <h2>{home.startTitle}</h2>

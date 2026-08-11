@@ -955,6 +955,74 @@ section {
   line-height: 1.45;
 }
 
+.faq-section {
+  margin-block: 2.8rem;
+}
+
+.faq-section__intro {
+  margin-bottom: 1rem;
+}
+
+.faq-section__intro h2 {
+  margin-bottom: 0.35rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.faq-item {
+  border: 1px dashed hsl(var(--line-2));
+  background: hsl(var(--panel));
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  color: hsl(var(--ink));
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  flex: 0 0 auto;
+  color: hsl(var(--nav-theme));
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item summary:hover {
+  color: hsl(var(--nav-theme));
+  background: hsl(var(--panel-2));
+}
+
+.faq-item summary:focus-visible {
+  outline: 2px solid hsl(var(--nav-theme-light));
+  outline-offset: -2px;
+}
+
+.faq-item p {
+  max-width: 80ch;
+  margin: 0;
+  padding: 0 1rem 1rem;
+  color: hsl(var(--dim));
+}
+
 .answer-first ul {
   margin: 0.65rem 0 0;
   padding-left: 1.25rem;

@@ -23,6 +23,17 @@ describe("ReStory site contract", () => {
     expect(JSON.stringify(siteConfig)).not.toContain("TBH");
   });
 
+  it("keeps the homepage FAQ complete and localized", () => {
+    siteConfig.locales.forEach((locale) => {
+      const faq = getLocaleCopy(locale).home.faqItems;
+      expect(faq).toHaveLength(6);
+      faq.forEach(({ question, answer }) => {
+        expect(question).not.toHaveLength(0);
+        expect(answer).not.toHaveLength(0);
+      });
+    });
+  });
+
   it("maps every researched keyword to one SEO-ready article", () => {
     const keywords = [
       "restory: chill electronics repairs walkthrough",

@@ -460,6 +460,9 @@ type HomeCopy = {
   answerSteps: readonly string[];
   quickTitle: string;
   quickDescription: string;
+  faqTitle: string;
+  faqDescription: string;
+  faqItems: readonly { question: string; answer: string }[];
   hero: {
     eyebrow: string;
     title: string;
@@ -514,6 +517,7 @@ type LocaleCopy = {
   labels: {
     communityWiki: string;
     quickLookup: string;
+    faq: string;
     startHere: string;
     aboutGame: string;
     gameAtAGlance: string;
@@ -569,6 +573,34 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     answerSteps: ["Accept customer orders", "Disassemble and clean devices", "Replace faulty parts", "Rebuild and deliver"],
     quickTitle: "Find the repair answer fast",
     quickDescription: "Repair steps, device notes, story choices, and launch-build checks in one place.",
+    faqTitle: "Frequently asked questions",
+    faqDescription: "Confirmed answers about the platform, story length, achievements, languages, and Demo.",
+    faqItems: [
+      {
+        question: "What kind of game is ReStory: Chill Electronics Repairs?",
+        answer: "It is a cozy, narrative-driven shop management simulation developed by Mandragora and published by tinyBuild. The game is set in a mid-2000s Tokyo electronics repair shop.",
+      },
+      {
+        question: "Which platforms does ReStory support?",
+        answer: "The full release is available on Steam for Windows and macOS. The Steam store lists Steam Deck as Playable.",
+      },
+      {
+        question: "How long is the main story?",
+        answer: "The main story is listed as 15+ hours.",
+      },
+      {
+        question: "How many Steam Achievements does ReStory have?",
+        answer: "The Steam store lists 50 Steam Achievements.",
+      },
+      {
+        question: "How many languages does ReStory support?",
+        answer: "The full release lists 9 interface and subtitle languages.",
+      },
+      {
+        question: "Is there a ReStory Demo?",
+        answer: "Yes. The standalone Steam Demo is listed as released on June 15, 2026. Its language and system details are separate from the full release.",
+      },
+    ],
     hero: siteConfig.homepage.hero,
     quickLinks: [
       { stat: "15+", title: "Beginner Guide", description: "Start the first repair-shop shift and learn the confirmed core loop.", href: "/guides/restory-chill-electronics-repairs-walkthrough", label: "first hours" },
@@ -607,6 +639,34 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     answerSteps: ["Принять заказ клиента", "Разобрать и очистить устройство", "Заменить неисправные детали", "Собрать и вернуть устройство"],
     quickTitle: "Быстро найдите ответ по ремонту",
     quickDescription: "Ремонт, устройства, выборы сюжета и проблемы запуска в одном месте.",
+    faqTitle: "Часто задаваемые вопросы",
+    faqDescription: "Краткие ответы о платформе, истории, достижениях, языках и демоверсии.",
+    faqItems: [
+      {
+        question: "Что это за игра ReStory: Chill Electronics Repairs?",
+        answer: "Это уютная сюжетная симуляция управления мастерской от Mandragora, изданная tinyBuild. Действие происходит в небольшой мастерской электроники в Токио середины 2000-х.",
+      },
+      {
+        question: "На каких платформах доступна ReStory?",
+        answer: "Полная версия доступна в Steam для Windows и macOS. В магазине Steam указано, что игра Playable на Steam Deck.",
+      },
+      {
+        question: "Сколько длится основная история?",
+        answer: "Основная история рассчитана более чем на 15 часов.",
+      },
+      {
+        question: "Сколько достижений Steam есть в ReStory?",
+        answer: "В магазине Steam указано 50 достижений Steam.",
+      },
+      {
+        question: "Сколько языков поддерживает ReStory?",
+        answer: "В полной версии указаны 9 языков интерфейса и субтитров.",
+      },
+      {
+        question: "Есть ли у ReStory демоверсия?",
+        answer: "Да. Отдельная демоверсия в Steam указана как выпущенная 15 июня 2026 года. Её языки и системные требования нужно рассматривать отдельно от полной версии.",
+      },
+    ],
     hero: {
       eyebrow: "Независимая фанатская Wiki",
       title: siteConfig.gameName,
@@ -670,6 +730,34 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     answerSteps: ["Kundenauftrag annehmen", "Gerät zerlegen und reinigen", "Defekte Teile ersetzen", "Zusammenbauen und zurückgeben"],
     quickTitle: "Die passende Reparatur schnell finden",
     quickDescription: "Reparaturschritte, Geräte, Story-Entscheidungen und bekannte Startprobleme an einem Ort.",
+    faqTitle: "Häufige Fragen",
+    faqDescription: "Kurze Antworten zu Plattform, Storylänge, Erfolgen, Sprachen und Demo.",
+    faqItems: [
+      {
+        question: "Was für ein Spiel ist ReStory: Chill Electronics Repairs?",
+        answer: "Es ist eine gemütliche, erzählerische Werkstatt-Simulation von Mandragora, veröffentlicht von tinyBuild. Das Spiel spielt in einer kleinen Elektronikwerkstatt im Tokio der mittleren 2000er.",
+      },
+      {
+        question: "Auf welchen Plattformen ist ReStory verfügbar?",
+        answer: "Die Vollversion ist auf Steam für Windows und macOS verfügbar. Im Steam-Store ist Steam Deck als Playable aufgeführt.",
+      },
+      {
+        question: "Wie lang ist die Hauptgeschichte?",
+        answer: "Die Hauptgeschichte ist mit mehr als 15 Stunden angegeben.",
+      },
+      {
+        question: "Wie viele Steam-Erfolge gibt es in ReStory?",
+        answer: "Im Steam-Store sind 50 Steam-Erfolge aufgeführt.",
+      },
+      {
+        question: "Wie viele Sprachen unterstützt ReStory?",
+        answer: "Für die Vollversion sind 9 Interface- und Untertitelsprachen angegeben.",
+      },
+      {
+        question: "Gibt es eine Demo von ReStory?",
+        answer: "Ja. Die eigenständige Steam-Demo ist mit dem Veröffentlichungsdatum 15. Juni 2026 angegeben. Ihre Sprach- und Systemangaben sollten getrennt von der Vollversion betrachtet werden.",
+      },
+    ],
     hero: {
       eyebrow: "Unabhängige Fan-Wiki",
       title: siteConfig.gameName,
@@ -733,6 +821,34 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     answerSteps: ["客の依頼を受ける", "機器を分解・清掃する", "故障部品を交換する", "組み立てて返却する"],
     quickTitle: "修理の答えをすぐに見つける",
     quickDescription: "修理手順、デバイス情報、ストーリー分岐、発売時の問題をまとめています。",
+    faqTitle: "よくある質問",
+    faqDescription: "対応プラットフォーム、物語の長さ、実績、言語、デモについての回答です。",
+    faqItems: [
+      {
+        question: "『リ・ストーリー: 思い出修理屋』はどんなゲーム？",
+        answer: "Mandragoraが開発し、tinyBuildが発売する、物語重視の修理店シミュレーションです。2000年代半ばの東京にある小さな電子機器修理店が舞台です。",
+      },
+      {
+        question: "対応プラットフォームは？",
+        answer: "完全版はWindowsとmacOS向けのSteamでプレイできます。SteamストアではSteam DeckはPlayableと記載されています。",
+      },
+      {
+        question: "メインストーリーの長さは？",
+        answer: "メインストーリーは15時間以上と記載されています。",
+      },
+      {
+        question: "Steam実績はいくつありますか？",
+        answer: "Steamストアでは50個のSteam実績が記載されています。",
+      },
+      {
+        question: "何言語に対応していますか？",
+        answer: "完全版はインターフェースと字幕に9言語対応と記載されています。",
+      },
+      {
+        question: "デモ版はありますか？",
+        answer: "はい。独立したSteamデモは2026年6月15日発売と記載されています。デモの言語とシステム要件は完全版とは分けて確認してください。",
+      },
+    ],
     hero: {
       eyebrow: "独立ファンメイド Wiki",
       title: "リ・ストーリー: 思い出修理屋",
@@ -806,6 +922,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
     labels: {
       communityWiki: "Independent Fan-Made Community Wiki",
       quickLookup: "Quick lookup",
+      faq: "FAQ",
       startHere: "Start Here",
       aboutGame: "About the game",
       gameAtAGlance: "Game at a glance",
@@ -883,6 +1000,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
     labels: {
       communityWiki: "Независимая фанатская Wiki",
       quickLookup: "Быстрый поиск",
+      faq: "Частые вопросы",
       startHere: "Начать здесь",
       aboutGame: "Об игре",
       gameAtAGlance: "Игра в цифрах",
@@ -960,6 +1078,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
     labels: {
       communityWiki: "Unabhängige Fan-Wiki",
       quickLookup: "Schnellsuche",
+      faq: "Häufige Fragen",
       startHere: "Hier starten",
       aboutGame: "Über das Spiel",
       gameAtAGlance: "Das Spiel auf einen Blick",
@@ -1037,6 +1156,7 @@ const localeCopy: Record<Locale, LocaleCopy> = {
     labels: {
       communityWiki: "独立ファンメイド・コミュニティ Wiki",
       quickLookup: "クイック検索",
+      faq: "よくある質問",
       startHere: "ここから開始",
       aboutGame: "ゲームについて",
       gameAtAGlance: "ゲーム概要",
