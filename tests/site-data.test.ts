@@ -17,6 +17,13 @@ describe("ReStory site contract", () => {
     expect(siteConfig.sidebarCodes).toEqual([]);
   });
 
+  it("keeps the Adsterra Native Banner configuration available", async () => {
+    const { readFile } = await import("node:fs/promises");
+    const banner = await readFile(new URL("../components/native-banner.tsx", import.meta.url), "utf8");
+    expect(banner).toContain("https://pl30770499.effectivecpmnetwork.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js");
+    expect(banner).toContain("container-34a15f6a5d042fa44074d21dd013e6c1");
+  });
+
   it("exposes the four researched locales without the old game label", () => {
     expect(siteConfig.locales).toEqual(["en", "ru", "de", "ja"]);
     expect(getLocaleCopy("ja").gameName).toBe("リ・ストーリー: 思い出修理屋");

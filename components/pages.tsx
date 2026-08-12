@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
+import { NativeBanner } from "./native-banner";
 import { SitePageJsonLd } from "./seo-json-ld";
 import { Taskbar } from "./taskbar";
 import { WikiSidebar } from "./wiki-sidebar";
@@ -135,6 +136,8 @@ export function HomePage({ locale }: { locale: Locale }) {
             })}
           </ul>
         </section>
+
+        <NativeBanner label={copy.accessibility.advertisement} />
 
         <section className="faq-section" aria-labelledby="home-faq-title">
           <div className="faq-section__intro">
@@ -283,6 +286,7 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
                 ))}
               </ul>
             </section>
+            <NativeBanner label={copy.accessibility.advertisement} />
             <section className="panel raised">
               <span className="section-kicker">{copy.labels.official}</span>
               <h2>{copy.labels.source}</h2>
@@ -368,6 +372,7 @@ export function GuideArticlePage({ locale, slug }: { locale: Locale; slug: strin
             <div className="prose">
               <Article />
             </div>
+            <NativeBanner label={copy.accessibility.advertisement} />
             <section>
               <span className="section-kicker">{copy.labels.relatedPages}</span>
               <ul className="grid cols-3 content-list">

@@ -168,6 +168,30 @@ input {
   min-width: 0;
 }
 
+.native-banner {
+  min-height: 0;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.native-banner > div {
+  width: 100%;
+  min-height: 0;
+}
+
+.native-banner > div:empty {
+  display: none;
+}
+
+@supports selector(.native-banner:has(> div:empty)) {
+  .native-banner:has(> div:empty) {
+    display: none;
+  }
+}
+
 .language-suggestion {
   display: flex;
   align-items: center;
