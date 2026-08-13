@@ -20,8 +20,7 @@ describe("ReStory site contract", () => {
   it("keeps the Adsterra Native Banner configuration available", async () => {
     const { readFile } = await import("node:fs/promises");
     const banner = await readFile(new URL("../components/native-banner.tsx", import.meta.url), "utf8");
-    expect(banner).toContain("<script");
-    expect(banner).toContain('data-cfasync="false"');
+    expect(banner).toContain('<script async="async" data-cfasync="false"');
     expect(banner).toContain("https://pl30770499.effectivecpmnetwork.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js");
     expect(banner).toContain("container-34a15f6a5d042fa44074d21dd013e6c1");
   });
