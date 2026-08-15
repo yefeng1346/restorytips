@@ -30,17 +30,17 @@ export const siteConfig = {
   sidebarCodes: [],
   homepage: {
     meta: {
-      title: "ReStory: Chill Electronics Repairs Wiki — Guides, Repairs",
+      title: "ReStory: Chill Electronics Repairs Wiki | Guides",
       description:
-        "ReStory: Chill Electronics Repairs wiki with repair walkthroughs, cleaning guides, device parts, story choices, achievements, settings, and launch issues.",
+        "ReStory: Chill Electronics Repairs wiki with repair walkthroughs, cleaning steps, parts, story choices, achievements, settings, and beginner tips for Steam.",
       keywords:
-        "ReStory, Chill Electronics Repairs, repair guide, walkthrough, cleaning, achievements",
+        "ReStory, Chill Electronics Repairs, walkthrough, cleaning, parts, achievements, beginner guide",
     },
     hero: {
       eyebrow: "Independent Fan-Made Community Wiki",
       title: "ReStory: Chill Electronics Repairs",
       description:
-        "Run a cozy electronics repair shop in mid-2000s Tokyo. Restore nostalgic consoles, phones, cameras, and music players while customer choices shape the shop and its stories.",
+        "Run a cozy electronics repair shop in mid-2000s Tokyo: take apart, clean, and rebuild nostalgic devices while customer choices shape the story.",
       stats: [
         "Launched Aug 6, 2026",
         "15+ Hour Story",
@@ -569,7 +569,7 @@ const localizedHomeCopy: Record<Locale, HomeCopy> = {
     answerKicker: "Short answer",
     answerTitle: "What do you do in ReStory: Chill Electronics Repairs?",
     answerText:
-      "ReStory: Chill Electronics Repairs is a cozy, narrative-driven shop management simulation on Steam. You run an electronics repair shop in mid-2000s Tokyo: accept customer orders, disassemble and clean nostalgic devices, replace faulty parts, rebuild them, and hand them back. A Y2K-era browser helps you find spare parts and handle online requests while money, tools, decoration, and customer choices shape the shop and its branching story.",
+      "You run a small electronics repair shop in mid-2000s Tokyo. Accept customer orders, disassemble and clean nostalgic devices, replace faulty parts, rebuild them, and return them. Use the Y2K-era browser to find parts and handle online requests while money, tools, decoration, and customer choices shape the shop and its branching story.",
     answerLoopTitle: "The repair loop",
     answerSteps: ["Accept customer orders", "Disassemble and clean devices", "Replace faulty parts", "Rebuild and deliver"],
     quickTitle: "Find the repair answer fast",

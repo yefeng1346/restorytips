@@ -239,6 +239,15 @@ export function HomePage({ locale }: { locale: Locale }) {
 
 export function GuideIndexPage({ locale }: { locale: Locale }) {
   const copy = getLocaleCopy(locale);
+  const isEnglish = locale === "en";
+  const guidePageTitle = isEnglish ? "ReStory: Chill Electronics Repairs Guides" : copy.nav.guides;
+  const guidePageDescription = isEnglish
+    ? "Browse step-by-step repairs, device and parts notes, story choices, achievements, settings, and launch-build checks in one place."
+    : copy.home.quickDescription;
+  const guideSectionTitle = isEnglish ? "Start with the guide that matches your question" : copy.home.quickTitle;
+  const guideSectionDescription = isEnglish
+    ? "Choose a walkthrough, cleaning guide, device reference, achievement checklist, or known-issues page."
+    : copy.home.quickDescription;
   const guides = guideMeta
     .filter((guide) => hasLocalizedGuide(locale, guide.slug))
     .flatMap((guide) => {
@@ -249,8 +258,8 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
     <PageChrome
       locale={locale}
       currentPath="/guides"
-      pageTitle={locale === "en" ? "ReStory Repair Guides" : copy.nav.guides}
-      pageDescription={copy.home.quickDescription}
+      pageTitle={guidePageTitle}
+      pageDescription={guidePageDescription}
     >
       <div className="wrap" style={{ paddingTop: "1.6rem" }}>
         <nav className="crumbs" aria-label={copy.accessibility.breadcrumb}>
@@ -260,8 +269,8 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
         </nav>
         <section className="banner">
           <span className="section-kicker">{copy.labels.communityWiki}</span>
-          <h1><span className="game">{locale === "en" ? "ReStory Repair Guides" : copy.nav.guides}</span></h1>
-          <p className="sub">{copy.home.quickDescription}</p>
+          <h1><span className="game">{guidePageTitle}</span></h1>
+          <p className="sub">{guidePageDescription}</p>
         </section>
 
         <div className="wiki-grid">
@@ -269,8 +278,14 @@ export function GuideIndexPage({ locale }: { locale: Locale }) {
           <div>
             <section style={{ marginTop: 0 }}>
               <span className="section-kicker">{copy.labels.startHere}</span>
-              <h2>{copy.home.quickTitle}</h2>
-              <ul className="grid cols-2 content-list">
+              <h2>{guideSectionTitle}</h2>
+              <p className="section-intro">{guideSectionDescription}</p>
+              {isEnglish ? (
+                <p className="guide-index-links">
+                  Start with the <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-walkthrough")}>beginner walkthrough</Link>, <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-cleaning-guide")}>cleaning guide</Link>, <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-parts-catalog")}>parts catalog</Link>, or <Link href={localizedPath(locale, "/guides/restory-chill-electronics-repairs-achievements")}>achievements checklist</Link>.
+                </p>
+              ) : null}
+              <ul className="grid cols-2 content-list" aria-label={isEnglish ? "ReStory guide pages" : copy.nav.guides}>
                 {guides.map((guide) => (
                   <li key={guide.slug}>
                     <Link className="card guide-card" href={localizedPath(locale, `/guides/${guide.slug}`)}>

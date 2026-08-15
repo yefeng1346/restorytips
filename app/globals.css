@@ -482,6 +482,16 @@ section {
   color: hsl(var(--dim));
 }
 
+.guide-index-links {
+  max-width: 72ch;
+  margin-top: -0.35rem;
+  color: hsl(var(--dim));
+}
+
+.guide-index-links a {
+  font-weight: 700;
+}
+
 .media-section {
   margin-block: 2.8rem;
 }
