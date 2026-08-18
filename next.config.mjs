@@ -16,8 +16,8 @@ const contentSecurityPolicy = [
   "img-src 'self' data: https:",
   "media-src 'self' https:",
   "style-src 'self' 'unsafe-inline'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://ep2.adtrafficquality.google https://pl30770499.effectivecpmnetwork.com",
-  "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://pl30770499.effectivecpmnetwork.com https://fizzyacerbitymellow.com https://protrafficinspector.com https://furiousexpansion.com",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://ep2.adtrafficquality.google https://staffresumed.com https://consumeririssalary.com",
+  "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://staffresumed.com https://consumeririssalary.com https://fizzyacerbitymellow.com https://protrafficinspector.com https://furiousexpansion.com",
   "font-src 'self' data:",
   "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://cdn.cloudvideosa.com https://ep2.adtrafficquality.google https://www.google.com",
 ].join("; ");

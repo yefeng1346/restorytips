@@ -20,9 +20,14 @@ describe("ReStory site contract", () => {
   it("keeps the Adsterra Native Banner configuration available", async () => {
     const { readFile } = await import("node:fs/promises");
     const banner = await readFile(new URL("../components/native-banner.tsx", import.meta.url), "utf8");
-    expect(banner).toContain('<script async="async" data-cfasync="false"');
-    expect(banner).toContain("https://pl30770499.effectivecpmnetwork.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js");
+    const nextConfig = await readFile(new URL("../next.config.mjs", import.meta.url), "utf8");
+    expect(banner).toContain('"use client"');
+    expect(banner).toContain("document.createElement(\"script\")");
+    expect(banner).not.toContain("dangerouslySetInnerHTML");
+    expect(banner).toContain("https://staffresumed.com/34a15f6a5d042fa44074d21dd013e6c1/invoke.js");
     expect(banner).toContain("container-34a15f6a5d042fa44074d21dd013e6c1");
+    expect(nextConfig).toContain("https://staffresumed.com");
+    expect(nextConfig).toContain("https://consumeririssalary.com");
   });
 
   it("exposes the four researched locales without the old game label", () => {
