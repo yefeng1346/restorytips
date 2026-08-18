@@ -182,16 +182,6 @@ input {
   min-height: 0;
 }
 
-.native-banner > div:empty {
-  display: none;
-}
-
-@supports selector(.native-banner:has(> div:empty)) {
-  .native-banner:has(> div:empty) {
-    display: none;
-  }
-}
-
 .language-suggestion {
   display: flex;
   align-items: center;
